@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  background: #000000;
+  color: #f9f9f9;
+  font-family: "Euclid Circular A", "Poppins";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}

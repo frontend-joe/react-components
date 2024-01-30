@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #12131a;
+  font-family: "Euclid Circular A";
+}
+
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 260px;
+  height: 100%;
+  padding: 0 16px;
+  background: #1d212a;
+  border-right: 1px solid #2e303e;
+  transition: width 0.4s;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  height: 72px;
+  padding: 0 1.25rem 0 0;
+  border-bottom: 1px solid #2e303e;
+  color: #e1ecff;
+}
+
+.sidebar .sidebar-header button {
+  width: 54px;
+}
+
+.sidebar-logo {
+  height: 20px;
+}
+
+.sidebar button {
+  position: relative;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  padding: 0 16px;
+  color: #e1ecff;
+  transition: background 0.3s;
+}
+
+.sidebar button span:nth-child(2) {
+  flex: 1 1 auto;
+}
+
+.sidebar button:is(.active, :hover) {
+  background: #004fee;
+  color: #e1ecff;
+}
+
+.sidebar button span {
+  transition: 0.3s;
+}
+
+.sidebar button.active > span:nth-child(3) {
+  rotate: -180deg;
+}
+
+.sidebar button:not(.active):hover {
+  background: #2e303e;
+}
+
+.sub-nav button.active::before {
+  background: #e1ecff;
+}
+
+.sub-nav {
+  overflow: hidden;
+  /* height: 0; */
+  transition: 0.5s;
+}
+
+/* .sub-nav.open {
+  height: 200px;
+} */
+
+.sub-nav button {
+  padding-left: 54px;
+}
+
+.sub-nav button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  translate: 0 -50%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #e1ecff;
+}
+
+.material-symbols-outlined {
+  font-size: 22px;
+}

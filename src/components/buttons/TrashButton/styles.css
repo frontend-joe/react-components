@@ -1,0 +1,155 @@
+.trash-button {
+  --color-icon: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 0;
+  background: #fc3b51;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Euclid Circular A";
+  color: #f9f9f9;
+  padding: 0 0 0 24px;
+  width: 210px;
+  height: 64px;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.trash-button .button-text {
+  flex: 0 0 120px;
+}
+
+.trash-button .animation {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  scale: 1;
+}
+
+.trash-button .can {
+  overflow: hidden;
+  position: relative;
+  translate: 0 3px;
+  width: 20px;
+  height: 22px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 2px solid var(--color-icon);
+}
+
+.trash-button .lid {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  translate: -50% 0;
+  width: 22px;
+  height: 2px;
+  background: var(--color-icon);
+}
+
+@keyframes move {
+  75%,
+  100% {
+    translate: 0 88px;
+  }
+}
+
+.trash-button .paper-wrapper,
+.trash-button .shredded-wrapper {
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  top: -20px;
+  left: 50%;
+  margin-left: -5px;
+  width: 10px;
+  height: 64px;
+}
+
+.trash-button .paper-wrapper {
+  height: 40px;
+}
+
+.trash-button .shredded-wrapper {
+  top: 24px;
+  height: 20px;
+  justify-content: center;
+}
+
+.trash-button .paper,
+.trash-button .shredded {
+  display: block;
+  background: var(--color-icon);
+  height: 20px;
+}
+
+.trash-button .paper {
+  width: 10px;
+}
+
+.trash-button .shredded {
+  margin-top: -40px;
+  width: 2px;
+}
+
+.trash-button .shredded::before,
+.trash-button .shredded::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: inherit;
+  height: inherit;
+  background: inherit;
+}
+
+.trash-button .shredded::before {
+  left: -4px;
+}
+
+.trash-button .shredded::after {
+  right: -4px;
+}
+
+@keyframes fill {
+  0%,
+  20% {
+    translate: 0 0;
+  }
+  40%,
+  70% {
+    translate: 0 -50%;
+  }
+  90%,
+  100% {
+    translate: 0 -100%;
+  }
+}
+
+.trash-button .filler {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -32px;
+  width: 64px;
+  height: 120%;
+  background: var(--color-icon);
+}
+
+.trash-button:disabled {
+  cursor: not-allowed;
+}
+
+.trash-button.deleting :is(.paper, .shredded) {
+  animation: move 1.25s linear 2 both;
+}
+
+.trash-button.deleting .filler {
+  animation: fill 2.5s both;
+}

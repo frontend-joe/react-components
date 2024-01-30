@@ -1,0 +1,18 @@
+.app {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 25vh;
+}
+
+.app a {
+  display: grid;
+  place-items: center;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  background: rgb(255 255 255 / 9%);
+}
+
+.app a:nth-child(odd) {
+  background: rgb(255 255 255 / 6%);
+}
