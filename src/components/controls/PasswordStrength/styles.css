@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  display: grid;
+  place-items: center;
+  margin: 0;
+  background: #000000;
+  font-family: "Euclid Circular A", "Poppins";
+  color: #fdfdfd;
+}
+
+.login-card {
+  width: 400px;
+  padding: 60px 30px 30px;
+  border-radius: 16px;
+  background: #0e0d0d;
+  text-align: center;
+}
+
+.login-card > h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0 0 30px;
+}
+
+.login-card img {
+  width: 260px;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  width: 100%;
+  margin: 0;
+  display: grid;
+}
+
+.login-form input.control::placeholder {
+  color: #9f9d9e;
+}
+
+.control {
+  outline: none;
+  width: 100%;
+  height: 56px;
+  padding: 0 16px;
+  color: inherit;
+  background: #181919;
+  border: 0;
+  border-radius: 6px;
+  margin: 8px 0;
+  font-family: inherit;
+  font-size: 18px;
+  transition: 0.4s;
+}
+
+button.control {
+  cursor: pointer;
+  width: 100%;
+  height: 56px;
+  padding: 0 16px;
+  background: #0079ea;
+  text-align: center;
+}
+
+.bars {
+  margin: 8px 0;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 6px;
+  border-radius: 3px;
+  background: #181919;
+}
+
+.bars div {
+  height: 6px;
+  border-radius: 3px;
+  transition: 0.4s;
+  width: 0%;
+}
+
+.bars.weak div {
+  background: #e24c71;
+  width: 33.33%;
+}
+
+.bars.medium div {
+  background: #f39845;
+  width: 66.66%;
+}
+
+.bars.strong div {
+  background: #57c558;
+  width: 100%;
+}
+
+.strength {
+  text-align: left;
+  height: 30px;
+  text-transform: capitalize;
+  color: #868b94;
+}
