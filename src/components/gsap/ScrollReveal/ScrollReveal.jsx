@@ -21,7 +21,7 @@ export const ScrollReveal = () => {
   }, []);
 
   return (
-    <section>
+    <section className="scroll-reveal">
       <div></div>
       <div></div>
       <div></div>

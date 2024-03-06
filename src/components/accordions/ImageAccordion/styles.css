@@ -1,0 +1,82 @@
+.image-accordion {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.image-accordion-item {
+  position: relative;
+  overflow: hidden;
+  width: 64px;
+  height: 500px;
+  border-radius: 36px;
+  display: flex;
+  align-items: flex-end;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.image-accordion-item:hover {
+  opacity: 0.75;
+}
+
+.image-accordion :is(h2, p) {
+  margin: 0;
+}
+
+.image-accordion-item h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: rgb(255 255 255 / 96%);
+}
+
+.image-accordion-item p {
+  color: rgb(255 255 255 / 66%);
+}
+
+.image-accordion-item.active {
+  width: 400px;
+  opacity: 1;
+}
+
+.image-accordion-item .material-symbols-outlined {
+  display: grid;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  color: rgb(0 0 0 / 80%);
+  background: rgb(255 255 255 / 70%);
+  border-radius: 50%;
+  font-size: 28px;
+}
+
+.image-accordion-item .content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 400px;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  padding: 100px 0 20px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: linear-gradient(to bottom, rgb(0 0 0 / 0%), rgb(0 0 0 / 80%));
+  transition: 0.25s;
+}
+
+.image-accordion-item.active .content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.image-accordion-item img {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  height: 150%;
+  filter: grayscale(0.6);
+}

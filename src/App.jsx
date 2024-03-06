@@ -4,6 +4,7 @@ import {
   Sidebar1,
   PasswordStrengthExample,
   ScrollReveal,
+  ImageAccordionExample,
 } from "./components";
 
 import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
@@ -35,6 +36,11 @@ const routes = [
     name: "ScrollReveal",
     path: "/gsap/scroll-reveal",
     element: <ScrollReveal />,
+  },
+  {
+    name: "ImageAccordion",
+    path: "/accordions/image-accordion",
+    element: <ImageAccordionExample />,
   },
 ];
 

@@ -1,4 +1,4 @@
-section {
+.scroll-reveal {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -7,7 +7,7 @@ section {
   margin: 0 auto;
 }
 
-section > div {
+.scroll-reveal > div {
   background: #121419;
   height: 190px;
   width: 30%;
@@ -15,6 +15,6 @@ section > div {
   transition: background 0.3s;
 }
 
-section > div:hover {
+.scroll-reveal > div:hover {
   background: #3e70ff;
 }
