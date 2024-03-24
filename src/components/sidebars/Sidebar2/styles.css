@@ -1,0 +1,84 @@
+.page.sidebar-2-page {
+  background: #17132a;
+}
+
+.sidebar-2 {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 56px;
+  height: 100%;
+  background: #4f2cd4;
+  transition: width 0.4s;
+}
+
+.sidebar-2.open {
+  width: 260px;
+}
+
+.sidebar-2 .inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 260px;
+}
+
+.sidebar-2 header {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  padding: 0 6px;
+  background: rgb(0 0 0 / 25%);
+}
+
+.sidebar-2-burger {
+  width: 44px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  color: #f9f9f9;
+}
+
+.sidebar-2 header > img {
+  height: 28px;
+}
+
+.sidebar-2 nav {
+  display: grid;
+  padding: 6px;
+  gap: 2px;
+}
+
+.sidebar-2 nav > button {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  font-family: "Poppins";
+  font-size: 16px;
+  text-transform: capitalize;
+  line-height: 1;
+  padding: 0 12px;
+  border-radius: 8px;
+  color: #f9f9f9;
+}
+
+.sidebar-2 nav > button:hover {
+  background: rgb(0 0 0 / 30%);
+}
+
+.sidebar-2 header > img,
+.sidebar-2 nav > button p {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.sidebar-2.open :is(nav button p, header > img) {
+  opacity: 1;
+}
+
+.sidebar-2.open nav > button {
+  width: 100%;
+}

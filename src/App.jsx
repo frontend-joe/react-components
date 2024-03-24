@@ -2,9 +2,11 @@ import {
   DeleteButton,
   TrashButton,
   Sidebar1,
+  Sidebar2,
   PasswordStrengthExample,
   ScrollReveal,
   ImageAccordionExample,
+  Login1,
 } from "./components";
 
 import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
@@ -41,6 +43,16 @@ const routes = [
     name: "ImageAccordion",
     path: "/accordions/image-accordion",
     element: <ImageAccordionExample />,
+  },
+  {
+    name: "Login1",
+    path: "/logins/login-1",
+    element: <Login1 />,
+  },
+  {
+    name: "Sidebar2",
+    path: "/sidebars/sidebar-2",
+    element: <Sidebar2 />,
   },
 ];
 
