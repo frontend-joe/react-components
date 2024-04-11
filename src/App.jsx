@@ -7,6 +7,8 @@ import {
   ScrollReveal,
   ImageAccordionExample,
   Login1,
+  Card1,
+  Modal1,
 } from "./components";
 
 import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
@@ -53,6 +55,16 @@ const routes = [
     name: "Sidebar2",
     path: "/sidebars/sidebar-2",
     element: <Sidebar2 />,
+  },
+  {
+    name: "Card1",
+    path: "/cards/card-1",
+    element: <Card1 />,
+  },
+  {
+    name: "Modal1",
+    path: "/modals/modal-1",
+    element: <Modal1 />,
   },
 ];
 
