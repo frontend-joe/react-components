@@ -1,0 +1,60 @@
+.page.parallax-1-page {
+  background: #0e0d0e;
+  height: 100%;
+  font-family: "Euclid Circular A", "Poppins";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.parallax-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("./bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 70%;
+  height: 600px;
+  width: 100vw;
+  transition: 0.05s linear;
+}
+
+.parallax-banner h2 {
+  font-size: 48px;
+  color: #f8f8f8;
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.parallax-banner button {
+  border: 0;
+  background: #ffffff;
+  color: #222222;
+  padding: 10px 24px;
+  border-radius: 30px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.parallax-container {
+  padding: 0 10%;
+}
+
+section h2 {
+  margin-top: 0;
+  margin-bottom: 40px;
+  padding-top: 60px;
+}
+
+section p:last-child {
+  padding-bottom: 60px;
+}
+
+section p {
+  opacity: 0.5;
+}

@@ -6,3 +6,4 @@ export * from "./accordions";
 export * from "./logins";
 export * from "./cards";
 export * from "./modals";
+export * from "./parallax";

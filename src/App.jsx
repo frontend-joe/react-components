@@ -9,6 +9,7 @@ import {
   Login1,
   Card1,
   Modal1,
+  Parallax1,
 } from "./components";
 
 import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
@@ -65,6 +66,11 @@ const routes = [
     name: "Modal1",
     path: "/modals/modal-1",
     element: <Modal1 />,
+  },
+  {
+    name: "Parallax1",
+    path: "/parallax/parallax-1",
+    element: <Parallax1 />,
   },
 ];
 
