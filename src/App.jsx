@@ -10,11 +10,13 @@ import {
   Card1,
   Modal1,
   Parallax1,
+  Dropdown1Example,
 } from "./components";
 
 import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
 
 import "./App.css";
+import { Dropdown1 } from "./components/dropdowns/Dropdown1/Dropdown1";
 
 const routes = [
   {
@@ -71,6 +73,11 @@ const routes = [
     name: "Parallax1",
     path: "/parallax/parallax-1",
     element: <Parallax1 />,
+  },
+  {
+    name: "Dropdown1",
+    path: "/dropdowns/dropdown-1",
+    element: <Dropdown1Example />,
   },
 ];
 

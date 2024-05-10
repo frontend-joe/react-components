@@ -1,0 +1,138 @@
+.dropdown-1 {
+  position: relative;
+  perspective: 1000px;
+  width: 144px;
+}
+
+.dropdown-1 button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0;
+  width: 100%;
+  height: 64px;
+  color: rgb(255 255 255 / 55%);
+  background: #2d2f31;
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Euclid Circular A";
+}
+
+.dropdown-1 > button {
+  background: transparent;
+  gap: 10px;
+  margin: 0 -4px;
+  white-space: nowrap;
+}
+
+.dropdown-1 > button > .chevron {
+}
+
+.dropdown-1:hover > button,
+.dropdown-1.open > button {
+  color: rgb(255 255 255 / 95%);
+}
+
+.dropdown-1.open > button .chevron {
+  rotate: -180deg;
+}
+
+.dropdown-1 > button > .span {
+  font-size: 30px;
+}
+
+.dropdown-1 button .chevron {
+  margin-left: auto;
+  transition: rotate 0.3s;
+}
+
+.dropdown-1-menu {
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+  top: 64px;
+  left: 0;
+  margin: 0 -20px;
+  width: calc(100% + 40px);
+  height: 168px;
+  opacity: 0;
+  transform: rotateX(-90deg);
+  transform-origin: 0% 0%;
+  visibility: hidden;
+  background: #2d2f31;
+  transition: 0.3s;
+}
+
+.dropdown-1.open .dropdown-1-menu {
+  opacity: 1;
+  transform: rotateX(0);
+  visibility: visible;
+}
+
+.dropdown-1-menu .main-menu {
+  width: 50%;
+}
+
+.dropdown-1-menu .menu-inner {
+  position: absolute;
+  width: 200%;
+  display: flex;
+  transition: 0.4s;
+}
+
+.dropdown-1-menu .menu-inner.open {
+  translate: -50%;
+}
+
+.dropdown-1-menu button {
+  border: 0;
+  height: 56px;
+  border-radius: 0;
+  gap: 10px;
+  padding: 0 8px 0 16px;
+  text-transform: capitalize;
+}
+
+.dropdown-1-menu button:hover {
+  color: rgb(255 255 255 / 95%);
+}
+
+.dropdown-1-menu .sub-menu {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 0;
+}
+
+.dropdown-1 button .material-symbols-outlined:first-child {
+  font-size: 22px;
+}
+
+.page.dropdown-1-page {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background: #212324;
+  height: 100vh;
+}
+
+.dropdown-1-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: #771dff;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown-1-nav > h1 {
+  font-weight: 400;
+  margin-right: auto;
+  margin-left: 14px;
+  font-size: 16px;
+}
