@@ -1,0 +1,101 @@
+:root {
+  --color-primary: #5644fd;
+  --tab-width: 300px;
+  --button-width: 56px;
+}
+
+.page.widget-1-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-top: 260px;
+  font-family: "Euclid Circular A", "Poppins";
+  line-height: 1.5;
+  background: #24232b;
+  color: #f9f9f9;
+}
+
+.widget {
+  background: #18181d;
+  width: var(--tab-width);
+  border-radius: 8px;
+}
+
+.widget h2 {
+  margin: 0;
+}
+
+.widget > header {
+  position: relative;
+  display: flex;
+  border-bottom: 1px solid rgb(255 255 255 / 10%);
+}
+
+.widget > header > button {
+  padding: 20px 0;
+  font-size: 15px;
+  width: var(--button-width);
+  cursor: pointer;
+  background: transparent;
+  color: rgb(255 255 255 / 50%);
+  display: grid;
+  place-items: center;
+  border: 0;
+  font-size: 22px;
+  transition: 0.5s;
+}
+
+.widget > header > button:not(.active) {
+  opacity: 0.7;
+}
+
+.widget > header > button:hover:not(.active) {
+  opacity: 1;
+}
+
+.widget > header > button.active {
+  color: var(--color-primary);
+}
+
+.widget .content {
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.widget .content-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: start;
+  width: calc(var(--tab-width) * 3);
+  transition: 0.5s;
+}
+
+.widget .underline {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: var(--button-width);
+  height: 3px;
+  background: var(--color-primary);
+  transition: 0.2s;
+}
+
+.widget h2 {
+  margin: 0 0 10px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.widget p {
+  margin: 0;
+  font-size: 13px;
+  opacity: 0.5;
+}
+
+.widget .content-inner > div {
+  width: inherit;
+  padding: 20px;
+}

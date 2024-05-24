@@ -8,3 +8,4 @@ export * from "./cards";
 export * from "./modals";
 export * from "./parallax";
 export * from "./dropdowns";
+export * from "./widgets";

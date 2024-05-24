@@ -45,16 +45,8 @@
   padding: 0 10%;
 }
 
-section h2 {
+.parallax-banner h2 {
   margin-top: 0;
   margin-bottom: 40px;
   padding-top: 60px;
-}
-
-section p:last-child {
-  padding-bottom: 60px;
-}
-
-section p {
-  opacity: 0.5;
 }
