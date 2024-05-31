@@ -3,6 +3,7 @@ import {
   TrashButton,
   Sidebar1,
   Sidebar2,
+  Sidebar3,
   PasswordStrengthExample,
   ScrollReveal,
   ImageAccordionExample,
@@ -12,6 +13,7 @@ import {
   Parallax1,
   Dropdown1Example,
   Widget1Example,
+  AutoSuggest,
 } from "./components";
 
 import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
@@ -84,6 +86,16 @@ const routes = [
     name: "Widget1",
     path: "/widgets/widget-1",
     element: <Widget1Example />,
+  },
+  {
+    name: "AutoSuggest",
+    path: "/controls/auto-suggest",
+    element: <AutoSuggest />,
+  },
+  {
+    name: "Sidebar3",
+    path: "/sidebars/sidebar-3",
+    element: <Sidebar3 />,
   },
 ];
 

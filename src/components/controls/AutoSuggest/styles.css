@@ -1,0 +1,103 @@
+.page.auto-suggest-page {
+  background: #18181b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.auto-suggest-page img {
+  width: 240px;
+  margin: 0 auto;
+}
+
+.auto-suggest-page button {
+  padding: 10px 16px;
+  border-radius: 4px;
+  border: 0;
+  background: #303134;
+  color: inherit;
+  font-family: inherit;
+}
+
+.auto-suggest-page p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.auto-suggest-page p a {
+  color: #8ab4f7;
+}
+
+.auto-suggest {
+  position: relative;
+}
+
+.auto-suggest input {
+  width: 440px;
+  height: 44px;
+  padding: 0 20px 0 44px;
+  border-radius: 22px;
+  border: 1px solid #5f6367;
+  background: transparent;
+  color: #e8eaed;
+  font-size: 16px;
+  font-family: inherit;
+  outline: none;
+}
+
+.auto-suggest input:focus {
+  background: #1f2024;
+  border-color: #1f2024;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.auto-suggest span:nth-child(1) {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  translate: 0 -50%;
+}
+
+.auto-suggest-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.auto-suggest .menu {
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  top: 44px;
+  left: 0;
+  width: 100%;
+  max-height: 228px;
+  padding: 0 16px 6px;
+  background: #1f2024;
+  border-bottom-right-radius: 22px;
+  border-bottom-left-radius: 22px;
+}
+
+.auto-suggest input:focus ~ .menu,
+.auto-suggest .menu:hover {
+  display: block;
+}
+
+.auto-suggest .menu > div {
+  padding: 8px 0;
+  border-top: 1px solid #5f6367;
+  line-height: 1.8;
+}
+
+.auto-suggest .menu > div button {
+  display: block;
+  background: transparent;
+  padding: 0;
+  height: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
