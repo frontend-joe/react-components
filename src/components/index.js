@@ -1,4 +1,5 @@
 export * from "./buttons";
+export * from "./carousels";
 export * from "./controls";
 export * from "./sidebars";
 export * from "./gsap";

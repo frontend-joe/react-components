@@ -14,12 +14,12 @@ import {
   Dropdown1Example,
   Widget1Example,
   AutoSuggest,
+  Carousel1,
 } from "./components";
 
 import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
 
 import "./App.css";
-import { Dropdown1 } from "./components/dropdowns/Dropdown1/Dropdown1";
 
 const routes = [
   {
@@ -96,6 +96,11 @@ const routes = [
     name: "Sidebar3",
     path: "/sidebars/sidebar-3",
     element: <Sidebar3 />,
+  },
+  {
+    name: "Carousel1",
+    path: "/carousels/carousel-1",
+    element: <Carousel1 />,
   },
 ];
 

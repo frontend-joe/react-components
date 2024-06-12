@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Euclid Circular A", "Poppins";
+}
+
+.page.carousel-1-page {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 0 8vw;
+  background: linear-gradient(45deg, #2c3d46, #0c0f13);
+  color: #f9f9f9;
+}
+
+.swiper a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #717171;
+  font-weight: 500;
+  background: #fff;
+  border-radius: 3.125rem;
+  margin: 0 auto;
+  padding: 10px 26px;
+  font-size: 0.9rem;
+  transition: 0.3s ease-in-out;
+}
+
+.swiper {
+  width: 100%;
+  max-width: 800px;
+  height: 440px;
+}
+
+.swiper-slide {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  filter: grayscale(0.6);
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-slide h2 {
+  color: #fff;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.swiper-slide a:hover {
+  color: #005baa;
+}
+
+.swiper-slide div {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: linear-gradient(rgb(0 0 0 / 0%) 55%, rgb(0 0 0 / 80%));
+  transition: 0.25s;
+  opacity: 0;
+  align-self: stretch;
+  padding-bottom: 70px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.swiper-slide-active div {
+  opacity: 1;
+}
+
+.swiper-slide > div > div {
+  translate: 0 100px;
+  transition: 0.3s;
+}
+
+.swiper-slide-active > div > div {
+  translate: 0;
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background: #fff !important;
+}
+
+.swiper-pagination {
+  bottom: 10px !important;
+  transform: scale(1.3);
+}
