@@ -3,6 +3,7 @@ export * from "./carousels";
 export * from "./controls";
 export * from "./sidebars";
 export * from "./gsap";
+export * from "./libraries";
 export * from "./accordions";
 export * from "./logins";
 export * from "./cards";

@@ -1,0 +1,58 @@
+.page.rc-slider-page {
+  background: #393965;
+  font-family: "Euclid Circular A", "Poppins";
+}
+
+.slider-card {
+  --color-primary: #756bea;
+  --color-card: #26263c;
+  display: grid;
+  gap: 14px;
+  padding: 20px 20px 24px;
+  width: 260px;
+  background: var(--color-card);
+  border-radius: 10px;
+  box-shadow: 0 20px 30px rgb(0 0 0 / 10%);
+}
+
+.slider-card h2 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(255 255 255 / 50%);
+}
+
+.slider-card var {
+  margin: 0;
+  font-size: 38px;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(255 255 255 / 100%);
+}
+
+.slider-card var abbr {
+  color: rgb(255 255 255 / 25%);
+  margin-right: 4px;
+}
+
+body .rc-slider-rail {
+  background: rgb(255 255 255 / 12%);
+}
+
+body .rc-slider-handle {
+  border-color: var(--color-card);
+  background: var(--color-primary);
+  opacity: 1;
+  scale: 1.5;
+}
+
+body .rc-slider-handle:hover,
+body .rc-slider-handle-dragging {
+  box-shadow: none !important;
+  border-color: var(--color-card) !important;
+  cursor: pointer;
+}
+
+body .rc-slider-track {
+  background: var(--color-primary);
+}

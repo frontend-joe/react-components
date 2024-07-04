@@ -15,6 +15,7 @@ import {
   Widget1Example,
   AutoSuggest,
   Carousel1,
+  RcSlider,
 } from "./components";
 
 import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
@@ -101,6 +102,16 @@ const routes = [
     name: "Carousel1",
     path: "/carousels/carousel-1",
     element: <Carousel1 />,
+  },
+  {
+    name: "ReactHookFormLogin",
+    path: "/libraries/react-hook-form",
+    element: <ReactHookFormLogin />,
+  },
+  {
+    name: "RcSlider",
+    path: "/libraries/rc-slider",
+    element: <RcSlider />,
   },
 ];
 
