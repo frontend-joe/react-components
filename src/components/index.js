@@ -11,3 +11,4 @@ export * from "./modals";
 export * from "./parallax";
 export * from "./dropdowns";
 export * from "./widgets";
+export * from "./navbars";

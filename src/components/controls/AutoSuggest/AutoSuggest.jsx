@@ -1033,7 +1033,7 @@ const Footer = () => (
   </>
 );
 
-const Search = ({ onSearch, results, search }) => (
+const AutoSuggest = ({ onSearch, results, search }) => (
   <div className="auto-suggest">
     <span className="material-symbols-outlined">search</span>
     <input value={search} spellCheck={false} type="text" onInput={onSearch} />
@@ -1047,7 +1047,7 @@ const Search = ({ onSearch, results, search }) => (
   </div>
 );
 
-export const AutoSuggest = () => {
+export const AutoSuggestExample = () => {
   const [search, setSearch] = useState("");
 
   const [results, setResults] = useState([]);
@@ -1069,7 +1069,7 @@ export const AutoSuggest = () => {
   return (
     <section className="page auto-suggest-page">
       <Header />
-      <Search search={search} onSearch={handleSearch} results={results} />
+      <AutoSuggest search={search} onSearch={handleSearch} results={results} />
       <Footer />
     </section>
   );

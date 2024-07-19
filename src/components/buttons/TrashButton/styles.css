@@ -1,5 +1,11 @@
+.page.trash-button-page {
+  background: #222222;
+}
+
 .trash-button {
   --color-icon: #f9f9f9;
+  position: relative;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,16 +16,61 @@
   font-weight: 400;
   font-family: "Euclid Circular A";
   color: #f9f9f9;
-  padding: 0 0 0 24px;
-  width: 210px;
+  padding: 0 0 0 20px;
+  opacity: 0.8;
+  width: 160px;
   height: 64px;
   text-align: left;
   cursor: pointer;
   transition: 0.3s;
 }
 
+@keyframes loader-move {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.trash-button .loader {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 4px;
+  background: rgb(0 0 0 / 24%);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.trash-button.deleting .loader {
+  opacity: 1;
+}
+
+.trash-button .loader::after {
+  content: "";
+  position: inherit;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: 0% 50%;
+  background: #f9f9f9;
+}
+
+.trash-button.deleting .loader::after {
+  animation: loader-move 1.5s linear both;
+}
+
+.trash-button:hover {
+  opacity: 1;
+}
+
 .trash-button .button-text {
-  flex: 0 0 120px;
+  flex: 0 0 66px;
+  width: 66px;
 }
 
 .trash-button .animation {
@@ -147,9 +198,9 @@
 }
 
 .trash-button.deleting :is(.paper, .shredded) {
-  animation: move 1.25s linear 2 both;
+  animation: move 1s linear 2 both;
 }
 
 .trash-button.deleting .filler {
-  animation: fill 2.5s both;
+  animation: fill 2s both;
 }

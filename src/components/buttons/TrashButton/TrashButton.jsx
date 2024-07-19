@@ -13,15 +13,14 @@ export const TrashButton = () => {
   };
 
   return (
-    <div className="page">
+    <div className="page trash-button-page">
       <button
         onClick={handleClick}
         className={`trash-button ${isDeleting ? "deleting" : ""}`}
         disabled={isDeleting}
       >
-        <span className="button-text">
-          {isDeleting ? "Deleting ..." : "Delete User"}
-        </span>
+        <span className="loader"></span>
+        <span className="button-text">Delete</span>
         <span className="animation">
           <span className="paper-wrapper">
             <span className="paper"></span>

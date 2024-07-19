@@ -13,9 +13,11 @@ import {
   Parallax1,
   Dropdown1Example,
   Widget1Example,
-  AutoSuggest,
   Carousel1,
   RcSlider,
+  Modal2,
+  Navbar1,
+  AutoSuggestExample,
 } from "./components";
 
 import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
@@ -91,7 +93,7 @@ const routes = [
   {
     name: "AutoSuggest",
     path: "/controls/auto-suggest",
-    element: <AutoSuggest />,
+    element: <AutoSuggestExample />,
   },
   {
     name: "Sidebar3",
@@ -104,14 +106,19 @@ const routes = [
     element: <Carousel1 />,
   },
   {
-    name: "ReactHookFormLogin",
-    path: "/libraries/react-hook-form",
-    element: <ReactHookFormLogin />,
-  },
-  {
     name: "RcSlider",
     path: "/libraries/rc-slider",
     element: <RcSlider />,
+  },
+  {
+    name: "Modal2",
+    path: "/modals/modal-2",
+    element: <Modal2 />,
+  },
+  {
+    name: "Navbar1",
+    path: "/navbars/navbar-1",
+    element: <Navbar1 />,
   },
 ];
 

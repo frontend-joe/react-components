@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   gap: 50px;
+  padding-top: 0;
 }
 
 .auto-suggest-page img {
@@ -48,8 +49,8 @@
 }
 
 .auto-suggest input:focus {
-  background: #1f2024;
-  border-color: #1f2024;
+  background: #2c2e34;
+  border-color: #2c2e34;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -69,13 +70,14 @@
 .auto-suggest .menu {
   display: none;
   position: absolute;
+  z-index: 1;
   overflow: hidden;
   top: 44px;
   left: 0;
   width: 100%;
   max-height: 228px;
   padding: 0 16px 6px;
-  background: #1f2024;
+  background: #2c2e34;
   border-bottom-right-radius: 22px;
   border-bottom-left-radius: 22px;
 }

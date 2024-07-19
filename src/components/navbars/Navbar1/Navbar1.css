@@ -1,0 +1,93 @@
+.page.navbar-1-page {
+  background: #09090b;
+  color: #faf9f5;
+  font-family: "Euclid Circular A", "Poppins";
+  padding-top: 72px;
+  margin: 0;
+}
+
+.navbar-1 {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  translate: 0 -72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 20px;
+  width: 100%;
+  height: 72px;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+  background: #4f52ff;
+  transition: 0.3s;
+}
+
+.navbar-1.visible {
+  top: 0;
+  translate: 0;
+}
+
+.navbar-1 > h1 {
+  width: 36px;
+  height: 36px;
+  background: #f9f9f9;
+  color: #4f52ff;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+}
+
+.navbar-1 .nav-items {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navbar-1 .nav-items > a {
+  text-decoration: none;
+  font-weight: 400;
+  color: rgb(255 255 255 / 96%);
+  height: 72px;
+  display: grid;
+  place-items: center;
+}
+
+.navbar-1 .nav-items > a:hover {
+  color: rgb(255 255 255 / 96%);
+}
+
+.page.navbar-1-page h2 {
+  font-size: 20px;
+  margin: 0 0 4px;
+  cursor: default;
+}
+
+.page.navbar-1-page section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 100px 60px;
+}
+
+.page.navbar-1-page p {
+  opacity: 0.6;
+}
+
+.page.navbar-1-page section.shaded {
+  background: #0e0e11;
+}
+
+.page.navbar-1-page section > img {
+  width: 200px;
+  height: 200px;
+}
+
+.page.navbar-1-page section.shaded > img {
+  padding: 20px;
+}
+
+.page.navbar-1-page section > p {
+  line-height: 1.7;
+}

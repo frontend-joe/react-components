@@ -1,0 +1,260 @@
+body {
+  background: #f8f9fb;
+  font-family: "Euclid Circular A", "Poppins";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page.modal-2-page {
+  background: #ffffff;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.modal-2-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 50vh;
+  padding-bottom: 20px;
+  background: #0a1535;
+  color: #f9f9f9;
+}
+
+.modal-2-footer article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 50px 40px;
+  margin: -99px 20px 20px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #773ecb, #9f63ff);
+}
+
+.modal-2-footer article h2 {
+  font-weight: 400;
+  color: rgb(255 255 255 / 70%);
+}
+
+.signup-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0 20px 0 20px;
+  width: 100%;
+  height: 56px;
+  background: #161022;
+  border: 0;
+  border-radius: 6px;
+  color: #f9f9f9;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.modal-2-footer section {
+  padding: 0 50px;
+}
+
+.modal-2-footer section.top {
+  padding-top: 30px;
+  margin-bottom: 48px;
+}
+
+.modal-2-footer section.top img {
+  display: block;
+  height: 30px;
+  margin: 0 0 30px;
+}
+
+.modal-2-footer section.top ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (width > 480px) {
+  .modal-2-footer article button {
+    width: 70%;
+  }
+
+  .modal-2-footer section.top ul {
+    padding-right: 10%;
+  }
+}
+
+@media (width > 600px) {
+  .modal-2-footer article {
+    flex-direction: row;
+    min-height: 140px;
+    margin: -70px 20px 20px;
+    padding: 30px 50px 30px;
+  }
+
+  .modal-2-footer article button {
+    width: auto;
+    padding: 0 20px 0 24px;
+  }
+
+  .modal-2-footer section.top ul {
+    grid-template-columns: repeat(4, 1fr);
+    padding-right: 0;
+  }
+}
+
+.modal-2-footer section.top ul li a {
+  display: block;
+  margin-bottom: 18px;
+  color: rgb(255 255 255 / 90%);
+}
+
+.modal-2-footer section.top h3 {
+  color: rgb(255 255 255 / 40%);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.modal-2-overlay,
+.modal-2-modal {
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+@keyframes overlay-in {
+  0% {
+    scale: 0 0.004;
+  }
+  33% {
+    scale: 1 0.004;
+  }
+  66%,
+  100% {
+    scale: 1 1;
+  }
+}
+
+.modal-2-overlay {
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(0 0 0 / 75%);
+  display: grid;
+  place-items: center;
+}
+
+.modal-2-overlay.open {
+  visibility: visible;
+  opacity: 1;
+  animation: overlay-in 1.5s both;
+}
+
+@keyframes modal-in {
+  100% {
+    opacity: 1;
+    visibility: visible;
+    scale: 1;
+  }
+}
+
+.modal-2-modal {
+  z-index: 2;
+  width: 430px;
+  top: 50%;
+  left: 50%;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 0 40px 50px;
+  translate: -50% -50%;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 24%);
+}
+
+.modal-2-overlay.open .modal-2-modal {
+  opacity: 1;
+  visibility: visible;
+  animation: modal-in 1s 0.5s both;
+}
+
+.modal-2-modal header {
+  background: linear-gradient(90deg, #773ecb, #9f63ff);
+  margin: -85px -20px 30px;
+  border-radius: 12px;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 40px;
+  box-shadow: 0 16px 30px rgb(0 0 0 / 12%);
+}
+
+.modal-2-modal h2 {
+  margin-bottom: 10px;
+  font-size: 29px;
+}
+
+.modal-2-modal h3 {
+  opacity: 0.45;
+  font-weight: 400;
+}
+
+.modal-2-modal form {
+  display: grid;
+  gap: 16px;
+}
+
+.modal-2-modal .textbox {
+  position: relative;
+  width: 100%;
+  height: 56px;
+  display: flex;
+  align-items: center;
+}
+
+.modal-2-modal .textbox span {
+  position: relative;
+  z-index: 1;
+  left: 16px;
+  font-size: 20px;
+  color: #96939c;
+  pointer-events: none;
+}
+
+.modal-2-modal input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: 0;
+  background: #ececec;
+  height: 56px;
+  border-radius: 6px;
+  font-family: inherit;
+  padding: 0 16px 0 44px;
+  font-size: 16px;
+}
+
+.modal-2-modal input::placeholder {
+  color: #96939c;
+}
+
+.modal-2-modal > p {
+  color: #96939c;
+  margin: 30px 0 0;
+}
