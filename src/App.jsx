@@ -18,6 +18,7 @@ import {
   Modal2,
   Navbar1,
   AutoSuggestExample,
+  Card2Example,
 } from "./components";
 
 import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
@@ -119,6 +120,11 @@ const routes = [
     name: "Navbar1",
     path: "/navbars/navbar-1",
     element: <Navbar1 />,
+  },
+  {
+    name: "Card2",
+    path: "/cards/card-2",
+    element: <Card2Example />,
   },
 ];
 

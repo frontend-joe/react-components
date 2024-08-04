@@ -1,0 +1,123 @@
+.page.card-2-example-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(45deg, #0cd2d1, #0857c0);
+  color: #fdfcfd;
+  font-family: "Euclid Circular A", "Poppins";
+}
+
+.card-2 {
+  display: flex;
+  align-items: center;
+  width: 75vw;
+  max-width: 650px;
+  padding: 50px 30px 50px 20px;
+  background: #121017;
+  border-radius: 24px;
+  box-shadow: 0 80px 60px rgb(0 0 0 / 12%);
+}
+
+.card-2 img {
+  max-width: 280px;
+  width: 32vw;
+  height: 300px;
+  object-fit: cover;
+  margin-left: -60px;
+  margin-right: 30px;
+  border-radius: inherit;
+  box-shadow: 0 60px 40px rgb(0 0 0 / 12%);
+  transition: border-radius 0.3s;
+}
+
+.card-2 h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-right: 30px;
+  margin-bottom: 6px;
+}
+
+.card-2 h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 12px;
+  opacity: 0.66;
+}
+
+.card-2 p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  opacity: 0.42;
+}
+
+.card-2 .buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.card-2 button {
+  border: 1px solid #f8f8f8;
+  background: transparent;
+  color: #f8f8f8;
+  width: 40%;
+  min-width: 100px;
+  text-align: center;
+  font-family: inherit;
+  padding: 12px 26px;
+  font-size: 16px;
+  border-radius: 40px;
+}
+
+.card-2 button.primary {
+  background: #ffffff;
+  color: #121017;
+}
+
+@media (width <= 600px) {
+  .card-2 {
+    margin: 0 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 60px;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .card-2 .buttons {
+    justify-content: center;
+  }
+
+  .card-2 .buttons button {
+    width: 50%;
+  }
+
+  .card-2 h2 {
+    margin-right: 0;
+    font-size: 26px;
+  }
+
+  .card-2 img {
+    margin: -100px 0 30px 0;
+    width: 100%;
+    max-width: 1000px;
+    height: 250px;
+  }
+
+  .card-2 p {
+    max-width: 400px;
+  }
+}
+
+@media (width <= 420px) {
+  .card-2 img {
+    height: 50vw;
+    width: 50vw;
+    border-radius: 50%;
+    margin: -140px 0 30px 0;
+  }
+}
