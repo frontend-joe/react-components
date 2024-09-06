@@ -20,6 +20,7 @@ import {
   AutoSuggestExample,
   Card2Example,
   Sidebar4,
+  Carousel2,
 } from "./components";
 
 import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
@@ -131,6 +132,11 @@ const routes = [
     name: "Sidebar4",
     path: "/sidebars/sidebar-4",
     element: <Sidebar4 />,
+  },
+  {
+    name: "Carousel2",
+    path: "/carousels/carousel-2",
+    element: <Carousel2 />,
   },
 ];
 
