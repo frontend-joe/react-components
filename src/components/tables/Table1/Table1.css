@@ -1,0 +1,66 @@
+.page.table-1-page {
+  background: #ebebeb;
+  color: rgb(0 0 0 / 96%);
+}
+
+.table-1-card {
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 50px rgb(0 0 0 / 10%);
+  overflow: auto;
+  max-width: 360px;
+  min-width: 360px;
+  width: 360px;
+}
+
+.table-1-card .resize-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 1px;
+  background: red;
+}
+
+.table-1-card table {
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.table-1-card table th {
+  color: rgb(0 0 0 / 40%);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.table-1-card table :is(th, td) {
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  height: 40px;
+}
+
+.table-1-card table .cell-content {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  translate: 0 -50%;
+}
+
+.table-1-card table th .draggable {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 6px;
+  background: red;
+  cursor: col-resize;
+}
+
+.table-1-card table :is(th, td) {
+  padding: 8px 12px;
+  border: 1px solid rgb(0 0 0 / 10%);
+}

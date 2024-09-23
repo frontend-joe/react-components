@@ -1,0 +1,122 @@
+:root {
+  --widget-2-color-primary: #195adc;
+  --widget-2-sidebar-width: 130px;
+  --widget-2-menu-height: 200px;
+}
+
+.page.widget-2-page {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(-135deg, var(--widget-2-color-primary), #0f3278);
+  color: #f0f5ff;
+}
+
+.widget-2-card {
+  display: flex;
+  padding: 0 20px;
+  width: 440px;
+  height: var(--widget-2-menu-height);
+  border-radius: 10px;
+  background: #101115;
+  box-shadow: 0 20px 30px rgba(57, 76, 96, 0.06);
+}
+
+.widget-2-card .buttons {
+  padding-top: 20px;
+  width: var(--widget-2-sidebar-width);
+}
+
+.widget-2-card .buttons button {
+  margin: 0;
+  font-size: 14px;
+  width: 100%;
+  height: 40px;
+  padding: 0 0 0 12px;
+  background: transparent;
+  border-radius: 6px;
+  border: 0;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-weight: 400;
+  font-family: inherit;
+  cursor: pointer;
+  color: inherit;
+}
+
+.widget-2-card .buttons button:focus {
+  outline-color: var(--widget-2-color-primary);
+  outline-offset: 0;
+}
+
+.widget-2-card .buttons button:hover {
+  background-color: rgb(255 255 255 / 4%);
+}
+
+.widget-2-card .buttons button span {
+  font-size: 16px;
+}
+
+.widget-2-card .buttons button.active {
+  background: var(--widget-2-color-primary);
+  color: #f9f9f9;
+}
+
+.widget-2-card .wrapper {
+  position: relative;
+  overflow: hidden;
+  flex: 1 1 auto;
+}
+
+.widget-2-card .wrapper::before,
+.widget-2-card .wrapper::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  width: 100%;
+  height: 36px;
+}
+
+.widget-2-card .wrapper::before {
+  top: 0;
+  background: linear-gradient(#101115, rgb(24 24 29 / 0%));
+}
+
+.widget-2-card .wrapper::after {
+  bottom: 0;
+  background: linear-gradient(rgb(24 24 29 / 0%), #101115);
+}
+
+.widget-2-card .content {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: calc(var(--widget-2-menu-height) * 3);
+  transition: 0.6s;
+}
+
+.widget-2-card .content p {
+  display: flex;
+  align-items: center;
+  line-height: 1.6;
+  font-size: 13px;
+  margin: 0;
+  opacity: 0.5;
+}
+
+.widget-2-card .block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+  height: var(--widget-2-menu-height);
+}
+
+.widget-2-card .block h2 {
+  margin: 0 0 6px;
+  font-size: 18px;
+  font-weight: 400;
+}

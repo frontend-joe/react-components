@@ -93,21 +93,12 @@ export const Sidebar1 = () => {
   };
 
   return (
-    <aside className="sidebar">
-      <NavHeader />
-      {menuItems.map((item) => (
-        <div>
-          {!item.items && (
-            <NavButton
-              onClick={handleClick}
-              name={item.name}
-              icon={item.icon}
-              isActive={activeItem === item.name}
-              hasSubNav={!!item.items}
-            />
-          )}
-          {item.items && (
-            <>
+    <section className="page sidebar-1-page">
+      <aside className="sidebar">
+        <NavHeader />
+        {menuItems.map((item) => (
+          <div>
+            {!item.items && (
               <NavButton
                 onClick={handleClick}
                 name={item.name}
@@ -115,15 +106,26 @@ export const Sidebar1 = () => {
                 isActive={activeItem === item.name}
                 hasSubNav={!!item.items}
               />
-              <SubMenu
-                activeItem={activeItem}
-                handleClick={handleClick}
-                item={item}
-              />
-            </>
-          )}
-        </div>
-      ))}
-    </aside>
+            )}
+            {item.items && (
+              <>
+                <NavButton
+                  onClick={handleClick}
+                  name={item.name}
+                  icon={item.icon}
+                  isActive={activeItem === item.name}
+                  hasSubNav={!!item.items}
+                />
+                <SubMenu
+                  activeItem={activeItem}
+                  handleClick={handleClick}
+                  item={item}
+                />
+              </>
+            )}
+          </div>
+        ))}
+      </aside>
+    </section>
   );
 };

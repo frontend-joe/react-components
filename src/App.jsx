@@ -21,6 +21,9 @@ import {
   Card2Example,
   Sidebar4,
   Carousel2,
+  Table1,
+  Sidebar5,
+  Widget2,
 } from "./components";
 
 import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
@@ -137,6 +140,21 @@ const routes = [
     name: "Carousel2",
     path: "/carousels/carousel-2",
     element: <Carousel2 />,
+  },
+  {
+    name: "Table1",
+    path: "/tables/table-1",
+    element: <Table1 />,
+  },
+  {
+    name: "Sidebar5",
+    path: "/sidebars/sidebar-5",
+    element: <Sidebar5 />,
+  },
+  {
+    name: "Widget2",
+    path: "/widgets/widget-2",
+    element: <Widget2 />,
   },
 ];
 

@@ -1,0 +1,90 @@
+.page.sidebar-5-page {
+  margin: 0;
+  background: #183266;
+  height: 100vh;
+}
+
+.sidebar-5 button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.sidebar-5 {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 260px;
+  background: #0a4cd2;
+}
+
+.sidebar-5 .sidebar-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 260px;
+}
+
+.sidebar-5 .sidebar-header {
+  display: flex;
+  align-items: center;
+  height: 72px;
+  background: rgb(0 0 0 / 15%);
+}
+
+.sidebar-5 .sidebar-burger {
+  width: 60px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  color: #f9f9f9;
+}
+
+.sidebar-5 .sidebar-logo {
+  height: 22px;
+}
+
+.sidebar-5 .sidebar-menu {
+  display: grid;
+  padding: 10px;
+}
+
+.sidebar-5 .sidebar-button {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  height: 56px;
+  width: 100%;
+  font-family: "Poppins";
+  font-size: 17px;
+  text-transform: capitalize;
+  line-height: 1;
+  padding: 0 10px;
+  border-radius: 8px;
+  color: #f9f9f9;
+  opacity: 0.9;
+}
+
+.sidebar-5 .sidebar-button p {
+  font-size: 15px;
+}
+
+.sidebar-5 .handle {
+  position: absolute;
+  z-index: 100;
+  width: 8px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  transition: 0.3s;
+}
+
+.sidebar-5 .handle:hover,
+.sidebar-5 .handle:active {
+  background: rgb(255 255 255 / 10%);
+  cursor: col-resize;
+}
