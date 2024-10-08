@@ -1,0 +1,63 @@
+.page.dropdown-2-page {
+  color: #6d696b;
+  background: #f7f7f7;
+  font-family: "Euclid Circular A", "Poppins";
+}
+
+.dropdown-2-nav {
+  margin-top: -40px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  height: 72px;
+  padding: 0 20px;
+  background: #ffffff;
+  box-shadow: 0 0 20px rgb(0 0 0 / 6%);
+}
+
+.dropdown-2-nav .logo {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-2-nav .logo img {
+  width: 36px;
+  padding: 0;
+  margin-left: 4px;
+  margin-right: 6px;
+}
+
+.dropdown-2-nav span.material-symbols-outlined {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 72px;
+  font-size: 24px;
+}
+
+.dropdown-2-nav h2 {
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.dropdown-2-nav .nav-right > img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: contain;
+  margin-left: 8px;
+}
+
+.dropdown-2-nav button {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+}
+
+.dropdown-2-nav .nav-right {
+  display: flex;
+  align-items: center;
+}

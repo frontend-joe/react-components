@@ -1,27 +1,17 @@
-.page.table-1-page {
-  background: #ebebeb;
-  color: rgb(0 0 0 / 96%);
-}
-
-.table-1-card {
+.table-1-wrapper {
+  overflow: auto;
   position: relative;
   z-index: 2;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 10px 50px rgb(0 0 0 / 10%);
-  overflow: auto;
-  max-width: 360px;
-  min-width: 360px;
-  width: 360px;
 }
 
 .table-1-card .resize-line {
-  position: absolute;
+  position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   bottom: 0;
   width: 1px;
-  background: red;
+  background: #5b7cfd;
 }
 
 .table-1-card table {
@@ -29,18 +19,28 @@
   text-align: left;
 }
 
+.table-1-card table thead {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
 .table-1-card table th {
-  color: rgb(0 0 0 / 40%);
+  opacity: 0.5;
   font-weight: 400;
-  font-size: 14px;
+  padding: 0 10px;
+  user-select: none;
+  text-transform: capitalize;
+  background: #e2e7ec;
 }
 
 .table-1-card table :is(th, td) {
-  white-space: nowrap;
-  overflow: hidden;
   position: relative;
-  text-overflow: ellipsis;
-  height: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 32px;
+  border: 1px solid #e2e7ec;
 }
 
 .table-1-card table .cell-content {
@@ -56,11 +56,5 @@
   right: 0;
   bottom: 0;
   width: 6px;
-  background: red;
   cursor: col-resize;
-}
-
-.table-1-card table :is(th, td) {
-  padding: 8px 12px;
-  border: 1px solid rgb(0 0 0 / 10%);
 }

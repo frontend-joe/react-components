@@ -1,0 +1,91 @@
+.page.table-1-page {
+  background: #e7eef7;
+  color: #616678;
+  display: flex;
+  align-items: flex-start;
+  padding-left: 74px;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.table-1-card {
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 30px 40px rgb(97 102 120 / 12%);
+  padding: 24px;
+  font-size: 12px;
+}
+
+.table-1-sidebar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 54px;
+  background: #5b7cfd;
+  transition: width 0.4s;
+}
+
+.table-1-sidebar nav {
+  padding: 0 8px;
+}
+
+.table-1-sidebar .header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 72px;
+  padding: 0 20px 0 8px;
+  background: rgb(0 0 0 / 25%);
+}
+
+.table-1-sidebar .header img {
+  height: 24px;
+  rotate: 180deg;
+  margin-left: 14px;
+}
+
+.table-1-sidebar .header h1,
+.table-1-sidebar a p {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  translate: 0 -50%;
+  opacity: 0;
+  margin: 0;
+  font-size: 12px;
+  white-space: nowrap;
+  transition: 0.175s;
+}
+
+.table-1-sidebar i {
+  font-size: 14px;
+}
+
+.table-1-sidebar .header h1 {
+  left: 50px;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.table-1-sidebar a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 44px;
+  width: 100%;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  padding: 0 0 0 12px;
+  opacity: 0.75;
+  cursor: pointer;
+}

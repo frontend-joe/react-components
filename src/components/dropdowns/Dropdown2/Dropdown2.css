@@ -1,0 +1,101 @@
+.dropdown-2 {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 72px;
+}
+
+.dropdown-2-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgb(0 0 0 / 40%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.dropdown-2-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-2 > button {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  background: transparent;
+}
+
+.dropdown-2-menu {
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  translate: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: max-content;
+  width: 270px;
+  max-height: 286px;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #ebebeb;
+  box-shadow: 0 0 10px rgb(0 0 0 / 8%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  appearance: none;
+}
+
+.dropdown-2-menu::-webkit-scrollbar {
+  width: 15px;
+}
+
+.dropdown-2-menu::-webkit-scrollbar-thumb {
+  background: #dadce0;
+  border-radius: 10px;
+  border: 4px solid transparent;
+  background-clip: padding-box;
+}
+
+.dropdown-2-menu.open {
+  opacity: 1;
+  visibility: visible;
+  translate: 0;
+}
+
+.dropdown-2-menu > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+  font-family: inherit;
+  color: #6d696b;
+  border: 0;
+  background: transparent;
+}
+
+.dropdown-2-menu > button > img {
+  width: 64px;
+  height: 64px;
+  padding: 16px;
+}
+
+.dropdown-2-menu > button > span:first-child {
+  display: block;
+  width: 64px;
+  height: 64px;
+  scale: 0.7;
+  background-image: url("./icons.png");
+  background-position: 0 -3105px;
+  background-size: 64px 3307px;
+  background-repeat: no-repeat;
+}
+
+.dropdown-2-menu > button > span:last-child {
+  font-size: 12px;
+  translate: 0 -12px;
+}

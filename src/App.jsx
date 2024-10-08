@@ -21,9 +21,11 @@ import {
   Card2Example,
   Sidebar4,
   Carousel2,
-  Table1,
+  Table1Example,
   Sidebar5,
   Widget2,
+  Navbar2,
+  Dropdown2Example,
 } from "./components";
 
 import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
@@ -144,7 +146,7 @@ const routes = [
   {
     name: "Table1",
     path: "/tables/table-1",
-    element: <Table1 />,
+    element: <Table1Example />,
   },
   {
     name: "Sidebar5",
@@ -155,6 +157,16 @@ const routes = [
     name: "Widget2",
     path: "/widgets/widget-2",
     element: <Widget2 />,
+  },
+  {
+    name: "Navbar2",
+    path: "/navbars/navbar-2",
+    element: <Navbar2 />,
+  },
+  {
+    name: "Dropdown2",
+    path: "/dropdowns/dropdown-2",
+    element: <Dropdown2Example />,
   },
 ];
 
