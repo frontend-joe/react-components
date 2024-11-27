@@ -1,8 +1,35 @@
 import { useRef, useState } from "react";
 import logo from "./logo.svg";
-import "./styles.css";
+import "./Sidebar5.css";
 
-const navItems = ["home", "settings", "backup", "mail", "cloud"];
+const items = [
+  {
+    name: "home",
+    icon: "home-2",
+  },
+  {
+    name: "favourites",
+    icon: "heart",
+  },
+  {
+    name: "products",
+    icon: "cart-2",
+  },
+  {
+    name: "testimonials",
+    icon: "comment-1",
+  },
+  {
+    name: "security",
+    icon: "locked-2",
+  },
+  {
+    name: "settings",
+    icon: "gear-1",
+  },
+];
+
+const Icon = ({ children }) => <i className={`lni lni-${children}`} />;
 
 export const Sidebar5 = () => {
   const [width, setWidth] = useState(60);
@@ -11,7 +38,7 @@ export const Sidebar5 = () => {
 
   const resize = (e) => {
     let newWidth = e.clientX - sidebar?.offsetLeft;
-    if (newWidth < 11) newWidth = 10;
+    if (newWidth < 60) newWidth = 60;
     if (newWidth > 259) newWidth = 260;
     setWidth(newWidth);
   };
@@ -39,15 +66,15 @@ export const Sidebar5 = () => {
         <div className="sidebar-inner">
           <header className="sidebar-header">
             <button type="button" className="sidebar-burger">
-              <span className="material-symbols-outlined">menu</span>
+              <Icon>menu-hamburger-1</Icon>
             </button>
             <img src={logo} className="sidebar-logo" />
           </header>
           <nav className="sidebar-menu">
-            {navItems.map((item) => (
-              <button key={item} type="button" className="sidebar-button">
-                <span className="material-symbols-outlined">{item}</span>
-                <p>{item}</p>
+            {items.map((item) => (
+              <button key={item.name} type="button" className="sidebar-button">
+                <Icon>{item.icon}</Icon>
+                <p>{item.name}</p>
               </button>
             ))}
           </nav>

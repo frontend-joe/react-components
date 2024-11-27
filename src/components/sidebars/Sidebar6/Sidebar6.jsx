@@ -1,28 +1,40 @@
 import { useState } from "react";
-import logo from "./logo.png";
-import "./Sidebar4.css";
+import logo from "./logo.svg";
+import "./Sidebar6.css";
 
 const navItems = [
-  "home",
   "dashboard",
-  "mail",
-  "cloud",
-  "workspaces",
+  "leaderboard",
+  "monitoring",
+  "groups",
+  "analytics",
+  "message",
   "settings",
 ];
 
-export const Sidebar4 = () => {
+export const Sidebar6 = () => {
   const [active, setActive] = useState(1);
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleOpen = () => setIsOpen(!isOpen);
 
   const goto = (index) => setActive(index);
 
   return (
-    <section className="page sidebar-4-page">
-      <aside className="sidebar-4">
+    <section className="page sidebar-6-page">
+      <aside className={`sidebar-6 ${isOpen ? "open" : ""}`}>
+        <button className="toggle-btn" type="button" onClick={toggleOpen}>
+          <span class="material-symbols-outlined">chevron_right</span>
+        </button>
         <div className="inner">
           <div className="header">
             <img src={logo} className="logo" />
-            <h1>Teams.co</h1>
+            <h1>Lampo</h1>
+          </div>
+          <div className="search">
+            <span class="material-symbols-outlined">search</span>
+            <input type="text" placeholder="Search" />
           </div>
           <nav
             className="menu"

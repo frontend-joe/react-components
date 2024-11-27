@@ -1,7 +1,12 @@
 .page.sidebar-5-page {
   margin: 0;
-  background: #183266;
+  background: #1c376d;
   height: 100vh;
+  overflow: hidden;
+}
+
+.lni {
+  font-size: 24px;
 }
 
 .sidebar-5 button {
@@ -9,7 +14,6 @@
   border: 0;
   padding: 0;
   cursor: pointer;
-  user-select: none;
 }
 
 .sidebar-5 {
@@ -19,7 +23,7 @@
   left: 0;
   bottom: 0;
   width: 260px;
-  background: #0a4cd2;
+  background: rgb(0 0 0 / 40%);
 }
 
 .sidebar-5 .sidebar-inner {
@@ -33,12 +37,12 @@
   display: flex;
   align-items: center;
   height: 72px;
-  background: rgb(0 0 0 / 15%);
+  padding-top: 10px;
 }
 
 .sidebar-5 .sidebar-burger {
   width: 60px;
-  height: 72px;
+  height: 60px;
   display: grid;
   place-items: center;
   color: #f9f9f9;
@@ -50,7 +54,7 @@
 
 .sidebar-5 .sidebar-menu {
   display: grid;
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .sidebar-5 .sidebar-button {
@@ -65,12 +69,13 @@
   line-height: 1;
   padding: 0 10px;
   border-radius: 8px;
-  color: #f9f9f9;
+  color: #b8c2d8;
   opacity: 0.9;
 }
 
 .sidebar-5 .sidebar-button p {
   font-size: 15px;
+  margin-left: 1px;
 }
 
 .sidebar-5 .handle {
@@ -80,11 +85,12 @@
   top: 0;
   bottom: 0;
   right: 0;
+  user-select: none;
   transition: 0.3s;
 }
 
 .sidebar-5 .handle:hover,
 .sidebar-5 .handle:active {
-  background: rgb(255 255 255 / 10%);
+  background: rgb(255 255 255 / 6%);
   cursor: col-resize;
 }

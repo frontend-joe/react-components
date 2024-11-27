@@ -5,7 +5,7 @@ import logo from "./logo.svg";
 const columns = [
   {
     name: "name",
-    width: 130,
+    width: 125,
   },
   {
     name: "age",
@@ -60,83 +60,18 @@ const data = [
     level: "Intermediate",
     languages: ["PHP", "Python", "JavaScript"],
   },
-  {
-    name: "Hannah White",
-    age: 22,
-    level: "Beginner",
-    languages: ["HTML", "CSS", "JavaScript"],
-  },
-  {
-    name: "Isaac Rodriguez",
-    age: 45,
-    level: "Expert",
-    languages: ["C", "C++", "Assembly"],
-  },
-  {
-    name: "Julia Brown",
-    age: 27,
-    level: "Intermediate",
-    languages: ["Swift", "Objective-C"],
-  },
-  {
-    name: "Kevin Davis",
-    age: 38,
-    level: "Advanced",
-    languages: ["Perl", "Python", "R"],
-  },
-  {
-    name: "Laura Martinez",
-    age: 30,
-    level: "Advanced",
-    languages: ["Java", "Groovy", "Bash"],
-  },
 ];
 
 export const Table1Example = () => {
   return (
-    <>
-      <aside className="table-1-sidebar">
-        <div class="header">
-          <img src={logo} />
-          <h1>Violet AI</h1>
+    <section className="page table-1-page">
+      <div className="table-1-card">
+        <div className="header">
+          <h2>Developers</h2>
+          <button type="button">Download</button>
         </div>
-
-        <nav>
-          <a>
-            <i class="ai-search"></i>
-            <p>Search</p>
-          </a>
-          <a>
-            <i class="ai-home"></i>
-            <p>Home</p>
-          </a>
-          <a>
-            <i class="ai-folder"></i>
-            <p>Projects</p>
-          </a>
-          <a>
-            <i class="ai-dashboard"></i>
-            <p>Dashboard</p>
-          </a>
-          <a>
-            <i class="ai-person"></i>
-            <p>Team</p>
-          </a>
-          <a>
-            <i class="ai-envelope"></i>
-            <p>Support</p>
-          </a>
-          <a>
-            <i class="ai-gear"></i>
-            <p>Settings</p>
-          </a>
-        </nav>
-      </aside>
-      <section className="page table-1-page">
-        <div className="table-1-card">
-          <Table1 columns={columns} data={data} />
-        </div>
-      </section>
-    </>
+        <Table1 columns={columns} data={data} />
+      </div>
+    </section>
   );
 };

@@ -2,71 +2,56 @@ import { useEffect, useRef, useState, createRef } from "react";
 import "./Table1.css";
 
 const TableHeader = ({ index, column, columnRef, initResize }) => {
+  const width = !!initResize ? column.width : "100%";
+
   return (
     <th
       ref={columnRef}
       style={{
-        width: `${column.width}px`,
-        minWidth: `${column.width}px`,
-        maxWidth: `${column.width}px`,
+        width: `${width}px`,
+        minWidth: `${width}px`,
+        maxWidth: `${width}px`,
       }}
     >
       {column.name}
-      <span
-        className="draggable"
-        onMouseDown={(e) => initResize(e, index)}
-      ></span>
+      {!!initResize && (
+        <span
+          className="draggable"
+          onMouseDown={(e) => initResize(e, index)}
+        ></span>
+      )}
     </th>
   );
 };
 
-const ResizeLine = ({ wrapperRef, resizeLineLeft }) => (
-  <div
-    className="resize-line"
-    style={{
-      left: `${resizeLineLeft}px`,
-      top: `${wrapperRef?.current?.offsetTop}px`,
-      bottom: `${
-        window.innerHeight -
-        (wrapperRef?.current?.offsetTop + wrapperRef?.current?.clientHeight)
-      }px`,
-    }}
-  ></div>
-);
-
 export const Table1 = ({ columns, data }) => {
   const [columnState, setColumnState] = useState(columns);
   const [columnRefs, setColumnRefs] = useState([]);
-  const [isResizing, setIsResizing] = useState(false);
-  const [resizeLineLeft, setResizeLineLeft] = useState(0);
 
   const wrapperRef = useRef(null);
   const activeIndex = useRef(null);
 
   const resize = (e) => {
-    setIsResizing(true);
-    setResizeLineLeft(e.clientX);
-  };
-
-  const stopResize = (e) => {
-    setIsResizing(false);
-
-    document.body.style.cursor = "default";
-
-    window.removeEventListener("mousemove", resize);
-    window.removeEventListener("mouseup", stopResize);
-
     const columnsCopy = [...columns];
     const column = columnsCopy[activeIndex.current];
     const columnRef = columnRefs[activeIndex.current];
     const nextWidth =
       e.clientX -
+      48 -
       columnRef.current.offsetLeft -
       (wrapperRef.current.offsetLeft - wrapperRef.current.scrollLeft);
+
+    console.log("nextWidth", nextWidth);
 
     column.width = nextWidth;
 
     setColumnState(columnsCopy);
+  };
+
+  const stopResize = () => {
+    document.body.style.cursor = "default";
+    window.removeEventListener("mousemove", resize);
+    window.removeEventListener("mouseup", stopResize);
   };
 
   const initResize = (e, index) => {
@@ -87,9 +72,6 @@ export const Table1 = ({ columns, data }) => {
 
   return (
     <div className="table-1-wrapper" ref={wrapperRef}>
-      {isResizing && (
-        <ResizeLine resizeLineLeft={resizeLineLeft} wrapperRef={wrapperRef} />
-      )}
       <table>
         <thead>
           <tr>
@@ -99,7 +81,9 @@ export const Table1 = ({ columns, data }) => {
                 index={index}
                 column={column}
                 columnRef={columnRefs[index]}
-                initResize={initResize}
+                initResize={
+                  index === columnState.length - 1 ? null : initResize
+                }
               />
             ))}
           </tr>
