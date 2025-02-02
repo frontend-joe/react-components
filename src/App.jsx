@@ -27,6 +27,7 @@ import {
   Navbar2,
   Dropdown2Example,
   Sidebar6,
+  Sidebar7,
 } from "./components";
 
 import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
@@ -173,6 +174,11 @@ const routes = [
     name: "Sidebar6",
     path: "/sidebars/sidebar-6",
     element: <Sidebar6 />,
+  },
+  {
+    name: "Sidebar7",
+    path: "/sidebars/sidebar-7",
+    element: <Sidebar7 />,
   },
 ];
 

@@ -24,6 +24,12 @@
   transition: width 0.45s;
 }
 
+.sidebar-3 button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
 .sidebar-3 .material-symbols-outlined {
   font-size: 20px;
 }

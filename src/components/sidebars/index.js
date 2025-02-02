@@ -4,3 +4,4 @@ export * from "./Sidebar3/Sidebar3";
 export * from "./Sidebar4/Sidebar4";
 export * from "./Sidebar5/Sidebar5";
 export * from "./Sidebar6/Sidebar6";
+export * from "./Sidebar7/Sidebar7";
