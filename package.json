@@ -16,6 +16,7 @@
     "rc-slider": "^10.6.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-dropzone": "^14.3.5",
     "react-router-dom": "^6.22.3",
     "swiper": "^11.1.4"
   },

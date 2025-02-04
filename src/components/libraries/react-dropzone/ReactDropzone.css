@@ -1,0 +1,54 @@
+.page.dropzone-page {
+  background: #212224;
+  --color-card: #161718;
+}
+
+.dropzone-card {
+  border-radius: 6px;
+  background: var(--color-card);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.dropzone-card h2 {
+  font-weight: 400;
+  margin: 0 0 6px;
+}
+
+.dropzone-card h3 {
+  font-weight: 400;
+  opacity: 0.5;
+  margin: 0 0 50px;
+}
+
+.dropzone-card img {
+  position: absolute;
+  top: -50px;
+  width: 100px;
+  border-radius: 50%;
+  border: 8px solid var(--color-card);
+}
+
+.dropzone {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 280px;
+  min-height: 200px;
+  border-width: 2px;
+  border-radius: 6px;
+  border-color: #464646;
+  border-style: dashed;
+  background-color: transparent;
+  color: #bdbdbd;
+  outline: none;
+}

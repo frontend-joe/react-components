@@ -28,6 +28,8 @@ import {
   Dropdown2Example,
   Sidebar6,
   Sidebar7,
+  ReactDropzone,
+  Dropdown3,
 } from "./components";
 
 import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
@@ -179,6 +181,16 @@ const routes = [
     name: "Sidebar7",
     path: "/sidebars/sidebar-7",
     element: <Sidebar7 />,
+  },
+  {
+    name: "ReactDropzone",
+    path: "/libraries/react-dropzone",
+    element: <ReactDropzone />,
+  },
+  {
+    name: "Dropdown3",
+    path: "/dropdowns/dropdown-3",
+    element: <Dropdown3 />,
   },
 ];
 
