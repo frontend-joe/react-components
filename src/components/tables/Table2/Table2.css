@@ -1,0 +1,69 @@
+.table-2 {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+}
+
+.table-2 thead {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.table-2 thead tr th:not(:last-child) {
+  width: 120px;
+  max-width: 120px;
+}
+
+.table-2 :is(th, td) {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0 6px;
+  height: 50px;
+  font-size: 13px;
+}
+
+.table-2 th {
+  font-weight: 500;
+  user-select: none;
+  text-transform: capitalize;
+  color: #706d84;
+  height: 56px;
+  cursor: pointer;
+  vertical-align: middle;
+  transition: 0.3s;
+}
+
+.table-2 th i {
+  font-size: 11px;
+  translate: 0 -1px;
+  margin-left: 6px;
+}
+
+.table-2 th:is(.active, :hover) {
+  color: inherit;
+}
+
+.table-2 td {
+  opacity: 0.65;
+  transition: opacity 0.3s;
+}
+
+.table-2 tbody tr:hover td {
+  opacity: 1;
+}
+
+.table-2 tr {
+  cursor: pointer;
+  border-bottom: 1px solid #34323c;
+}
+
+.table-2 tbody tr:last-child {
+  border: 0;
+}
+
+.table-2 tbody tr:nth-child(odd) {
+  background: #1e1d25;
+}

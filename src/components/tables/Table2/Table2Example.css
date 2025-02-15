@@ -1,0 +1,99 @@
+.table-2-page {
+  background: #222129;
+  color: #f5f3f9;
+  margin: 0;
+  height: 100vh;
+  font-size: 110%;
+  font-family: "Euclid Circular A", "Poppins";
+}
+
+.table-2-page .wrapper {
+  overflow: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.table-2-page header {
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 18px;
+}
+
+.table-2-page header .content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 240px;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 70px 60px;
+}
+
+.table-2-page header::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  translate: -50% 0;
+  z-index: 0;
+  background: #5926fc;
+  width: 500vw;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+.table-2-page header button {
+  font-family: inherit;
+  background: rgb(0 0 0 / 16%);
+  color: inherit;
+  border: 0;
+  border-radius: 8px;
+  padding: 12px 18px 12px 20px;
+  font-size: 13.5px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.table-2-page header button span {
+  font-size: 16px;
+  translate: 0 -1px;
+}
+
+.table-2-page header h2 {
+  font-size: 20px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.table-2-page header h2 i {
+  margin-right: 8px;
+  background: rgb(0 0 0 / 16%);
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.table-2-page .card {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  background: #1a191e;
+  border-radius: 8px;
+  box-shadow: 0 30px 40px rgb(0 0 0 / 12%);
+  padding: 10px 18px 18px;
+  font-size: 12px;
+  margin: -100px auto 30px;
+}
+
+@media (width < 706px) {
+  .table-2-page .card {
+    margin: -100px 50px 30px;
+  }
+}
