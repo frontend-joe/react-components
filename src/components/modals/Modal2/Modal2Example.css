@@ -1,17 +1,8 @@
-body {
-  background: #f8f9fb;
-  font-family: "Euclid Circular A", "Poppins";
-}
-
-* {
-  box-sizing: border-box;
-}
-
 .page.modal-2-page {
   background: #ffffff;
 }
 
-.container {
+.page.modal-2-page .container {
   max-width: 700px;
   margin: 0 auto;
 }
@@ -21,10 +12,10 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
-  height: 50vh;
+  height: calc(50vh + 1px);
   padding-bottom: 20px;
-  background: #0a1535;
-  color: #f9f9f9;
+  background: #161022;
+  color: #e5e2e9;
 }
 
 .modal-2-footer article {
@@ -33,15 +24,15 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 20px 50px 40px;
+  padding: 20px 40px 40px;
   margin: -99px 20px 20px;
   border-radius: 10px;
-  background: linear-gradient(90deg, #773ecb, #9f63ff);
+  background: linear-gradient(90deg, #9d50bb, #6e48aa);
 }
 
 .modal-2-footer article h2 {
   font-weight: 400;
-  color: rgb(255 255 255 / 70%);
+  color: #f9f9f9;
 }
 
 .signup-button {
@@ -55,9 +46,10 @@ body {
   background: #161022;
   border: 0;
   border-radius: 6px;
-  color: #f9f9f9;
+  color: #e5e2e9;
   font-family: inherit;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .modal-2-footer section {
@@ -116,11 +108,11 @@ body {
 .modal-2-footer section.top ul li a {
   display: block;
   margin-bottom: 18px;
-  color: rgb(255 255 255 / 90%);
+  color: #e5e2e9;
 }
 
 .modal-2-footer section.top h3 {
-  color: rgb(255 255 255 / 40%);
+  color: #9a90a9;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 12px;
@@ -128,125 +120,18 @@ body {
   margin-bottom: 20px;
 }
 
-.modal-2-overlay,
-.modal-2-modal {
-  position: fixed;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.5s;
-}
-
-@keyframes overlay-in {
-  0% {
-    scale: 0 0.004;
-  }
-  33% {
-    scale: 1 0.004;
-  }
-  66%,
-  100% {
-    scale: 1 1;
-  }
-}
-
-.modal-2-overlay {
-  z-index: 1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgb(0 0 0 / 75%);
-  display: grid;
-  place-items: center;
-}
-
-.modal-2-overlay.open {
-  visibility: visible;
-  opacity: 1;
-  animation: overlay-in 1.5s both;
-}
-
-@keyframes modal-in {
-  100% {
-    opacity: 1;
-    visibility: visible;
-    scale: 1;
-  }
-}
-
-.modal-2-modal {
-  z-index: 2;
-  width: 430px;
-  top: 50%;
-  left: 50%;
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 0 40px 50px;
-  translate: -50% -50%;
-  box-shadow: 0 10px 30px rgb(0 0 0 / 24%);
-}
-
-.modal-2-overlay.open .modal-2-modal {
-  opacity: 1;
-  visibility: visible;
-  animation: modal-in 1s 0.5s both;
-}
-
-.modal-2-modal header {
-  background: linear-gradient(90deg, #773ecb, #9f63ff);
-  margin: -85px -20px 30px;
-  border-radius: 12px;
-  height: 170px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding-left: 40px;
-  box-shadow: 0 16px 30px rgb(0 0 0 / 12%);
-}
-
-.modal-2-modal h2 {
-  margin-bottom: 10px;
-  font-size: 29px;
-}
-
-.modal-2-modal h3 {
-  opacity: 0.45;
-  font-weight: 400;
-}
-
 .modal-2-modal form {
   display: grid;
   gap: 16px;
 }
 
-.modal-2-modal .textbox {
-  position: relative;
-  width: 100%;
-  height: 56px;
-  display: flex;
-  align-items: center;
-}
-
-.modal-2-modal .textbox span {
-  position: relative;
-  z-index: 1;
-  left: 16px;
-  font-size: 20px;
-  color: #96939c;
-  pointer-events: none;
-}
-
 .modal-2-modal input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   border: 0;
   background: #ececec;
   height: 56px;
   border-radius: 6px;
   font-family: inherit;
-  padding: 0 16px 0 44px;
+  padding: 0 20px;
   font-size: 16px;
 }
 
@@ -257,4 +142,5 @@ body {
 .modal-2-modal > p {
   color: #96939c;
   margin: 30px 0 0;
+  text-align: center;
 }

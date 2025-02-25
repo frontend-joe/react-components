@@ -1,0 +1,176 @@
+.layout {
+  background: #222129;
+  color: #f5f3f9;
+  margin: 0;
+  height: 100vh;
+  font-size: 16px;
+  font-family: "Euclid Circular A", "Poppins";
+}
+
+.layout-table-wrapper {
+  overflow: auto;
+  position: relative;
+  z-index: 2;
+  max-height: 60vh;
+}
+
+.layout-header {
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 18px;
+}
+
+.layout-header .content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 240px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 70px 60px;
+}
+
+.layout-header::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  translate: -50% 0;
+  z-index: 0;
+  background: #5926fc;
+  width: 500vw;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+.layout-header button {
+  font-family: inherit;
+  background: rgb(0 0 0 / 16%);
+  color: inherit;
+  border: 0;
+  border-radius: 8px;
+  padding: 12px 18px 12px 20px;
+  font-size: 13.5px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.layout-header button span {
+  font-size: 16px;
+  translate: 0 -1px;
+}
+
+.layout-header h2 {
+  font-size: 24px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.layout-header h2 i {
+  margin-right: 8px;
+  background: rgb(0 0 0 / 16%);
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.layout-card {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  background: #1a191e;
+  border-radius: 8px;
+  box-shadow: 0 30px 40px rgb(0 0 0 / 12%);
+  padding: 10px 18px 18px;
+  font-size: 12px;
+  margin: -100px auto 30px;
+}
+
+@media (width < 706px) {
+  .layout-table {
+    margin: -100px 50px 30px;
+  }
+}
+
+.layout-table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+}
+
+.layout-table thead {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: #1a191e;
+}
+
+.layout-table thead tr th:not(:last-child) {
+  width: 120px;
+  max-width: 120px;
+}
+
+.layout-table :is(th, td) {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0 6px;
+  height: 60px;
+  font-size: 16px;
+}
+
+.layout-table th {
+  font-weight: 500;
+  user-select: none;
+  text-transform: capitalize;
+  color: #706d84;
+  height: 56px;
+  cursor: pointer;
+  vertical-align: middle;
+  transition: 0.3s;
+}
+
+.layout-table th i {
+  font-size: 11px;
+  translate: 0 -1px;
+  margin-left: 6px;
+}
+
+.layout-table th:is(.active, :hover) {
+  color: inherit;
+}
+
+.layout-table td {
+  opacity: 0.65;
+  transition: opacity 0.3s;
+}
+
+.layout-table td a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.layout-table tbody tr:hover td {
+  opacity: 1;
+}
+
+.layout-table tr {
+  cursor: pointer;
+  border-bottom: 1px solid #34323c;
+}
+
+.layout-table tbody tr:last-child {
+  border: 0;
+}
+
+.layout-table tbody tr:nth-child(odd) {
+  background: #1e1d25;
+}
