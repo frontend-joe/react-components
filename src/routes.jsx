@@ -14,6 +14,7 @@ import {
   Modal2Example,
   Navbar1,
   Navbar2,
+  Navbar3,
   Parallax1,
   PasswordStrengthExample,
   RcSlider,
@@ -193,5 +194,10 @@ export const routes = [
     name: "Table2",
     path: "/tables/table-2",
     element: <Table2Example />,
+  },
+  {
+    name: "Navbar3",
+    path: "/navbars/navbar-3",
+    element: <Navbar3 />,
   },
 ];
