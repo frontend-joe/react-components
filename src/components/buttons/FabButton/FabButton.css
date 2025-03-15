@@ -1,0 +1,93 @@
+.page.fab-button-page {
+  background: #16151b;
+}
+
+.fab {
+  position: fixed;
+  right: 30px;
+  bottom: 38px;
+  border-radius: 50%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.fab button {
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+}
+
+.fab > button {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 0;
+  background: #e952de;
+  border: 0;
+  color: #f9f9f9;
+  transition: 0.2s;
+  rotate: 0deg;
+}
+
+.fab > button > span {
+  font-size: 36px;
+}
+
+.fab-menu {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  width: 360px;
+  height: 360px;
+  translate: -50% -50%;
+  border: 80px solid #282633;
+  border-radius: 50%;
+  rotate: -220deg;
+  scale: 0.7;
+  opacity: 0;
+  transition: 0.4s ease-out;
+}
+
+.fab.open > button {
+  rotate: 45deg;
+}
+
+.fab.open .fab-menu {
+  rotate: 0deg;
+  scale: 1;
+  opacity: 1;
+}
+
+.fab-menu > button {
+  position: absolute;
+  color: #e0e0e0;
+  transition: 0.4s;
+}
+
+.fab-menu > button:hover {
+  scale: 1.2;
+  color: #f9f9f9;
+}
+
+.material-symbols-outlined {
+  font-size: 36px;
+}
+
+.fab-menu > button:nth-child(1) {
+  left: 78px;
+  top: -58px;
+}
+
+.fab-menu > button:nth-child(2) {
+  left: -16px;
+  top: -16px;
+}
+
+.fab-menu > button:nth-child(3) {
+  left: -58px;
+  top: 78px;
+}
