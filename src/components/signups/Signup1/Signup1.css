@@ -1,0 +1,183 @@
+.page.signup-1-page {
+  display: grid;
+  place-items: center;
+  margin: 0;
+  padding: 0 20px;
+  background: #3284ce;
+  font-family: "Euclid Circular A", "Poppins";
+  box-sizing: border-box;
+}
+
+.signup-1 :is(button, input) {
+  border: 0;
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  font-family: inherit;
+  font-size: 16px;
+  outline: none;
+}
+
+@keyframes clouds {
+  25% {
+    translate: -200px -200px;
+  }
+  50% {
+    translate: 0 -400px;
+    scale: 1 1.1;
+  }
+  75% {
+    translate: 200px -200px;
+  }
+  100% {
+    translate: 0 0;
+  }
+}
+
+.signup-1-clouds {
+  position: fixed;
+  top: -20%;
+  left: 0;
+  height: 200vh;
+  translate: 0 0;
+  animation: clouds 25s infinite linear;
+}
+
+.signup-1 {
+  --color-primary: #385ef6;
+  --color-muted: #5a616c;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 70%;
+  max-width: 400px;
+  padding: 200px 60px;
+  background: #121216;
+}
+
+.signup-1 > h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 0 10px;
+  color: rgb(255 255 255 / 96%);
+}
+
+.signup-1 > h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 30px;
+  color: var(--color-muted);
+}
+
+.signup-1 > form {
+  margin: 0;
+  display: grid;
+  gap: 16px;
+}
+
+.signup-1 .textbox {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.signup-1 .textbox > span {
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+  left: 0;
+  font-size: 22px;
+  pointer-events: none;
+  color: var(--color-muted);
+  transition: 0.3s;
+}
+
+.signup-1 .textbox input {
+  padding: 0 24px 0 36px;
+  border-bottom: 2px solid #2b3442;
+  color: rgb(255 255 255 / 96%);
+  height: 72px;
+  transition: 0.3s;
+}
+
+.signup-1 :is(input:focus, input:valid) ~ label {
+  translate: -36px -44px;
+  scale: 0.875;
+}
+
+.signup-1 input:focus ~ label {
+  color: var(--color-primary);
+}
+
+.signup-1 input:focus {
+  border-color: var(--color-primary);
+}
+
+.signup-1 :is(input:focus, input:valid) ~ span {
+  color: rgb(255 255 255 / 96%);
+}
+
+.signup-1 .textbox label {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  translate: 0 -50%;
+  color: var(--color-muted);
+  pointer-events: none;
+  transition: 0.4s;
+}
+
+.signup-1 > form > button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 0 12px 0 24px;
+  border-radius: 6px;
+  background: var(--color-primary);
+  color: #f9f9f9;
+  border: 0;
+  font-family: inherit;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.signup-1 p > a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.signup-1 .password {
+  margin-bottom: 20px;
+}
+
+.signup-1 .password input {
+  padding-right: 50px;
+}
+
+.signup-1 .password button {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  height: 36px;
+  width: 36px;
+  translate: 0 -50%;
+  cursor: pointer;
+}
+
+.signup-1 .password button span {
+  color: var(--color-muted);
+  transition: 0.3s;
+}
+
+.signup-1 .password button:hover span {
+  color: rgb(255 255 255 / 96%);
+}

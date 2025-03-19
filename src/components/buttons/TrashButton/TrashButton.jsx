@@ -1,5 +1,7 @@
 import { useState } from "react";
-import "./styles.css";
+import "./TrashButton.css";
+import paper from "./paper.svg";
+import shredded from "./shredded.svg";
 
 export const TrashButton = () => {
   const [isDeleting, setIsDeleting] = useState(false);
@@ -23,10 +25,10 @@ export const TrashButton = () => {
         <span className="button-text">Delete</span>
         <span className="animation">
           <span className="paper-wrapper">
-            <span className="paper"></span>
+            <img src={paper} className="paper" />
           </span>
           <span className="shredded-wrapper">
-            <span className="shredded"></span>
+            <img src={shredded} className="shredded" />
           </span>
           <span className="lid"></span>
           <span className="can">

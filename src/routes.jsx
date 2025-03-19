@@ -28,6 +28,7 @@ import {
   Sidebar5,
   Sidebar6,
   Sidebar7,
+  Signup1,
   Table1Example,
   Table2Example,
   TrashButton,
@@ -205,5 +206,10 @@ export const routes = [
     name: "FabButton",
     path: "/button/fab-button",
     element: <FabButton />,
+  },
+  {
+    name: "Signup1",
+    path: "/signups/signup-1",
+    element: <Signup1 />,
   },
 ];

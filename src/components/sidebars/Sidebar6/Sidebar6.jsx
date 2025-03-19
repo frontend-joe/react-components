@@ -5,7 +5,6 @@ import "./Sidebar6.css";
 const navItems = [
   "dashboard",
   "leaderboard",
-  "monitoring",
   "groups",
   "analytics",
   "message",
@@ -15,26 +14,15 @@ const navItems = [
 export const Sidebar6 = () => {
   const [active, setActive] = useState(1);
 
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleOpen = () => setIsOpen(!isOpen);
-
   const goto = (index) => setActive(index);
 
   return (
     <section className="page sidebar-6-page">
-      <aside className={`sidebar-6 ${isOpen ? "open" : ""}`}>
-        <button className="toggle-btn" type="button" onClick={toggleOpen}>
-          <span class="material-symbols-outlined">chevron_right</span>
-        </button>
+      <aside className="sidebar-6">
         <div className="inner">
           <div className="header">
             <img src={logo} className="logo" />
             <h1>Lampo</h1>
-          </div>
-          <div className="search">
-            <span class="material-symbols-outlined">search</span>
-            <input type="text" placeholder="Search" />
           </div>
           <nav
             className="menu"

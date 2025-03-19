@@ -8,7 +8,7 @@
 }
 
 .page.sidebar-6-page {
-  background: #484082;
+  background: #474bb7;
 }
 
 .sidebar-6 button {
@@ -19,17 +19,18 @@
 }
 
 .sidebar-6 {
+  overflow: hidden;
   position: absolute;
   top: 20px;
   left: 20px;
   bottom: 30px;
   width: var(--width-closed);
   border-radius: 16px;
-  background: #231f33;
+  background: #1a1a36;
   transition: width 0.3s;
 }
 
-.sidebar-6.open {
+.sidebar-6:hover {
   width: var(--width-open);
 }
 
@@ -54,51 +55,8 @@
   color: #f9f9f9;
 }
 
-.sidebar-6.open .toggle-btn {
+.sidebar-6:hover .toggle-btn {
   rotate: 180deg;
-}
-
-.sidebar-6 .search {
-  position: relative;
-  padding: 16px 0;
-  margin: 0 10px 0;
-  width: calc(var(--width-closed) - 20px);
-  transition: 0.3s;
-}
-
-.sidebar-6.open .search {
-  width: calc(var(--width-open) - 20px);
-}
-
-.sidebar-6 .search span {
-  position: absolute;
-  top: 26px;
-  left: 12px;
-  color: rgb(255 255 255 / 25%);
-}
-
-.sidebar-6 .search input {
-  background: rgb(255 255 255 / 4%);
-  border: 0;
-  border-radius: 8px;
-  font-family: inherit;
-  width: 100%;
-  height: 44px;
-  font-size: 17px;
-  padding-left: 30px;
-  transition: 0.3s;
-}
-
-.sidebar-6 .search input::placeholder {
-  color: rgb(255 255 255 / 0%);
-}
-
-.sidebar-6.open .search input::placeholder {
-  color: rgb(255 255 255 / 25%);
-}
-
-.sidebar-6.open .search input {
-  padding-left: 52px;
 }
 
 .sidebar-6 .inner {
@@ -107,6 +65,8 @@
   left: 0;
   bottom: 0;
   width: 260px;
+  display: flex;
+  flex-direction: column;
 }
 
 .sidebar-6 .header {
@@ -121,7 +81,7 @@
   transition: 0.3s;
 }
 
-.sidebar-6.open .header {
+.sidebar-6:hover .header {
   width: var(--width-open);
 }
 
@@ -138,16 +98,18 @@
 
 .sidebar-6 .menu {
   position: relative;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
 }
 
 .sidebar-6 .menu::after {
   content: "";
   position: absolute;
   top: 0;
-  left: 4px;
+  left: 0;
   height: 56px;
-  width: 4px;
+  width: 6px;
   background: #656aff;
   translate: 0 var(--top);
   transition: 0.3s;
@@ -164,22 +126,28 @@
   text-transform: capitalize;
   line-height: 1;
   padding: 0 22px;
-  color: rgb(255 255 255 / 40%);
+  color: #9193b3;
   cursor: pointer;
   opacity: 0.8;
   transition: 0.3s;
 }
 
-.sidebar-6.open .menu button {
+.sidebar-6:hover .menu button {
   width: var(--width-open);
 }
 
-.sidebar-6 .menu :is(button:hover, .active) {
-  color: rgb(255 255 255 / 100%);
+.sidebar-6 .menu button.active {
+  color: #f9f9f9;
+  background: rgb(255 255 255 / 3%);
   opacity: 1;
 }
 
-.sidebar-6.open .menu .active {
+.sidebar-6 .menu button:not(.active):hover {
+  background: rgb(255 255 255 / 2%);
+  opacity: 0.9;
+}
+
+.sidebar-6:hover .menu .active {
   cursor: default;
 }
 
@@ -190,14 +158,15 @@
 .sidebar-6 .menu button p,
 .sidebar-6 .header h1 {
   opacity: 0;
+  transition: 0.3s;
 }
 
-.sidebar-6.open :is(.sidebar-6 .menu button p, .sidebar-6 .header h1) {
+.sidebar-6 .menu button:hover p {
+  transition: 0.1s;
+}
+
+.sidebar-6:hover :is(.sidebar-6 .menu button p, .sidebar-6 .header h1) {
   opacity: 1;
-}
-
-.sidebar-6.open .logo {
-  scale: 1;
 }
 
 .sidebar-6 .menu button > img {

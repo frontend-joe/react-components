@@ -15,9 +15,9 @@
   font-size: 22px;
   font-weight: 400;
   font-family: "Euclid Circular A";
-  color: #f9f9f9;
+  color: var(--color-icon);
   padding: 0 0 0 20px;
-  opacity: 0.8;
+  opacity: 0.85;
   width: 160px;
   height: 64px;
   text-align: left;
@@ -111,16 +111,11 @@
   }
 }
 
-.trash-button .paper-wrapper,
-.trash-button .shredded-wrapper {
+.trash-button :is(.paper-wrapper, .shredded-wrapper) {
   overflow: hidden;
   position: absolute;
   display: flex;
   top: -20px;
-  left: 50%;
-  margin-left: -5px;
-  width: 10px;
-  height: 64px;
 }
 
 .trash-button .paper-wrapper {
@@ -130,42 +125,14 @@
 .trash-button .shredded-wrapper {
   top: 24px;
   height: 20px;
-  justify-content: center;
 }
 
-.trash-button .paper,
-.trash-button .shredded {
-  display: block;
-  background: var(--color-icon);
-  height: 20px;
-}
-
-.trash-button .paper {
-  width: 10px;
+.trash-button :is(.paper, .shredded) {
+  height: 18px;
 }
 
 .trash-button .shredded {
   margin-top: -40px;
-  width: 2px;
-}
-
-.trash-button .shredded::before,
-.trash-button .shredded::after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  width: inherit;
-  height: inherit;
-  background: inherit;
-}
-
-.trash-button .shredded::before {
-  left: -4px;
-}
-
-.trash-button .shredded::after {
-  right: -4px;
 }
 
 @keyframes fill {
