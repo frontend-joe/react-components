@@ -31,6 +31,7 @@ import {
   Signup1,
   Table1Example,
   Table2Example,
+  Table3Example,
   TrashButton,
   Widget1Example,
   Widget2,
@@ -211,5 +212,10 @@ export const routes = [
     name: "Signup1",
     path: "/signups/signup-1",
     element: <Signup1 />,
+  },
+  {
+    name: "Table3",
+    path: "/tables/table-3",
+    element: <Table3Example />,
   },
 ];

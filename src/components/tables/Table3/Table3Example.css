@@ -1,0 +1,222 @@
+.page.table-3-page {
+  background: #141414;
+  font-family: "SF Pro";
+  font-size: 14px;
+  overflow: hidden;
+}
+
+body {
+  overflow: hidden;
+}
+
+.card {
+  background: #1c1c1c;
+  border-radius: 8px;
+  width: 600px;
+  border: 1px solid #2d2d2d;
+}
+
+.table-3-page header {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.table-3-page header > h2 {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.table-3-page header > h2 > span {
+  font-size: 19px;
+  color: #626262;
+}
+
+.table-3-page button {
+  cursor: pointer;
+  background: #1c1c1c;
+}
+
+.table-3-page header > button {
+  border: 1px solid #2d2d2d;
+  color: #ffffff;
+  font-family: inherit;
+  border-radius: 6px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+  margin-left: 16px;
+  font-size: 16px;
+}
+
+.table-3-page header > button.dropdown {
+  width: auto;
+  padding-right: 8px;
+  gap: 6px;
+}
+
+.table-3-switch input {
+  position: absolute;
+  scale: 0;
+}
+
+.table-3-switch-control {
+  position: relative;
+  display: block;
+  width: 42px;
+  height: 22px;
+  border-radius: 32px;
+  background: #191919;
+  border: 1px solid #2d2d2d;
+  cursor: pointer;
+}
+
+.table-3-switch input:checked ~ .table-3-switch-control {
+  background: #353535;
+}
+
+.table-3-switch input:checked ~ .table-3-switch-control::after {
+  translate: 20px 0;
+}
+
+.table-3-switch-control::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 16px;
+  width: 16px;
+  background: #ffffff;
+  border-radius: inherit;
+}
+
+.table-3-checkbox input {
+  position: absolute;
+  scale: 0;
+}
+
+.table-3-checkbox-control {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  background: #191919;
+  border: 1px solid #2d2d2d;
+  cursor: pointer;
+}
+
+.table-3-checkbox input:checked ~ .table-3-checkbox-control {
+  background: #ffffff;
+}
+
+.table-3-checkbox input:checked ~ .table-3-checkbox-control::after {
+  opacity: 1;
+}
+
+.table-3-checkbox-control::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  translate: -50% 0;
+  height: 8px;
+  width: 4px;
+  border-right: 3px solid #141414;
+  border-bottom: 3px solid #141414;
+  rotate: 45deg;
+  opacity: 0;
+}
+
+.table-3-id {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.table-3-id-img-wrapper {
+  background: #353535;
+  display: grid;
+  place-items: center;
+  padding: 7px;
+  border-radius: 50%;
+}
+
+.table-3-id img {
+  width: 14px;
+}
+
+.table-3-status {
+  position: relative;
+  border: 1px solid #2d2d2d;
+  border-radius: 6px;
+  padding-left: 22px;
+  padding-right: 8px;
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.table-3-status::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 3px;
+  translate: 0 -50%;
+  background: #ffffff;
+}
+
+.table-3-status.available::after {
+  background: #46ad7c;
+}
+
+.table-3-status.issue::after {
+  background: #f35a42;
+}
+
+.table-3-status.busy::after {
+  background: #fd9d27;
+}
+
+.table-3-progress {
+  position: relative;
+  display: inline-block;
+  background: #353535;
+  width: 100px;
+  height: 8px;
+  border-radius: 5px;
+  margin-right: 12px;
+}
+
+.table-3-progress::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: var(--width);
+  border-radius: inherit;
+  background: #ffffff;
+  transition: 0.3s;
+}
+
+.page-3-id-header {
+  display: flex;
+  align-items: center;
+}
+
+.page-3-id-header span {
+  font-size: 18px;
+  margin-left: 4px;
+}

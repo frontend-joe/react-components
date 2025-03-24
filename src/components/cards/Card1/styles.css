@@ -8,14 +8,14 @@
   font-family: "Euclid Circular A", "Poppins";
 }
 
-h2,
-h3,
-h4 {
+.card-1-page h2,
+.card-1-page h3,
+.card-1-page h4 {
   margin: 0;
   font-weight: 500;
 }
 
-.cards {
+.card-1-page .cards {
   display: flex;
   gap: 30px;
 }
@@ -72,34 +72,34 @@ h4 {
   transform: rotateY(-180deg);
 }
 
-.card var {
+.card-1-page .card var {
   font-style: normal;
   font-size: 80px;
   line-height: 1;
 }
 
-.card h3 {
+.card-1-page .card h3 {
   margin: 0 0 30px;
   font-weight: 500;
 }
 
-#summary :is(var, h3) {
+.card-1-page #summary :is(var, h3) {
   color: #3b82f6;
 }
 
-#overdue :is(var, h3) {
+.card-1-page #overdue :is(var, h3) {
   color: #e56363;
 }
 
-#features :is(var, h3) {
+.card-1-page #features :is(var, h3) {
   color: #25b697;
 }
 
-.card :is(h4, p) {
+.card-1-page .card :is(h4, p) {
   opacity: 0.6;
   font-size: 20px;
 }
 
-.card p {
+.card-1-page .card p {
   margin-top: 76px;
 }

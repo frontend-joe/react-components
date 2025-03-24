@@ -33,7 +33,9 @@ export const Layout = () => {
         <div className="layout-table-wrapper">
           <table className="layout-table">
             <thead>
-              <th>Name</th>
+              <tr>
+                <th>Name</th>
+              </tr>
             </thead>
             <tbody>
               {sortedRoutes.map((route) => (
