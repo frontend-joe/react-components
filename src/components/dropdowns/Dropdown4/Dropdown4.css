@@ -1,0 +1,89 @@
+.dropdown-4 {
+  position: relative;
+  perspective: 400px;
+  color: #f9f9f9;
+  font-family: "Euclid Circular A", "Poppins";
+}
+
+.dropdown-4 :is(button, ul, .button-inner) {
+  transform-origin: 50% 0;
+  backface-visibility: hidden;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    background 0.3s, scale 0.3s;
+}
+
+.dropdown-4 button {
+  position: relative;
+  z-index: 1;
+  background: transparent;
+  border: 0;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: inherit;
+  height: 60px;
+  width: 160px;
+  gap: 12px;
+  padding: 0 20px 0 32px;
+  cursor: pointer;
+}
+
+.dropdown-4 > button span {
+  font-size: 28px;
+}
+
+.dropdown-4 > button .button-inner {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.dropdown-4 ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #3b1977;
+  transform: rotateX(-90deg) translateZ(60px);
+}
+
+.dropdown-4.open ul {
+  transform: rotate(0) translateZ(60px);
+}
+
+.dropdown-4 ul button {
+  justify-content: flex-start;
+  gap: 12px;
+  text-transform: capitalize;
+  padding: 0 16px;
+}
+
+.dropdown-4 ul button i {
+  font-size: 20px;
+}
+
+.dropdown-4 ul button:hover {
+  background: rgb(255 255 255 / 12%);
+}
+
+.dropdown-4 > button {
+  background: #5d13f1;
+  transform: rotate(0);
+}
+
+.dropdown-4:not(.open) > button:hover {
+  scale: 1.05;
+}
+
+.dropdown-4.open > button {
+  transform: rotateX(90deg);
+}
+
+.dropdown-4.open > button .button-inner {
+  opacity: 0;
+}

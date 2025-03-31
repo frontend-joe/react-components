@@ -1,0 +1,17 @@
+.page.dropdown-4-page {
+  background: #fdfcf1;
+  color: #5f5a67;
+}
+
+.page.dropdown-4-page > div {
+  translate: 0 -60px;
+}
+
+.Toastify__toast {
+  font-family: inherit;
+  text-transform: capitalize;
+}
+
+/* .Toastify__toast .Toastify__progress-bar--wrp {
+  display: none;
+} */
