@@ -19,6 +19,7 @@ import {
   Navbar3,
   Parallax1,
   PasswordStrengthExample,
+  PasswordVisibilityExample,
   RcSlider,
   ReactDropzone,
   ScrollReveal,
@@ -29,7 +30,6 @@ import {
   Sidebar5,
   Sidebar6,
   Sidebar7,
-  Signup1,
   Table1Example,
   Table2Example,
   Table3Example,
@@ -55,7 +55,7 @@ export const routes = [
     element: <Sidebar1 />,
   },
   {
-    name: "PasswordStrength",
+    name: "Controls - PasswordStrength",
     path: "/controls/password-strength",
     element: <PasswordStrengthExample />,
   },
@@ -105,7 +105,7 @@ export const routes = [
     element: <Widget1Example />,
   },
   {
-    name: "AutoSuggest",
+    name: "Controls - AutoSuggest",
     path: "/controls/auto-suggest",
     element: <AutoSuggestExample />,
   },
@@ -210,9 +210,9 @@ export const routes = [
     element: <FabButton />,
   },
   {
-    name: "Signup1",
-    path: "/signups/signup-1",
-    element: <Signup1 />,
+    name: "Controls - PasswordVisibility",
+    path: "/controls/password-visibility",
+    element: <PasswordVisibilityExample />,
   },
   {
     name: "Table3",
