@@ -30,6 +30,7 @@ import {
   Sidebar5,
   Sidebar6,
   Sidebar7,
+  Sidebar8,
   Table1Example,
   Table2Example,
   Table3Example,
@@ -223,5 +224,10 @@ export const routes = [
     name: "Dropdown4",
     path: "/dropdowns/dropdown-4",
     element: <Dropdown4Example />,
+  },
+  {
+    name: "Sidebar8",
+    path: "/sidebars/sidebar-8",
+    element: <Sidebar8 />,
   },
 ];
