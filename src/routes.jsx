@@ -22,6 +22,7 @@ import {
   PasswordVisibilityExample,
   RcSlider,
   ReactDropzone,
+  ReactXarrows,
   ScrollReveal,
   Sidebar1,
   Sidebar2,
@@ -35,6 +36,7 @@ import {
   Table2Example,
   Table3Example,
   TrashButton,
+  TypedMessageExample,
   Widget1Example,
   Widget2,
 } from "./components";
@@ -229,5 +231,15 @@ export const routes = [
     name: "Sidebar8",
     path: "/sidebars/sidebar-8",
     element: <Sidebar8 />,
+  },
+  {
+    name: "ReactXarrows",
+    path: "/libraries/react-xarrows",
+    element: <ReactXarrows />,
+  },
+  {
+    name: "GSAP - TypedMessage",
+    path: "/gsap/typed-message",
+    element: <TypedMessageExample />,
   },
 ];

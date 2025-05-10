@@ -1,12 +1,3 @@
-body {
-  background: #f8f9fb;
-  font-family: "Euclid Circular A", "Poppins";
-}
-
-* {
-  box-sizing: border-box;
-}
-
 .page.modal-1-page {
   background: #ffffff;
 }

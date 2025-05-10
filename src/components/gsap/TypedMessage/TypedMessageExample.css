@@ -1,0 +1,117 @@
+.typed-message-page {
+  color: #222222;
+  min-height: 100vh;
+  background: url("./image.jpg");
+  background-size: cover;
+  background-position: -360px;
+  font-family: "Euclid Circular B", "Poppins";
+}
+
+.typed-message-page::before {
+  content: "";
+  z-index: 0;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgb(0 0 0 / 86%), rgb(0 0 0 / 0%) 120%);
+}
+
+.typed-message-page nav {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  padding: 0 40px;
+  align-items: center;
+  height: 96px;
+  color: #f7f7f7;
+}
+
+.typed-message-search {
+  position: relative;
+  flex: 1 1 auto;
+}
+
+.typed-message-search span {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 16px;
+  translate: 0 -50%;
+}
+
+.typed-message-search input {
+  border: 0;
+  border-radius: 40px;
+  height: 50px;
+  background: rgb(255 255 255 / 10%);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  font-family: inherit;
+  font-size: 16px;
+  padding-left: 46px;
+}
+
+.typed-message-search input::placeholder {
+  color: rgb(255 255 255 / 60%);
+}
+
+.typed-message-banner {
+  position: relative;
+  height: 400px;
+  border-radius: 50px;
+}
+
+.typed-message-banner-img {
+  position: absolute;
+  inset: 30px;
+  overflow: hidden;
+  border-radius: 32px;
+  top: 0;
+  height: 100%;
+  object-fit: cover;
+}
+
+.typed-message-banner-content {
+  padding-top: 250px;
+  padding-inline: 82px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.typed-message-wrapper {
+  font-size: 48px;
+  font-weight: 400;
+  max-width: 450px;
+  line-height: 1.2;
+}
+
+.typed-message-banner-content > button {
+  background: rgb(247 247 247 / 12%);
+  color: #f7f7f7;
+  backdrop-filter: blur(10px);
+  font-family: inherit;
+  padding: 0 32px;
+  height: 64px;
+  border-radius: 32px;
+  border: 0;
+  font-size: 22px;
+  align-self: baseline;
+}
+
+.typed-message-logo {
+  width: 140px;
+  padding-right: 40px;
+}
+
+.typed-message-links {
+  display: flex;
+  width: 140px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+}
+
+.typed-message-links span {
+  font-size: 24px;
+}

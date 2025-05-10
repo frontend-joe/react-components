@@ -1,21 +1,10 @@
-body {
-  margin: 0;
-  background: #141414;
-  color: #fdffff;
-  height: 100vh;
-  font-family: "SF Pro";
-}
-
-:root {
-  --color-hover: #313132;
-  --border: 1px solid #2d2d2d;
-}
-
 .sidebar-8 header :is(h2, h3) {
   margin: 0;
 }
 
 .sidebar-8 {
+  --color-hover: #313132;
+  --border: 1px solid #2d2d2d;
   position: fixed;
   overflow: hidden;
   top: 24px;

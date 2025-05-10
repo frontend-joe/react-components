@@ -5,11 +5,7 @@
   overflow: hidden;
 }
 
-body {
-  overflow: hidden;
-}
-
-.card {
+.table-3-page .card {
   background: #1c1c1c;
   border-radius: 8px;
   width: 600px;
