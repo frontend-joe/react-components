@@ -1,0 +1,161 @@
+.card-3 {
+  --color-primary: #356aff;
+  --color-muted: #9895a2;
+  --color-highlight: #242328;
+  --border: 1px solid #2f2e32;
+  position: relative;
+  border-radius: 24px;
+  width: clamp(200px, 80vw, 500px);
+  padding-top: 30px;
+  background: #1c1b20;
+}
+
+.card-3 > img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  translate: -50% -50%;
+  width: 92px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background: var(--color-highlight);
+  padding: 20px;
+  box-shadow: 0 20px 150px rgb(0 0 0 / 8%);
+}
+
+.card-3 .main {
+  padding: 24px 24px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-3 :is(h2, h3, h4, h5) {
+  font-weight: 400;
+  margin: 0;
+}
+
+.card-3 em {
+  font-style: normal;
+  color: var(--color-primary);
+}
+
+.card-3 h2 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.card-3 h3 {
+  font-weight: 300;
+  font-size: clamp(16px, 4vw, 20px);
+  color: var(--color-muted);
+}
+
+.card-3 h4 {
+  font-weight: 500;
+  font-size: clamp(22px, 5.5vw, 26px);
+  margin-bottom: 6px;
+}
+
+.card-3 h5 {
+  color: var(--color-muted);
+  font-size: clamp(14px, 4vw, 16px);
+  margin-bottom: 40px;
+}
+
+.card-3 .details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  margin-bottom: 20px;
+  font-size: clamp(14px, 4vw, 16px);
+}
+
+.card-3 .salary em {
+  color: var(--color-muted);
+}
+
+.card-3 .date {
+  color: var(--color-muted);
+}
+
+.card-3 .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 16px 24px;
+  border-top: var(--border);
+}
+
+.card-3 .footer button {
+  background: transparent;
+  border: var(--border);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: inherit;
+}
+
+.card-3 .footer button span {
+  font-size: 22px;
+}
+
+.card-3 .badge {
+  display: inline-flex;
+  margin-right: auto;
+  align-items: center;
+  gap: 12px;
+  padding-right: 20px;
+  font-size: 14px;
+  border-radius: 50px;
+  background: var(--color-highlight);
+}
+
+.card-3 .badge .text {
+  display: none;
+}
+
+.card-3 .badge img {
+  width: 40px;
+}
+
+.card-3 .badge p {
+  color: var(--color-muted);
+}
+
+@media (width >= 430px) {
+  .card-3 {
+    padding-top: 0;
+  }
+
+  .card-3 > img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    left: auto;
+    translate: 0;
+    width: clamp(68px, 12vw, 80px);
+    padding: 16px;
+    border-color: transparent;
+    box-shadow: none;
+  }
+
+  .card-3 .main {
+    text-align: left;
+  }
+
+  .card-3 .badge .text {
+    display: inline;
+  }
+
+  .card-3 h5 {
+    margin-bottom: 28px;
+  }
+}

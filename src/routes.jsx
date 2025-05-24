@@ -2,6 +2,7 @@ import {
   AutoSuggestExample,
   Card1,
   Card2Example,
+  Card3Example,
   Carousel1,
   Carousel2,
   DeleteButton,
@@ -241,5 +242,10 @@ export const routes = [
     name: "GSAP - TypedMessage",
     path: "/gsap/typed-message",
     element: <TypedMessageExample />,
+  },
+  {
+    name: "Card3",
+    path: "/cards/card-3",
+    element: <Card3Example />,
   },
 ];
