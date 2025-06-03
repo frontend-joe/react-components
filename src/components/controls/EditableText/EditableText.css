@@ -1,0 +1,42 @@
+.editable-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.editable-text-value.is-editing ~ .editable-text-buttons {
+  opacity: 1;
+  visibility: visible;
+}
+
+.editable-text-buttons {
+  display: flex;
+  gap: 2px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.editable-text:hover .editable-text-buttons {
+  opacity: 1;
+  visibility: visible;
+}
+
+.editable-text-buttons button {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  display: grid;
+  place-items: center;
+  color: inherit;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.editable-text-buttons button:hover {
+  opacity: 0.8;
+}
+
+.editable-text-value {
+  outline: none;
+}

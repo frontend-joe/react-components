@@ -2,7 +2,7 @@ body {
   margin: 0;
   background: #000000;
   color: #f9f9f9;
-  /* overflow: hidden; */
+  overflow: hidden;
   font-family: "Euclid Circular A", "Poppins";
 }
 

@@ -10,6 +10,7 @@ import {
   Dropdown2Example,
   Dropdown3,
   Dropdown4Example,
+  EditableTitleExample,
   FabButton,
   ImageAccordionExample,
   Login1,
@@ -247,5 +248,10 @@ export const routes = [
     name: "Card3",
     path: "/cards/card-3",
     element: <Card3Example />,
+  },
+  {
+    name: "Controls - EditableText",
+    path: "/controls/editable-text",
+    element: <EditableTitleExample />,
   },
 ];

@@ -1,4 +1,6 @@
 .message {
   font-weight: inherit;
   line-height: inherit;
+  font-size: 80px;
+  text-shadow: 0 0 10px rgb(0 0 0 / 10%);
 }

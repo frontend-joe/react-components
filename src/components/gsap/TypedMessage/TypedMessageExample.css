@@ -57,22 +57,32 @@
 
 .typed-message-banner {
   position: relative;
-  height: 400px;
+  height: 100vh;
   border-radius: 50px;
+  color: #ffffff;
 }
 
-.typed-message-banner-img {
+.background-video {
   position: absolute;
-  inset: 30px;
+  z-index: 0;
+  inset: 0;
   overflow: hidden;
-  border-radius: 32px;
   top: 0;
   height: 100%;
   object-fit: cover;
 }
 
+.banner-overlay {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: linear-gradient(rgb(0 0 0 / 40%), rgb(0 0 0 / 0%));
+}
+
 .typed-message-banner-content {
-  padding-top: 250px;
+  position: relative;
+  z-index: 3;
+  padding-top: 320px;
   padding-inline: 82px;
   display: flex;
   flex-direction: column;
