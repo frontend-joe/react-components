@@ -47,7 +47,7 @@
   transition: 0.3s;
 }
 
-.accordion-2-item .content {
+.accordion-2-content {
   position: relative;
   height: 0;
   overflow: hidden;

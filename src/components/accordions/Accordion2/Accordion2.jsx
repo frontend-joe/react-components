@@ -17,7 +17,7 @@ const AccordionItem = (props) => {
       </h2>
       <div
         ref={contentEl}
-        className={`content ${active === index ? "show" : ""}`}
+        className="accordion-2-content"
         style={
           active === index
             ? { height: contentEl?.current?.scrollHeight }
