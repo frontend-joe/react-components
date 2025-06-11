@@ -1,0 +1,27 @@
+.page.accordion-2-page {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  color: #ffffff;
+  background: #141316;
+  font-family: "Euclid Circular B", "Poppins";
+}
+
+.accordion-2-card {
+  background: #22252f;
+  width: 400px;
+  padding: 24px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.accordion-2-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: auto;
+}
+
+.accordion-2-header > span {
+  font-size: 20px;
+}

@@ -12,7 +12,8 @@ import {
   Dropdown4Example,
   EditableTitleExample,
   FabButton,
-  ImageAccordionExample,
+  Accordion1Example,
+  Accordion2Example,
   Login1,
   Modal1,
   Modal2Example,
@@ -70,9 +71,14 @@ export const routes = [
     element: <ScrollReveal />,
   },
   {
-    name: "ImageAccordion",
-    path: "/accordions/image-accordion",
-    element: <ImageAccordionExample />,
+    name: "Accordion1",
+    path: "/accordions/accordion-1",
+    element: <Accordion1Example />,
+  },
+  {
+    name: "Accordion2",
+    path: "/accordions/accordion-2",
+    element: <Accordion2Example />,
   },
   {
     name: "Login1",

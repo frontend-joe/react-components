@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./styles.css";
 
-export const ImageAccordion = ({ items }) => {
+export const Accordion1 = ({ items }) => {
   const [active, setActive] = useState(0);
 
   const handleToggle = (index) => setActive(index);

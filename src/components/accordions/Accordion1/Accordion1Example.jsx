@@ -1,4 +1,4 @@
-import { ImageAccordion } from "../ImageAccordion/ImageAccordion";
+import { Accordion1 } from "./Accordion1";
 import image1 from "./6.jpg";
 import image2 from "./2.jpg";
 import image3 from "./3.jpg";
@@ -35,8 +35,8 @@ const coolImages = [
   },
 ];
 
-export const ImageAccordionExample = () => (
+export const Accordion1Example = () => (
   <section className="page">
-    <ImageAccordion items={coolImages} />
+    <Accordion1 items={coolImages} />
   </section>
 );
