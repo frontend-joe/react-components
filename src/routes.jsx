@@ -35,6 +35,7 @@ import {
   Sidebar6,
   Sidebar7,
   Sidebar8,
+  Sidebar9,
   Table1Example,
   Table2Example,
   Table3Example,
@@ -259,5 +260,10 @@ export const routes = [
     name: "Controls - EditableText",
     path: "/controls/editable-text",
     element: <EditableTitleExample />,
+  },
+  {
+    name: "Sidebar9",
+    path: "/sidebars/sidebar-9",
+    element: <Sidebar9 />,
   },
 ];
