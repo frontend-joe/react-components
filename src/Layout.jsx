@@ -3,7 +3,22 @@ import { routes } from "./routes";
 import "./Layout.css";
 
 export const Layout = () => {
-  const sortedRoutes = routes.sort((a, b) => a.name.localeCompare(b.name));
+  const sortedRoutes = routes.sort((a, b) => {
+    const regex = /^([a-zA-Z]+)(\d*)$/;
+
+    const matchA = a.name.match(regex);
+    const matchB = b.name.match(regex);
+
+    const textA = matchA ? matchA[1] : a.name;
+    const textB = matchB ? matchB[1] : b.name;
+    const numA = matchA && matchA[2] ? parseInt(matchA[2], 10) : 0;
+    const numB = matchB && matchB[2] ? parseInt(matchB[2], 10) : 0;
+
+    const textCompare = textA.localeCompare(textB);
+    if (textCompare !== 0) return textCompare;
+
+    return numA - numB;
+  });
 
   const navigate = useNavigate();
 
