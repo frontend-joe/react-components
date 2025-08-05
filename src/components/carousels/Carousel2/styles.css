@@ -11,12 +11,12 @@
   align-items: center;
 }
 
-.swiper {
+.carousel-2-page .swiper {
   padding-top: 50px;
   padding-bottom: 140px;
 }
 
-.swiper .swiper-slide {
+.carousel-2-page .swiper .swiper-slide {
   background-position: center;
   background-size: cover;
   border-radius: 10px;

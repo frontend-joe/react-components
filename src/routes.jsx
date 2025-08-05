@@ -5,6 +5,7 @@ import {
   Card3Example,
   Carousel1,
   Carousel2,
+  Carousel3,
   DeleteButton,
   Dropdown1Example,
   Dropdown2Example,
@@ -37,6 +38,7 @@ import {
   Sidebar8,
   Sidebar9,
   Sidebar10,
+  SliderExample,
   Table1Example,
   Table2Example,
   Table3Example,
@@ -271,5 +273,15 @@ export const routes = [
     name: "Sidebar10",
     path: "/sidebars/sidebar-10",
     element: <Sidebar10 />,
+  },
+  {
+    name: "Controls - Slider",
+    path: "/controls/slider",
+    element: <SliderExample />,
+  },
+  {
+    name: "Carousel3",
+    path: "/carousels/carousel-3",
+    element: <Carousel3 />,
   },
 ];

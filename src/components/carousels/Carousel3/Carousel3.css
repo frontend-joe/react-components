@@ -1,0 +1,104 @@
+.page.carousel-3-page {
+  background: linear-gradient(45deg, #8647b3, #40429c);
+  font-size: 14px;
+  color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-3-page h2 {
+  font-weight: 500;
+  margin: 0 0 16px;
+}
+
+.carousel-3-page p {
+  opacity: 0.7;
+  font-size: 18px;
+  margin: 0 0 20px;
+}
+
+.carousel-3-page a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 500;
+  background: transparent;
+  border-radius: 3.125rem;
+  border: 2px solid #ffffff;
+  margin: 0 auto;
+  padding: 6px 26px;
+  font-size: 0.9rem;
+  transition: 0.3s ease-in-out;
+}
+
+.carousel-3-page .swiper {
+  height: 440px;
+  margin-top: 40px;
+}
+
+.carousel-3-page .swiper-pagination-bullet,
+.carousel-3-page .swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.carousel-3-page .swiper-pagination {
+  bottom: 34px !important;
+  transform: scale(1.3);
+}
+
+.carousel-3-page .swiper-slide {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(0.4) saturate(2) sepia(0.2);
+  -webkit-box-reflect: below 24px
+    linear-gradient(transparent, transparent, #0006);
+}
+
+.carousel-3-page .swiper-slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgb(0 0 0 / 0%) 50%, rgb(0 0 0 / 100%));
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.carousel-3-page .swiper-slide h2 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-bottom: 0.625rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.carousel-3-page .swiper-slide a:hover {
+  color: #005baa;
+}
+
+.carousel-3-page .swiper-slide div {
+  transition: 0.5s;
+  opacity: 0;
+  padding-bottom: 140px;
+}
+
+.carousel-3-page .swiper-slide-active div {
+  opacity: 1;
+}
+
+.swiper-slide-shadow-coverflow {
+  border-radius: 20px;
+}

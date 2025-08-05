@@ -14,7 +14,7 @@
   color: #f9f9f9;
 }
 
-.swiper a {
+.carousel-1-page .swiper a {
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
@@ -28,13 +28,13 @@
   transition: 0.3s ease-in-out;
 }
 
-.swiper {
+.carousel-1-page .swiper {
   width: 100%;
   max-width: 800px;
   height: 440px;
 }
 
-.swiper-slide {
+.carousel-1-page .swiper-slide {
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -45,7 +45,7 @@
   background-position: center;
 }
 
-.swiper-slide h2 {
+.carousel-1-page .swiper-slide h2 {
   color: #fff;
   font-weight: 100;
   font-size: 20px;
@@ -56,11 +56,11 @@
   text-align: center;
 }
 
-.swiper-slide a:hover {
+.carousel-1-page .swiper-slide a:hover {
   color: #005baa;
 }
 
-.swiper-slide div {
+.carousel-1-page .swiper-slide div {
   position: absolute;
   z-index: 1;
   inset: 0;
@@ -76,25 +76,25 @@
   justify-content: flex-end;
 }
 
-.swiper-slide-active div {
+.carousel-1-page .swiper-slide-active div {
   opacity: 1;
 }
 
-.swiper-slide > div > div {
+.carousel-1-page .swiper-slide > div > div {
   translate: 0 100px;
   transition: 0.3s;
 }
 
-.swiper-slide-active > div > div {
+.carousel-1-page .swiper-slide-active > div > div {
   translate: 0;
 }
 
-.swiper-pagination-bullet,
-.swiper-pagination-bullet-active {
+.carousel-1-page .swiper-pagination-bullet,
+.carousel-1-page .swiper-pagination-bullet-active {
   background: #fff !important;
 }
 
-.swiper-pagination {
+.carousel-1-page .swiper-pagination {
   bottom: 10px !important;
   transform: scale(1.3);
 }
