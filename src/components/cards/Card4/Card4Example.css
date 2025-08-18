@@ -1,0 +1,10 @@
+.page.card-4-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(45deg, #3727a9, #4a1c40);
+  color: #fdfcfd;
+  font-family: "Euclid Circular A", "Poppins";
+}

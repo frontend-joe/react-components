@@ -3,6 +3,7 @@ import {
   Card1,
   Card2Example,
   Card3Example,
+  Card4Example,
   Carousel1,
   Carousel2,
   Carousel3,
@@ -283,5 +284,10 @@ export const routes = [
     name: "Carousel3",
     path: "/carousels/carousel-3",
     element: <Carousel3 />,
+  },
+  {
+    name: "Card4",
+    path: "/cards/card-4",
+    element: <Card4Example />,
   },
 ];
