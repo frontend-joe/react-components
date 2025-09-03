@@ -1,0 +1,33 @@
+.page.parallax-2-page {
+  margin: 0;
+  background: #6a8faa;
+  font-family: "Euclid Circular A", "Poppins";
+}
+
+.parallax-2-page section {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parallax-2-page .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(0.68);
+}
+
+.parallax-2-page h1 {
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  z-index: 1;
+  font-size: 3em;
+  font-weight: 400;
+}

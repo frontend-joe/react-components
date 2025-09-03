@@ -23,6 +23,7 @@ import {
   Navbar2,
   Navbar3,
   Parallax1,
+  Parallax2,
   PasswordStrengthExample,
   PasswordVisibilityExample,
   RcSlider,
@@ -289,5 +290,10 @@ export const routes = [
     name: "Card4",
     path: "/cards/card-4",
     element: <Card4Example />,
+  },
+  {
+    name: "Parallax2",
+    path: "/parallax/parallax-2",
+    element: <Parallax2 />,
   },
 ];
