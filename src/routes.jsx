@@ -12,6 +12,7 @@ import {
   Dropdown2Example,
   Dropdown3,
   Dropdown4Example,
+  Dropdown5Example,
   EditableTitleExample,
   FabButton,
   Accordion1Example,
@@ -295,5 +296,10 @@ export const routes = [
     name: "Parallax2",
     path: "/parallax/parallax-2",
     element: <Parallax2 />,
+  },
+  {
+    name: "Dropdown5",
+    path: "/dropdown/dropdown-5",
+    element: <Dropdown5Example />,
   },
 ];

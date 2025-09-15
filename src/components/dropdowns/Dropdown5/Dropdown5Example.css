@@ -1,0 +1,71 @@
+.page.dropdown-5-page {
+  color: #c5c7c5;
+  background: #1b1b1b;
+  font-family: "Euclid Circular A", "Poppins";
+}
+
+.dropdown-5-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  padding: 0 20px;
+  background: #1b1b1b;
+  border-bottom: 1px solid #282a2c;
+  box-shadow: 0 0 40px rgb(0 0 0 / 12%);
+}
+
+.dropdown-5-nav .logo {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-5-nav .logo img {
+  width: 36px;
+  padding: 0;
+  margin-left: 4px;
+  margin-right: 6px;
+}
+
+.dropdown-5-nav span.material-symbols-outlined {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 72px;
+  font-size: 24px;
+}
+
+.dropdown-5-nav h2 {
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.dropdown-5-nav .nav-right > img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: contain;
+  margin-left: 8px;
+}
+
+.dropdown-5-nav button {
+  background: transparent;
+  border: 0;
+  color: #a5a7a5;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.dropdown-5-nav button:is(:hover, :focus) {
+  background: #282a2c;
+  color: #c5c7c5;
+}
+
+.dropdown-5-nav .nav-right {
+  display: flex;
+  align-items: center;
+}
