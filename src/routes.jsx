@@ -26,6 +26,7 @@ import {
   Parallax1,
   Parallax2,
   PasswordStrengthExample,
+  PasswordStrength2Example,
   PasswordVisibilityExample,
   RcSlider,
   ReactDropzone,
@@ -301,5 +302,10 @@ export const routes = [
     name: "Dropdown5",
     path: "/dropdown/dropdown-5",
     element: <Dropdown5Example />,
+  },
+  {
+    name: "Controls - PasswordStrength2",
+    path: "/controls/password-strength-2",
+    element: <PasswordStrength2Example />,
   },
 ];
