@@ -1,4 +1,4 @@
-import { Accordion1 } from "./Accordion1";
+import { Accordion3 } from "./Accordion3";
 import image1 from "./6.jpg";
 import image2 from "./2.jpg";
 import image3 from "./3.jpg";
@@ -8,13 +8,12 @@ import image5 from "./5.jpg";
 const coolImages = [
   {
     header: "Canada",
-    image: image1,
+    image: image4,
     text: `Image description`,
   },
-
   {
     header: "New Zealand",
-    image: image2,
+    image: image1,
     text: `Image description`,
   },
   {
@@ -34,4 +33,4 @@ const coolImages = [
   },
 ];
 
-export const Accordion1Example = () => <Accordion1 items={coolImages} />;
+export const Accordion3Example = () => <Accordion3 items={coolImages} />;

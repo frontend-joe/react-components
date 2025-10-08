@@ -17,6 +17,7 @@ import {
   FabButton,
   Accordion1Example,
   Accordion2Example,
+  Accordion3Example,
   Login1,
   Modal1,
   Modal2Example,
@@ -307,5 +308,10 @@ export const routes = [
     name: "Controls - PasswordStrength2",
     path: "/controls/password-strength-2",
     element: <PasswordStrength2Example />,
+  },
+  {
+    name: "Accordion3",
+    path: "/accordions/accordion-3",
+    element: <Accordion3Example />,
   },
 ];

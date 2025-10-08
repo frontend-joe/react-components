@@ -1,8 +1,8 @@
-.page.image-accordion-page {
+.page.accordion-3-page {
   background: #141415;
 }
 
-.page.image-accordion-page .bg {
+.page.accordion-3-page .bg {
   background-size: cover;
   position: fixed;
   width: 100vh;
@@ -17,7 +17,7 @@
   transition: background 0.5s;
 }
 
-.page.image-accordion-page .bg::after {
+.page.accordion-3-page .bg::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -25,7 +25,20 @@
   backdrop-filter: blur(16px);
 }
 
-.image-accordion-item {
+.accordion-3-item:hover {
+  opacity: 0.5;
+}
+
+.accordion-3 :is(h2, p) {
+  margin: 0;
+}
+
+.accordion-3 {
+  display: flex;
+  gap: 12px;
+}
+
+.accordion-3-item {
   position: relative;
   overflow: hidden;
   background: #ffffff;
@@ -39,40 +52,22 @@
   transition: 0.5s;
 }
 
-.image-accordion-item:hover {
-  opacity: 0.5;
-}
-
-h2,
-p {
-  margin: 0;
-}
-
-.image-accordion {
-  display: flex;
-  gap: 12px;
-}
-
-.image-accordion-item {
-  cursor: pointer;
-}
-
-.image-accordion-item h2 {
+.accordion-3-item h2 {
   font-size: 24px;
   font-weight: 400;
   color: rgb(255 255 255 / 96%);
 }
 
-.image-accordion-item p {
+.accordion-3-item p {
   color: rgb(255 255 255 / 66%);
 }
 
-.image-accordion-item.active {
+.accordion-3-item.active {
   width: 400px;
   opacity: 1;
 }
 
-.image-accordion-item .material-symbols-outlined {
+.accordion-3-item .material-symbols-outlined.icon {
   display: grid;
   place-items: center;
   width: 50px;
@@ -82,7 +77,7 @@ p {
   font-size: 28px;
 }
 
-.image-accordion-item .content {
+.accordion-3-item .content {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -98,12 +93,12 @@ p {
   transition: 0.25s;
 }
 
-.image-accordion-item.active .content {
+.accordion-3-item.active .content {
   opacity: 1;
   visibility: visible;
 }
 
-.image-accordion-item img {
+.accordion-3-item img {
   position: absolute;
   z-index: 0;
   top: 50%;
