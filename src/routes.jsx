@@ -43,6 +43,7 @@ import {
   Sidebar8,
   Sidebar9,
   Sidebar10,
+  Sidebar11,
   SliderExample,
   Table1Example,
   Table2Example,
@@ -313,5 +314,10 @@ export const routes = [
     name: "Accordion3",
     path: "/accordions/accordion-3",
     element: <Accordion3Example />,
+  },
+  {
+    name: "Sidebar11",
+    path: "/sidebars/sidebar-11",
+    element: <Sidebar11 />,
   },
 ];
