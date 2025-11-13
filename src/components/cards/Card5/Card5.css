@@ -1,0 +1,145 @@
+.card-5 {
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 24px;
+  width: 400px;
+  box-shadow: 0 40px 80px rgba(128, 87, 216, 0.1);
+}
+
+.card-5 label {
+  color: #a39fb2;
+  font-size: 15px;
+}
+
+.card-5-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.card-5-header h2 {
+  font-weight: 500;
+  color: #4f4664;
+}
+
+.card-5-chart {
+  display: flex;
+  height: 220px;
+}
+
+.card-5-chart-y-axis {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 20px;
+  padding-bottom: 32px;
+}
+
+.card-5-chart-y-axis label {
+  height: 25%;
+  display: flex;
+  align-items: flex-end;
+  translate: 0 6px;
+}
+
+.card-5-chart-bars {
+  display: flex;
+  flex: 1 1 auto;
+  margin: 0 0 0 12px;
+  opacity: 0.8;
+  background-size: 1px 52px;
+  background-position: -32px;
+  background-image: repeating-linear-gradient(
+    0deg,
+    #ebecfa,
+    #ebecfa 1px,
+    #fff 1px,
+    #fff
+  );
+}
+
+.card-5-chart-bar-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 33.33%;
+}
+
+.card-5-chart-bar-wrapper label {
+  height: 32px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.card-5-chart-bar {
+  position: relative;
+  background: linear-gradient(rgb(199 194 253 / 100%), rgb(199 194 253 / 4%));
+  height: 60px;
+  width: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.card-5-chart-bar::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #c7c2fd;
+  border-radius: inherit;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.card-5-chart-bar:hover::after {
+  opacity: 1;
+}
+
+.card-5-chart-tooltip {
+  opacity: 0;
+  position: absolute;
+  left: calc(50% + 24px);
+  bottom: 89px;
+  transition: 0.3s;
+}
+
+.card-5-chart-tooltip::after,
+.card-5-chart-tooltip::before {
+  content: "";
+  position: absolute;
+  background: #8a54ff;
+}
+
+.card-5-chart-tooltip::before {
+  right: 0;
+  bottom: -6px;
+  width: 63px;
+  height: 2px;
+}
+
+.card-5-chart-tooltip::after {
+  right: 63px;
+  bottom: -8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.card-5-chart-tooltip h3 {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.card-5-chart-tooltip var {
+  font-style: normal;
+  font-size: 11px;
+  white-space: nowrap;
+  color: #8f8b9c;
+}
+
+.card-5-chart-bar:hover ~ .card-5-chart-tooltip {
+  opacity: 1;
+}

@@ -47,7 +47,7 @@ export const PasswordStrengthExample = () => {
   const handleChange = (value) => console.log(value);
 
   return (
-    <div className="page">
+    <div className="page password-strength-page">
       <div className="login-card">
         <img src={logo} />
         <h2>Sign Up</h2>

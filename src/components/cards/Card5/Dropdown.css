@@ -1,0 +1,67 @@
+.card-5-dropdown {
+  position: relative;
+}
+
+.card-5-dropdown button {
+  cursor: pointer;
+  font-family: inherit;
+  padding: 8px 12px;
+  text-transform: capitalize;
+  background: transparent;
+  border: 0;
+}
+
+.card-5-dropdown > button {
+  display: flex;
+  gap: 8px;
+  background: #eeeef5;
+  color: #736a88;
+  border-radius: 9px;
+  opacity: 0.8;
+  padding-left: 12px;
+  padding-right: 8px;
+  transition: 0.3s;
+}
+
+.card-5-dropdown > button:hover {
+  opacity: 1;
+}
+
+.card-5-menu {
+  position: absolute;
+  overflow: hidden;
+  z-index: 10;
+  top: 40px;
+  right: 0;
+  width: max-content;
+  background: #fff;
+  box-shadow: 0 0 40px rgba(128, 87, 216, 0.2);
+  border-radius: 7px;
+  opacity: 0;
+  visibility: hidden;
+  display: grid;
+  transition: 0.3s;
+}
+
+.card-5-menu > button {
+  text-align: left;
+  opacity: 0.7;
+  transition: 0.3s;
+  color: #645a79;
+}
+
+.card-5-menu > button.active {
+  color: #8a54ff;
+  opacity: 1;
+  cursor: default;
+}
+
+.card-5-menu > button:hover {
+  background: #fbf9ff;
+  opacity: 1;
+}
+
+.card-5-menu.open {
+  opacity: 1;
+  visibility: visible;
+}

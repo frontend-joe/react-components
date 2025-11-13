@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-.page {
+.page.password-strength-page {
   display: grid;
   place-items: center;
   margin: 0;
@@ -11,7 +11,7 @@
   color: #fdfdfd;
 }
 
-.login-card {
+.password-strength-page .login-card {
   width: 400px;
   padding: 60px 30px 30px;
   border-radius: 16px;
@@ -19,28 +19,28 @@
   text-align: center;
 }
 
-.login-card > h2 {
+.password-strength-page .login-card > h2 {
   font-size: 36px;
   font-weight: 600;
   margin: 0 0 30px;
 }
 
-.login-card img {
+.password-strength-page .login-card img {
   width: 260px;
   margin-bottom: 20px;
 }
 
-.login-form {
+.password-strength-page .login-form {
   width: 100%;
   margin: 0;
   display: grid;
 }
 
-.login-form input.control::placeholder {
+.password-strength-page .login-form input.control::placeholder {
   color: #9f9d9e;
 }
 
-.control {
+.password-strength-page .control {
   outline: none;
   width: 100%;
   height: 56px;
@@ -55,7 +55,7 @@
   transition: 0.4s;
 }
 
-button.control {
+.password-strength-page button.control {
   cursor: pointer;
   width: 100%;
   height: 56px;
@@ -64,7 +64,7 @@ button.control {
   text-align: center;
 }
 
-.bars {
+.password-strength-page .bars {
   margin: 8px 0;
   flex: 1 1 auto;
   display: flex;
@@ -75,29 +75,29 @@ button.control {
   background: #181919;
 }
 
-.bars div {
+.password-strength-page .bars div {
   height: 6px;
   border-radius: 3px;
   transition: 0.4s;
   width: 0%;
 }
 
-.bars.weak div {
+.password-strength-page .bars.weak div {
   background: #e24c71;
   width: 33.33%;
 }
 
-.bars.medium div {
+.password-strength-page .bars.medium div {
   background: #f39845;
   width: 66.66%;
 }
 
-.bars.strong div {
+.password-strength-page .bars.strong div {
   background: #57c558;
   width: 100%;
 }
 
-.strength {
+.password-strength-page .strength {
   text-align: left;
   height: 30px;
   text-transform: capitalize;
