@@ -1,11 +1,133 @@
+.page.navbar-2-page {
+  background: #f3f3f6;
+  font-family: "Euclid Circular B", "Poppins";
+}
+
 .navbar-2 {
+  --color-primary: #fe5495;
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  height: 72px;
-  border-bottom: 1px solid rgb(255 255 255 / 10%);
+  z-index: 1;
   display: flex;
   align-items: center;
-  padding: 0 24px;
+  gap: 24px;
+  padding: 0 20px;
+  height: 78px;
+  width: 100%;
+  background: #ffffff;
+  color: #5b5968;
+  box-shadow: 0 10px 50px rgb(0 0 0 / 2%);
+}
+
+.navbar-2 a {
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  height: 72px;
+  font-size: 15px;
+}
+
+.navbar-2 .avatar {
+  height: 46px;
+  padding: 1px;
+  border-radius: 50%;
+  border: 1px solid #8f44fd;
+}
+
+.navbar-2 > img {
+  height: 32px;
+}
+
+.navbar-2-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.navbar-2-dropdown {
+  position: fixed;
+  z-index: 1;
+  top: 86px;
+  left: 0;
+  width: 120px;
+  padding: 6px 0;
+  display: grid;
+  opacity: 0;
+  visibility: hidden;
+  /* transition: 0.3s; */
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 0 30px rgb(0 0 0 / 4%);
+  transition: 0.3s;
+}
+
+.navbar-2 a:is(:hover, .active) {
+  color: var(--color-primary);
+}
+
+.navbar-2-dropdown.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.navbar-2-dropdown::after {
+  content: "";
+  position: absolute;
+  top: -12px;
+  width: 100%;
+  height: 50px;
+}
+
+.navbar-2-dropdown > a {
+  position: relative;
+  z-index: 1;
+  height: 40px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.navbar-2-search {
+  flex: 1 1 auto;
+  position: relative;
+  margin-left: 12px;
+}
+
+.navbar-2-search input {
+  border: 0;
+  border-radius: 52px;
+  height: 52px;
+  width: 100%;
+  background: #f3f3f6;
+  padding-left: 18px;
+  padding-right: 36px;
+  font-size: 14.75px;
+  font-family: inherit;
+}
+
+.navbar-2-search button {
+  border: 0;
+  display: grid;
+  place-items: center;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: #f9f9f9;
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  translate: 0 -50%;
+  font-size: 18px;
+}
+
+.navbar-2-search button span {
+  font-size: 20px;
+}
+
+.navbar-2-search input::placeholder {
+  color: #9b98b1;
 }

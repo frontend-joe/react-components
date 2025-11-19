@@ -1,9 +1,9 @@
 body {
   margin: 0;
-  background: #6a8faa;
+  /* background: #6a8faa; */
   color: #f9f9f9;
   font-family: "Euclid Circular B", "Poppins";
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 * {
