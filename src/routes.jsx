@@ -20,6 +20,7 @@ import {
   Accordion2Example,
   Accordion3Example,
   Login1,
+  Login2,
   Modal1,
   Modal2Example,
   Navbar1,
@@ -325,5 +326,10 @@ export const routes = [
     name: "Card5",
     path: "/cards/card-5",
     element: <Card5Example />,
+  },
+  {
+    name: "Login2",
+    path: "/logins/login-2",
+    element: <Login2 />,
   },
 ];
