@@ -5,6 +5,7 @@ import {
   Card3Example,
   Card4Example,
   Card5Example,
+  Card6Example,
   Carousel1,
   Carousel2,
   Carousel3,
@@ -331,5 +332,10 @@ export const routes = [
     name: "Login2",
     path: "/logins/login-2",
     element: <Login2 />,
+  },
+  {
+    name: "Card6",
+    path: "/cards/card-6",
+    element: <Card6Example />,
   },
 ];

@@ -1,0 +1,209 @@
+.card-6 {
+  --color-muted: rgb(255 255 255 / 50%);
+  position: relative;
+  background: rgb(0 0 0 / 25%);
+  border-radius: 24px;
+  width: 85%;
+  max-width: 580px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 40px 60px rgba(58, 71, 72, 0.16);
+}
+
+.card-6-hero {
+  position: relative;
+  display: grid;
+  place-items: center;
+  border-radius: 22px;
+  padding: 48px 24px;
+  background: linear-gradient(#712ff6, #8d10f9);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.card-6-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 24px 24px 28px;
+  text-align: center;
+}
+
+.card-6 img {
+  height: 13.5vw;
+  min-height: 72px;
+  max-height: 84px;
+  border-radius: 50%;
+  box-shadow: 0 20px 80px rgb(0 0 0 / 56%);
+  border: 2px solid rgb(255 255 255 / 16%);
+  padding: 2px;
+}
+
+.card-6 var {
+  font-style: normal;
+}
+
+.card-6 ul {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+}
+
+.card-6 .tags {
+  margin-bottom: 16px;
+}
+
+.card-6 .tags li {
+  background: rgb(255 255 255 / 12%);
+  font-size: 12px;
+  height: 28px;
+  color: var(--color-muted);
+  padding: 6px 8px;
+  border-radius: 32px;
+}
+
+.card-6 .stats {
+  gap: 0;
+  margin-bottom: 16px;
+  width: 90%;
+}
+
+.card-6 .stats li {
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(18px, 4vw, 24px);
+  min-width: 0;
+}
+
+.card-6 .stats label {
+  color: var(--color-muted);
+  font-size: 13px;
+}
+
+.card-6 :is(h2, h3, h4) {
+  font-weight: 400;
+}
+
+.card-6 h2 {
+  margin-bottom: 3px;
+}
+
+.card-6 h3 {
+  margin: 0 0 12px;
+  color: var(--color-muted);
+  font-size: 16px;
+}
+
+.card-6 button {
+  color: inherit;
+  font-family: inherit;
+  border-radius: 28px;
+}
+
+.card-6 .actions {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.card-6 .contact-btn,
+.card-6 .save-btn {
+  height: 48px;
+  box-shadow: 0 10px 80px rgb(0 0 0 / 12%);
+  background: rgb(255 255 255 / 5%);
+  border: 0;
+  backdrop-filter: blur(20px);
+}
+
+.card-6 .contact-btn {
+  flex: 1 1 auto;
+  font-size: 16px;
+  background: #f9f9f9;
+  color: #1f1e21;
+}
+
+.card-6 .save-btn {
+  width: 48px;
+  height: 48px;
+}
+
+.card-6 .share-btn {
+  background: transparent;
+  border: 0;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+}
+
+.card-6 .share-btn i {
+  font-size: 18px;
+}
+
+.card-6 i {
+  font-size: 18px;
+}
+
+@media (width >= 400px) {
+  .card-6 {
+    padding: 5px;
+  }
+
+  .card-6-content {
+    align-items: flex-start;
+    text-align: left;
+    padding: 24px;
+  }
+
+  .card-6-hero {
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+  }
+
+  .card-6 .stats {
+    width: auto;
+    gap: 6vw;
+  }
+}
+
+@media (width >= 520px) {
+  .card-6 {
+    min-height: 300px;
+    flex-direction: row;
+  }
+
+  .card-6-hero {
+    flex: 1 1 45%;
+    min-width: 45%;
+  }
+
+  .card-6 .tags {
+    margin-bottom: 0;
+  }
+
+  .card-6-content {
+    flex: 1 1 55%;
+    max-width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .card-6 .stats {
+    gap: 3vw;
+    height: 60px;
+    align-items: center;
+  }
+
+  .card-6 .actions {
+    margin-top: auto;
+  }
+}
