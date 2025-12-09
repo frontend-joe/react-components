@@ -4,7 +4,7 @@ body {
   color: #f9f9f9;
   background: #2b2a2f;
   font-family: "Euclid Circular B", "Poppins";
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 * {
