@@ -1,0 +1,108 @@
+.page.sidebar-12-page {
+  background: red url("./bg.jpg");
+  background-position: -360px;
+  background-size: cover;
+  overflow: hidden;
+  font-family: "Euclid Circular B", "Poppins", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+.sidebar-12 {
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 260px;
+  border-radius: 16px;
+  padding: 0 16px;
+  background: rgb(0 0 0 / 19%);
+  backdrop-filter: blur(30px);
+}
+
+.sidebar-12 header {
+  display: flex;
+  align-items: center;
+  height: 72px;
+  padding-top: 10px;
+  border-bottom: 1px solid rgb(255 255 255 / 8%);
+}
+
+.sidebar-12 header img {
+  height: 44px;
+}
+
+.sidebar-12 button {
+  position: relative;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: inherit;
+  padding: 0 16px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: rgb(255 255 255 / 95%);
+  transition: 0.3s;
+}
+
+.sidebar-12 button.active {
+  background: rgb(0 0 0 / 18%);
+}
+
+.sidebar-12 button:not(.active):hover {
+  background: rgb(0 0 0 / 8%);
+}
+
+.sidebar-12 i {
+  font-size: 20px;
+  width: 20px;
+}
+
+.sidebar-12 button i:last-child {
+  margin-left: auto;
+  transition: 0.3s;
+}
+
+.sidebar-12 button.active i:last-child {
+  rotate: -180deg;
+}
+
+.sidebar-12 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-12 .sub-menu {
+  overflow: hidden;
+  transition: height 0.5s ease;
+}
+
+.sidebar-12 .sub-menu ul {
+  padding-left: 0;
+}
+
+.sidebar-12 .sub-menu button {
+  padding-left: 48px;
+}
+
+.sidebar-12 .sub-menu button::before {
+  content: "";
+  position: absolute;
+  left: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(255 255 255 / 35%);
+}

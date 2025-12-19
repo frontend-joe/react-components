@@ -9,3 +9,4 @@ export * from "./Sidebar8/Sidebar8";
 export * from "./Sidebar9/Sidebar9";
 export * from "./Sidebar10/Sidebar10";
 export * from "./Sidebar11/Sidebar11";
+export * from "./Sidebar12/Sidebar12";

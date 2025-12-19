@@ -48,6 +48,7 @@ import {
   Sidebar9,
   Sidebar10,
   Sidebar11,
+  Sidebar12,
   SliderExample,
   Table1Example,
   Table2Example,
@@ -343,5 +344,10 @@ export const routes = [
     name: "Dropdown6",
     path: "/dropdowns/dropdown-6",
     element: <Dropdown6Example />,
+  },
+  {
+    name: "Sidebar12",
+    path: "/sidebars/sidebar-12",
+    element: <Sidebar12 />,
   },
 ];
