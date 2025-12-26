@@ -23,6 +23,7 @@ import {
   Accordion3Example,
   Login1,
   Login2,
+  Login3,
   Modal1,
   Modal2Example,
   Navbar1,
@@ -349,5 +350,10 @@ export const routes = [
     name: "Sidebar12",
     path: "/sidebars/sidebar-12",
     element: <Sidebar12 />,
+  },
+  {
+    name: "Login3",
+    path: "/logins/login-3",
+    element: <Login3 />,
   },
 ];

@@ -1,0 +1,211 @@
+.page.login-3-page {
+  --gradient: linear-gradient(-35deg, #8d00ff, #365fe7);
+  --muted: #8d889d;
+  background: #1e1b2b;
+  color: #f9f9f9;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  font-family: "Euclid Circular B";
+}
+
+.login-3 .card {
+  position: relative;
+  overflow: hidden;
+  width: 660px;
+  height: 440px;
+  border-radius: 16px;
+  background: #141317;
+  box-shadow: 0 12px 80px rgba(0, 0, 0, 0.12);
+}
+
+.login-3 .card-bg {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  background: var(--gradient);
+  translate: 0 0;
+  transition: 0.65s;
+}
+
+.login-3 .card-bg.signin {
+  translate: 100% 0;
+}
+
+.login-3 .hero,
+.login-3 .form {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.65s;
+}
+
+.login-3 .form.signup {
+  left: 50%;
+}
+
+.login-3 .hero.signin {
+  left: 50%;
+  translate: 100% 0;
+}
+
+.login-3 .hero.signin.active {
+  translate: 0;
+}
+
+.login-3 .hero.signup {
+  translate: -100% 0;
+}
+
+.login-3 .hero.signup.active {
+  translate: 0;
+}
+
+.login-3 .hero {
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 50%;
+  color: #f9f9f9;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.login-3 .form.active,
+.login-3 .hero.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.login-3 h2 {
+  margin: 0;
+  font-weight: 500;
+}
+
+.login-3 .form.signin {
+  translate: -100% 0;
+}
+
+.login-3 .form.signin.active {
+  translate: 0;
+}
+
+.login-3 .form.signup {
+  translate: 100% 0;
+}
+
+.login-3 .form.signup.active {
+  translate: 0;
+}
+
+.login-3 .hero p {
+  margin: 0 0 6px;
+  opacity: 0.75;
+  line-height: 1.45;
+}
+
+.login-3 .hero button {
+  padding: 12px 40px;
+  border-radius: 32px;
+  letter-spacing: 1px;
+  font-family: inherit;
+  color: inherit;
+  border: 1px solid #f9f9f9;
+  background: transparent;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.login-3 .hero button:hover {
+  color: #2a449a;
+  background: #f9f9f9;
+}
+
+.login-3 .form {
+  background: inherit;
+  z-index: 1;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 32px;
+}
+
+.login-3 .form h2 {
+  font-size: 22px;
+  text-align: center;
+}
+
+.login-3 .sso {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.login-3 .form form > a {
+  font-size: 14px;
+  margin-top: 10px;
+  color: var(--muted);
+}
+
+.login-3 .sso a {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgb(255 255 255 / 24%);
+  font-size: 16px;
+}
+
+.login-3 .form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.login-3 .form p {
+  margin: 0 0 -8px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.login-3 .form input {
+  font-family: inherit;
+  border-radius: 10px;
+  border: 0;
+  background: #1f1b2b;
+  padding: 14px 12px;
+  color: inherit;
+  width: 100%;
+}
+
+.login-3 .form input::placeholder {
+  color: #8d889d;
+}
+
+.login-3 .form button {
+  border: 0;
+  padding: 14px 0;
+  border-radius: 32px;
+  font-family: inherit;
+  color: #f9f9f9;
+  width: 160px;
+  margin-top: 10px;
+  background: var(--gradient);
+}
