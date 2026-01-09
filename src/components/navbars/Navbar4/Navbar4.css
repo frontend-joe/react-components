@@ -1,0 +1,113 @@
+.navbar-4-page {
+  --color-primary: #5c48cf;
+  --gradient: linear-gradient(to right, var(--color-primary), #485acf);
+  background: #202022;
+  font-family: "Euclid Circular A", "Poppins";
+  color: #f9f9f9;
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.navbar-4 {
+  position: fixed;
+  top: 6px;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  background: #161618;
+  box-shadow: 0 20px 40px rgb(0 0 0 / 12%);
+}
+
+.navbar-4 img {
+  height: 32px;
+}
+
+.navbar-4 .end {
+  width: 120px;
+}
+
+.navbar-4 .end:last-child {
+  text-align: right;
+  color: #7f7f80;
+}
+
+.navbar-4 nav {
+  position: relative;
+  font-weight: 400;
+  font-size: 0;
+  display: flex;
+  padding: 0;
+  width: 80%;
+}
+
+.navbar-4 nav .item {
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  padding: 0 20px;
+  cursor: pointer;
+  z-index: 5;
+  min-width: 25%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.navbar-4 .item:hover {
+  opacity: 1;
+}
+
+.navbar-4 .dropdown {
+  overflow: hidden;
+  list-style: none;
+  position: absolute;
+  padding: 0;
+  width: 100%;
+  left: 0;
+  top: 62px;
+}
+.navbar-4 .dropdown > div {
+  translate: 0 -100%;
+  transition: all 0.5s 0.1s;
+  position: relative;
+}
+
+.dropdown a {
+  display: block;
+  padding: 0;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  background: #161618;
+  color: #7f7f80;
+  transition: background 0.1s;
+}
+
+.navbar-4 .dropdown a:hover {
+  background: var(--gradient);
+  color: inherit;
+}
+
+.navbar-4 .underline {
+  height: 5px;
+  background: var(--gradient);
+  position: absolute;
+  bottom: 0;
+  width: 25%;
+  z-index: 2;
+  pointer-events: none;
+  transition: 0.35s;
+}
+
+.navbar-4 nav .item:hover > .dropdown > div {
+  translate: 0;
+}

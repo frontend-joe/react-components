@@ -29,6 +29,7 @@ import {
   Navbar1,
   Navbar2,
   Navbar3,
+  Navbar4,
   Parallax1,
   Parallax2,
   PasswordStrengthExample,
@@ -51,6 +52,7 @@ import {
   Sidebar11,
   Sidebar12,
   Sidebar13,
+  Sidebar14,
   SliderExample,
   Table1Example,
   Table2Example,
@@ -361,5 +363,15 @@ export const routes = [
     name: "Sidebar13",
     path: "/sidebars/sidebar-13",
     element: <Sidebar13 />,
+  },
+  {
+    name: "Sidebar14",
+    path: "/sidebars/sidebar-14",
+    element: <Sidebar14 />,
+  },
+  {
+    name: "Navbar4",
+    path: "/navbars/navbar-4",
+    element: <Navbar4 />,
   },
 ];
