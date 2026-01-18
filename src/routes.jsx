@@ -53,6 +53,7 @@ import {
   Sidebar12,
   Sidebar13,
   Sidebar14,
+  Sidebar15,
   SliderExample,
   Table1Example,
   Table2Example,
@@ -373,5 +374,10 @@ export const routes = [
     name: "Navbar4",
     path: "/navbars/navbar-4",
     element: <Navbar4 />,
+  },
+  {
+    name: "Sidebar15",
+    path: "/sidebars/sidebars-15",
+    element: <Sidebar15 />,
   },
 ];
