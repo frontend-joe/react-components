@@ -24,6 +24,7 @@ import {
   Login1,
   Login2,
   Login3,
+  Login4,
   Modal1,
   Modal2Example,
   Navbar1,
@@ -379,5 +380,10 @@ export const routes = [
     name: "Sidebar15",
     path: "/sidebars/sidebars-15",
     element: <Sidebar15 />,
+  },
+  {
+    name: "Login4",
+    path: "/logins/login-4",
+    element: <Login4 />,
   },
 ];

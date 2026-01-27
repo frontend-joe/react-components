@@ -1,0 +1,219 @@
+.login-4-card * {
+  box-sizing: border-box;
+}
+
+.login-4-page.page {
+  margin: 0;
+  background: #f2f3fe;
+  color: #4b5679;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  font-family: "Euclid Circular B";
+}
+
+.login-4-card {
+  --gradient: linear-gradient(45deg, #5823c9, #6b50ff);
+  position: relative;
+  overflow: hidden;
+  width: 660px;
+  height: 440px;
+  border-radius: 24px;
+  background: #ffffff;
+  border: 8px solid #ffffff;
+  box-shadow: 0 12px 80px rgba(41, 30, 113, 0.12);
+}
+
+.login-4-card .card-bg {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  background: var(--gradient);
+  border-radius: 18px;
+  translate: 0 0;
+  transition: 0.65s ease-in-out;
+}
+
+.login-4-card .card-bg.login {
+  translate: 100% 0;
+}
+
+.login-4-card .hero,
+.login-4-card .form {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.65s ease-in-out;
+}
+
+.login-4-card .hero.active,
+.login-4-card .form.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.login-4-card .form.register {
+  left: 50%;
+}
+
+.login-4-card .hero.login {
+  left: 50%;
+  translate: 100% 0;
+}
+
+.login-4-card .hero.login.active {
+  translate: 0;
+}
+
+.login-4-card .hero.register {
+  translate: -100% 0;
+}
+
+.login-4-card .hero.register.active {
+  translate: 0;
+}
+
+.login-4-card .hero {
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 50%;
+  color: #f9f9f9;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.login-4-card h2 {
+  margin: 0;
+  font-weight: 500;
+}
+
+.login-4-card .form.login {
+  translate: 100% 0;
+}
+
+.login-4-card .form.login.active {
+  translate: 0;
+}
+
+.login-4-card .form.register {
+  translate: -100% 0;
+}
+
+.login-4-card .form.register.active {
+  translate: 0;
+}
+
+.login-4-card .hero p {
+  margin: 0 0 6px;
+  opacity: 0.85;
+  line-height: 1.45;
+}
+
+.login-4-card .hero button {
+  padding: 12px 40px;
+  border-radius: 32px;
+  letter-spacing: 1px;
+  font-family: inherit;
+  color: inherit;
+  border: 1px solid #f9f9f9;
+  background: transparent;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.login-4-card .hero button:hover {
+  color: #3c23c9;
+  background: #f9f9f9;
+}
+
+.login-4-card .form {
+  background: #ffffff;
+  z-index: 1;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 32px;
+}
+
+.login-4-card .form h2 {
+  font-size: 22px;
+  text-align: center;
+}
+
+.login-4-card .sso {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.login-4-card .form form > a {
+  font-size: 14px;
+  margin-top: 10px;
+  opacity: 0.5;
+}
+
+.login-4-card .sso a {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f2f3fe;
+  font-size: 16px;
+}
+
+.login-4-card .form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.login-4-card .form p {
+  margin: 0 0 -8px;
+  text-align: center;
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+.login-4-card .form input {
+  font-family: inherit;
+  border-radius: 10px;
+  border: 0;
+  background: #f2f3fe;
+  padding: 14px 12px;
+  color: inherit;
+  width: 100%;
+}
+
+.login-4-card .form input::placeholder {
+  color: #96959e;
+}
+
+.login-4-card .form button {
+  border: 0;
+  padding: 14px 0;
+  border-radius: 32px;
+  font-family: inherit;
+  letter-spacing: 1px;
+  color: #f9f9f9;
+  width: 160px;
+  margin-top: 10px;
+  background: var(--gradient);
+  box-shadow: 0 10px 40px rgb(30 61 161 / 32%);
+}
