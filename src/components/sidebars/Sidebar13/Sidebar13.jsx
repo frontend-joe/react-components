@@ -64,6 +64,10 @@ export const Sidebar13 = () => {
 
   return (
     <section className="page sidebar-13-page">
+      <div className="title">
+        <h2>React Sidebar</h2>
+        <h3>@FRONTENDJOE</h3>
+      </div>
       <aside className="sidebar-13">
         <header>
           <img src={logo} alt="Logo" />

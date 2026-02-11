@@ -1,0 +1,254 @@
+.page.signup-1-page {
+  margin: 0;
+  background: #f2f3fe;
+  color: #4b5679;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  font-family: "Euclid Circular B", "Poppins";
+}
+
+.signup-1-card {
+  --color-primary: #6663e6;
+  position: relative;
+  overflow: hidden;
+  width: 660px;
+  height: 440px;
+  border-radius: 32px;
+  background: #ffffff;
+  box-shadow: 0 12px 80px rgba(0, 0, 0, 0.12);
+}
+
+.signup-1-card .card-bg {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 860px;
+  height: 440px;
+  rotate: -45deg;
+  transform-origin: 0% 100%;
+  background: var(--color-primary);
+}
+
+.signup-1-card .card-bg-2 {
+  background: var(--color-primary);
+  rotate: 0deg;
+  opacity: 0;
+  right: 0;
+  left: auto;
+  transform-origin: 100% 100%;
+}
+
+.signup-1-card .card-bg-1.register {
+  animation: card-bg-register 1.5s both;
+}
+
+.signup-1-card .card-bg-1.login {
+  animation: card-bg-login 1.5s both;
+}
+
+.signup-1-card .card-bg-2.register {
+  animation: card-bg-2-register 1.5s both;
+}
+
+.signup-1-card .card-bg-2.login {
+  animation: card-bg-2-login 1.5s both;
+}
+
+.signup-1-card .logo {
+  position: absolute;
+  top: 70px;
+  z-index: 2;
+  height: 24px;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.signup-1-card .logo-1 {
+  translate: -280px 0;
+  left: 64px;
+}
+
+.signup-1-card .logo-2 {
+  translate: 280px 0;
+  right: 64px;
+}
+
+.signup-1-card .card-bg.login ~ .logo-1,
+.signup-1-card .card-bg.register ~ .logo-2 {
+  opacity: 1;
+  translate: 0;
+  transition: 0.3s 1.05s;
+}
+
+.signup-1-card .form {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.signup-1-card .form h2 {
+  text-align: center;
+  font-weight: 500;
+}
+
+.signup-1-card .form form {
+  display: grid;
+  gap: 12px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.signup-1-card .form a {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #a7a7ad;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+}
+
+.signup-1-card .form p {
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  color: #a7a7ad;
+}
+
+.signup-1-card .form a em {
+  display: block;
+  font-style: normal;
+  font-size: 15px;
+  color: var(--color-primary);
+}
+
+.signup-1-card .form.register {
+  translate: 100% 0;
+}
+
+.signup-1-card .form.register form {
+  translate: 320px 0;
+}
+
+.signup-1-card .form.login form {
+  translate: -320px 0;
+}
+
+.signup-1-card .form.register.active form,
+.signup-1-card .form.login.active form {
+  opacity: 1;
+  translate: 0;
+  transition: 0.5s 1s;
+}
+
+.signup-1-card form input {
+  width: 260px;
+  padding: 0 12px;
+  font-size: 14px;
+  background: #f4f4f7;
+}
+
+.signup-1-card form input::placeholder {
+  color: #a7a7ad;
+}
+
+.signup-1-card input,
+.signup-1-card button {
+  border: 0;
+  border-radius: 12px;
+  height: 44px;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.signup-1-card form button {
+  color: #f9f9f9;
+  background: var(--color-primary);
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+/* Animations (Global definitions - prefixes not applied to @keyframe names) */
+@keyframes card-bg-register {
+  0% {
+    rotate: -45deg;
+  }
+  50% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    rotate: 0deg;
+  }
+  50.01%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes card-bg-login {
+  0% {
+    opacity: 0;
+    rotate: 0deg;
+  }
+  50% {
+    rotate: 0deg;
+    opacity: 0;
+  }
+  50%,
+  100% {
+    rotate: 0;
+  }
+  50.01%,
+  100% {
+    opacity: 1;
+  }
+  100% {
+    rotate: -45deg;
+  }
+}
+
+@keyframes card-bg-2-register {
+  0%,
+  50% {
+    rotate: 0;
+    opacity: 0;
+  }
+  50.01% {
+    opacity: 1;
+    rotate: 0deg;
+  }
+  100% {
+    opacity: 1;
+    rotate: 45deg;
+  }
+}
+
+@keyframes card-bg-2-login {
+  0% {
+    rotate: 45deg;
+    opacity: 1;
+  }
+  50%,
+  100% {
+    rotate: 0deg;
+    opacity: 1;
+  }
+  50.01%,
+  100% {
+    opacity: 0;
+  }
+}

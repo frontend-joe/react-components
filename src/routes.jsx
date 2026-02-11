@@ -55,6 +55,7 @@ import {
   Sidebar13,
   Sidebar14,
   Sidebar15,
+  Signup1,
   SliderExample,
   Table1Example,
   Table2Example,
@@ -385,5 +386,10 @@ export const routes = [
     name: "Login4",
     path: "/logins/login-4",
     element: <Login4 />,
+  },
+  {
+    name: "Signup1",
+    path: "/signup/signup-1",
+    element: <Signup1 />,
   },
 ];

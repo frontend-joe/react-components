@@ -1,6 +1,6 @@
 .page.sidebar-13-page {
   background: url("./bg.jpg");
-  background-position: center;
+  background-position: -380px;
   background-size: cover;
   overflow: hidden;
   font-family: "Euclid Circular B", "Poppins", sans-serif;
@@ -9,11 +9,37 @@
   box-sizing: border-box;
 }
 
+.title {
+  position: absolute;
+  top: 160px;
+  left: 50%;
+  translate: -50% 0;
+}
+
+.title h2,
+.title h3 {
+  margin: 0;
+  font-weight: 400;
+  text-align: center;
+  text-shadow: 0 0 10px rgb(0 0 0 / 28%);
+}
+
+.title h2 {
+  margin: 0 0 8px;
+}
+
+.title h3 {
+  letter-spacing: 1px;
+  opacity: 0.6;
+  font-size: 14px;
+}
+
 .sidebar-13 {
   position: fixed;
-  top: 24px;
-  left: 24px;
-  bottom: 24px;
+  top: 240px;
+  left: auto;
+  right: auto;
+  bottom: -40px;
   display: flex;
   flex-direction: column;
   gap: 8px;
