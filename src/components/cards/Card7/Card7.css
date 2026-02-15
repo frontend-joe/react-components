@@ -1,0 +1,129 @@
+.card-7 {
+  --card: #272524;
+  display: flex;
+  align-items: center;
+  width: 75vw;
+  max-width: 650px;
+  padding: 44px 30px 44px 20px;
+  background: var(--card);
+  border-radius: 24px;
+}
+
+.card-7 img {
+  max-width: 280px;
+  width: 36vw;
+  height: 300px;
+  object-fit: cover;
+  margin-left: -60px;
+  margin-right: 30px;
+  border-radius: inherit;
+  box-shadow: 0 60px 40px rgb(0 0 0 / 8%);
+  transition: border-radius 0.3s;
+}
+
+.card-7 h2 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-right: 30px;
+  margin-bottom: 10px;
+}
+
+.card-7 h3 {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 0 12px;
+  opacity: 0.75;
+}
+
+.card-7 p {
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  opacity: 0.5;
+}
+
+.card-7 .socials {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-7 .socials > button {
+  position: relative;
+  border: 0;
+  background: transparent;
+  color: #f8f8f8;
+  padding: 0;
+}
+
+.card-7 .socials > button:first-child::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  width: 52px;
+  height: 52px;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #ff7c7d, #ffda67);
+  transition: 0.3s;
+  transform: translateY(0);
+}
+
+.card-7 .socials > button > i {
+  position: relative;
+  z-index: 1;
+  border: 4px solid var(--card);
+  background: #3f3b39;
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  border-radius: 40px;
+}
+
+@media (width <= 600px) {
+  .card-7 {
+    margin: 0 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 60px;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .card-7 h2 {
+    margin-right: 0;
+    font-size: 26px;
+  }
+
+  .card-7 img {
+    margin: -100px 0 30px 0;
+    width: 100%;
+    max-width: 1000px;
+    height: 250px;
+  }
+
+  .card-7 p {
+    max-width: 360px;
+  }
+
+  .card-7 .socials {
+    justify-content: center;
+  }
+}
+
+@media (width <= 440px) {
+  .card-7 img {
+    height: 50vw;
+    width: 50vw;
+    border-radius: 50%;
+    border: 12px solid var(--card);
+    box-shadow: none;
+    margin: -140px 0 30px 0;
+  }
+}
