@@ -18,7 +18,7 @@ export const DeleteButton = () => {
   };
 
   return (
-    <div className="page">
+    <div className="page delete-button-page">
       <button
         onClick={handleClick}
         className={`delete-button ${isDeleting || isDeleted ? "deleting" : ""}`}

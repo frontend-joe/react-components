@@ -1,0 +1,149 @@
+.page.login-5 {
+  display: grid;
+  place-items: center;
+  gap: 50px;
+  margin: 0;
+  height: 100vh;
+  padding: 0 32px;
+  color: #f9f9f9;
+  background: #17171f;
+  font-family: "Euclid Circular A", "Poppins";
+}
+
+@media (width >= 500px) {
+  .page.login-5 {
+    padding: 0;
+  }
+}
+
+.login-5-background {
+  position: fixed;
+  top: -55vmin;
+  left: -55vmin;
+  width: 110vmin;
+  height: 110vmin;
+  border-radius: 47% 53% 61% 39% / 45% 51% 49% 55%;
+  background: #6a65ff;
+}
+
+.login-5-background::after {
+  content: "";
+  position: inherit;
+  right: -55vmin;
+  bottom: -55vmin;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  background: #3c85fe;
+}
+
+.login-5-card {
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+  width: 94%;
+  margin: 0 20px;
+  padding: 84px 30px 54px;
+  border-radius: 48px;
+  border: 6px solid rgb(255 255 255 / 4%);
+  background: rgb(255 255 255 / 4%);
+  backdrop-filter: blur(44px);
+  text-align: center;
+  box-shadow: 0 100px 100px rgb(0 0 0 / 10%);
+}
+
+@media (width >= 450px) {
+  .login-5-card {
+    margin: 0;
+    width: 360px;
+  }
+}
+
+.login-5-card > img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 30px;
+  border: 6px solid rgb(255 255 255 / 14%);
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.login-5-card > h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 0 32px;
+}
+
+.login-5-card form {
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.login-5-textbox {
+  position: relative;
+}
+
+.login-5-textbox i {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  translate: 0 -50%;
+}
+
+.login-5-card form :is(input, button) {
+  width: 100%;
+  height: 56px;
+  border-radius: 28px;
+  font-size: 16px;
+  font-family: inherit;
+  outline: none;
+  transition: 0.3s;
+}
+
+.login-5-card form :is(input, button):focus {
+  box-shadow: 0 0 0 3px #6a65ff;
+}
+
+.login-5-textbox input {
+  border: 0;
+  padding: 0 24px 0 44px;
+  color: #f9f9f9;
+  background: rgb(255 255 255 / 4%);
+}
+
+.login-5-card form > input::placeholder {
+  color: rgb(255 255 255 / 32%);
+}
+
+.login-5-card form > button {
+  border: 0;
+  color: #f9f9f9;
+  background: rgb(255 255 255 / 8%);
+  display: grid;
+  place-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.login-5-card form > button:hover {
+  background: #6a65ff;
+}
+
+.login-5-card > footer {
+  color: rgb(255 255 255 / 38%);
+}
+
+.login-5-card > form > a {
+  opacity: 0.75;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  margin-bottom: 12px;
+}
+
+.login-5-card > footer > a {
+  color: #f9f9f9;
+  text-decoration: none;
+}

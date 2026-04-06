@@ -1,0 +1,115 @@
+.page.dropdown-7-page {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background: url("bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  --color-menu: rgb(0 0 0 / 10%);
+}
+
+.page.dropdown-7-page::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgb(0 0 0 / 40%), rgb(0 0 0 / 0%));
+}
+
+.dropdown-7 {
+  --width: 240px;
+  margin-top: -50px;
+  position: relative;
+  z-index: 1;
+}
+
+.dropdown-7 button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 16px;
+  width: var(--width);
+  height: 64px;
+  color: rgb(255 255 255 / 80%);
+  background: var(--color-menu);
+  border: 0;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Euclid Circular B";
+  transition: 0.3s ease;
+}
+
+.dropdown-7 .menu,
+.dropdown-7 > button {
+  border-radius: 10px;
+  background: var(--color-menu);
+  color: #f9f9f9;
+  border: 2px solid rgb(255 255 255 / 10%);
+}
+
+.dropdown-7.open > button .chevron {
+  rotate: -180deg;
+}
+
+.dropdown-7 button .chevron {
+  margin-left: auto;
+  transition: 0.3s ease;
+}
+
+.dropdown-7 .menu {
+  position: absolute;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  z-index: 1;
+  top: 74px;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  translate: 0 -20px;
+  visibility: hidden;
+  transition: 0.4s ease;
+}
+
+.dropdown-7.open .menu {
+  opacity: 1;
+  translate: 0;
+  visibility: visible;
+}
+
+.dropdown-7 .menu-inner {
+  position: absolute;
+  width: calc(var(--width) * 2);
+  display: flex;
+  transition: 0.4s ease;
+}
+
+.dropdown-7 .menu-inner.open {
+  translate: -50%;
+}
+
+.dropdown-7 .menu button {
+  border: 0;
+  height: 56px;
+  border-radius: 0;
+  text-transform: capitalize;
+}
+
+.dropdown-7 button:hover {
+  background: rgb(255 255 255 / 4%);
+  color: rgb(255 255 255 / 80%);
+}
+
+.dropdown-7 .sub-menu {
+  position: absolute;
+  width: var(--width);
+  left: var(--width);
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.dropdown-7 .sub-menu.open {
+  opacity: 1;
+  visibility: visible;
+}

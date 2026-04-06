@@ -1,5 +1,5 @@
 .page.trash-button-page {
-  background: #222222;
+  background: #141414;
 }
 
 .trash-button {
@@ -9,12 +9,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 14px;
   border: 0;
   background: #fc3b51;
   font-size: 22px;
   font-weight: 400;
-  font-family: "Euclid Circular A";
+  font-family: "Euclid Circular B";
   color: var(--color-icon);
   padding: 0 0 0 20px;
   opacity: 0.85;

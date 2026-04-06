@@ -4,3 +4,4 @@ export * from "./PasswordVisibility/PasswordVisibilityExample";
 export * from "./EditableText/EditableTextExample";
 export * from "./Slider/SliderExample";
 export * from "./PasswordStrength2/PasswordStrength2";
+export * from "./PasswordStrength3/PasswordStrength3";

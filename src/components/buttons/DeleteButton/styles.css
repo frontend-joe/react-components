@@ -1,12 +1,12 @@
-.page-wrapper {
-  background: #000;
+.page.delete-button-page {
+  background: #141414;
 }
 
 .delete-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 18px;
   border: 0;
   background: #fc3b51;
   font-size: 24px;
