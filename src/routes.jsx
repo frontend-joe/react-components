@@ -39,6 +39,7 @@ import {
   PasswordStrengthExample,
   PasswordStrength2Example,
   PasswordStrength3Example,
+  PasswordStrength4Example,
   PasswordVisibilityExample,
   RcSlider,
   ReactDropzone,
@@ -405,6 +406,11 @@ export const routes = [
     name: "Controls - PasswordStrength3",
     path: "/controls/password-strength-3",
     element: <PasswordStrength3Example />,
+  },
+  {
+    name: "Controls - PasswordStrength4",
+    path: "/controls/password-strength-4",
+    element: <PasswordStrength4Example />,
   },
   {
     name: "Dropdown7",
