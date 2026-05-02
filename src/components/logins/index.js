@@ -3,3 +3,4 @@ export * from "./Login2/Login2";
 export * from "./Login3/Login3";
 export * from "./Login4/Login4";
 export * from "./Login5/Login5";
+export * from "./Login6/Login6";
