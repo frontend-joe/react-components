@@ -29,6 +29,7 @@ import {
   Login4,
   Login5,
   Login6,
+  Login7,
   Modal1,
   Modal2Example,
   Navbar1,
@@ -427,5 +428,10 @@ export const routes = [
     name: "Login6",
     path: "/logins/login-6",
     element: <Login6 />,
+  },
+  {
+    name: "Login7",
+    path: "/logins/login-7",
+    element: <Login7 />,
   },
 ];
