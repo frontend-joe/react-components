@@ -1,15 +1,10 @@
 import { useRef } from "react";
 import logo from "./logo.svg";
 import google from "./google.svg";
-import apple from "./apple.svg";
 import facebook from "./facebook.svg";
-import { useWebGLBackground } from "./useWebGLBackground";
 import "./Login7.css";
 
 export const Login7 = () => {
-  // const canvasRef = useRef(null);
-  // useWebGLBackground(canvasRef);
-
   const hearts = Array.from({ length: 4 - 0 + 1 }, (_, i) => 0 + i);
 
   return (
