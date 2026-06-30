@@ -1,0 +1,223 @@
+.page.login-9 {
+  background: #c7e7ff;
+  color: #332e2e;
+  font-family: "Euclid Circular B", "Poppins";
+  --color-border: rgb(0 0 0 / 16%);
+}
+
+.login-9-card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 20px 40px -10px rgb(0 0 0 / 10%);
+  padding: 8px;
+  width: clamp(300px, 85vw, 500px);
+}
+
+.login-9-hero,
+.login-9-form {
+  flex: 1 1 50%;
+}
+
+.login-9-card :is(h3, p) {
+  font-weight: 500;
+  margin: 0;
+}
+
+.login-9-hero {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  min-height: 200px;
+  background: radial-gradient(
+    ellipse at center,
+    #eaf5fd 0%,
+    #cfe7fa 45%,
+    #55acee 100%
+  );
+}
+
+.login-9-form {
+  padding: 30px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.login-9-form > img {
+  height: 26px;
+  margin-bottom: 12px;
+}
+
+.login-9-form > h3 {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.login-9 :is(button, input) {
+  height: 52px;
+  border-radius: 14px;
+  background: #efefef;
+  color: inherit;
+  font-family: inherit;
+  font-size: 16px;
+  width: 100%;
+}
+
+.login-9 input {
+  border: 0;
+  padding: 0 14px;
+}
+
+.login-9 input::placeholder {
+  color: #9e9e9e;
+}
+
+.login-9-socials {
+  display: flex;
+  gap: 8px;
+}
+
+.login-9-extra-text {
+  display: none;
+}
+
+.login-9-social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 0;
+  background: #c0c0c0;
+  font-size: 15px;
+}
+
+.login-9-social-btn > img {
+  height: 24px;
+}
+
+.login-9-social-btn:first-child > img {
+  height: 20px;
+}
+
+.login-9-social-btn > p {
+  color: #5c5c5c;
+}
+
+.login-9-form > button[type="submit"] {
+  color: #f9f9f9;
+  font-weight: 500;
+  border: 0;
+  background: #332e2e;
+  font-size: 17px;
+}
+
+.login-9-or {
+  position: relative;
+  text-align: center;
+  height: 24px;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.login-9-or::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  translate: 0 -50%;
+  height: 1px;
+  background: rgb(0 0 0 / 40%);
+  opacity: 0.6;
+}
+
+.login-9-or::after {
+  content: "Or";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: 1;
+  background: #ffffff;
+  font-size: 12px;
+  padding: 0 12px;
+}
+
+@media (width >= 485px) {
+  .login-9-card {
+    width: clamp(300px, 90vw, 740px);
+  }
+
+  .login-9-form {
+    padding-inline: 50px;
+  }
+
+  .login-9-socials {
+    flex-direction: column;
+  }
+
+  .login-9-extra-text {
+    display: inline;
+  }
+}
+
+@media (width >= 640px) {
+  .login-9-card {
+    padding: 8px 0 8px 8px;
+    flex-direction: row;
+  }
+
+  .login-9-form {
+    padding: 30px;
+  }
+}
+
+.ocean {
+  height: 5%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #226699;
+}
+
+.wave {
+  background: url(./wave.svg) repeat-x;
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation:
+    wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
+    swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%,
+  100% {
+    transform: translate3d(0, -25px, 0);
+  }
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+}
