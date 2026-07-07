@@ -1,0 +1,130 @@
+.page.navbar-5-page {
+  background: url("bg.jpg") no-repeat center / cover;
+  color: #f9f9f9;
+  font-family: "Euclid Circular B", "Poppins";
+}
+
+.navbar-5 {
+  position: fixed;
+  top: 22px;
+  right: 22px;
+  left: 22px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 16px 0 32px;
+  height: 72px;
+  border-radius: 36px;
+  background: color-mix(in oklch, rgb(255 255 255 / 8%) 72%, transparent);
+  backdrop-filter: blur(16px) saturate(1.2);
+  -webkit-backdrop-filter: blur(16px) saturate(1.2);
+  box-shadow:
+    inset 0 1px 0 color-mix(in oklch, rgb(255 255 255 / 12%) 65%, transparent),
+    inset 0 0 0 0.06rem
+      color-mix(in oklch, rgb(255 255 255 / 6%) 55%, transparent);
+}
+
+.navbar-5 > span {
+  margin-left: auto;
+}
+
+.navbar-5 .logo {
+  height: 28px;
+  margin-right: 28px;
+}
+
+.navbar-5 .avatar {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: auto;
+}
+
+.navbar-5-page ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar-5 .menu {
+  position: relative;
+  height: 100%;
+  padding-left: 24px;
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 24px;
+}
+
+.navbar-5 .menu::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  translate: 0 -50%;
+  width: 1px;
+  height: 18px;
+  background: color-mix(in oklch, rgb(255 255 255 / 40%) 65%, transparent);
+}
+
+.navbar-5 .menu > ul {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  height: 100%;
+}
+
+.navbar-5-page ul > li {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.navbar-5-page ul > li:hover {
+  opacity: 1;
+}
+
+.navbar-5-page .submenu.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.navbar-5-page .submenu {
+  position: fixed;
+  top: 98px;
+  left: -24px;
+  opacity: 0;
+  visibility: hidden;
+  padding: 24px;
+  border-radius: 36px;
+  background: color-mix(in oklch, rgb(255 255 255 / 12%) 72%, transparent);
+  backdrop-filter: blur(16px) saturate(1.2);
+  -webkit-backdrop-filter: blur(16px) saturate(1.2);
+  box-shadow:
+    inset 0 1px 0 color-mix(in oklch, rgb(255 255 255 / 15%) 65%, transparent),
+    inset 0 0 0 0.06rem
+      color-mix(in oklch, rgb(255 255 255 / 6%) 55%, transparent);
+  transition: 0.3s;
+}
+
+.navbar-5-page .submenu::before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: 0;
+  right: 0;
+  height: 18px;
+}
+
+.navbar-5-page .submenu > div {
+  display: none;
+}
+
+.navbar-5-page .submenu ul {
+  display: grid;
+  gap: 20px;
+}
+
+.navbar-5-page .submenu > div.visible {
+  display: grid;
+}

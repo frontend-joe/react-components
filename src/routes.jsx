@@ -38,6 +38,7 @@ import {
   Navbar2,
   Navbar3,
   Navbar4,
+  Navbar5,
   Parallax1,
   Parallax2,
   PasswordStrengthExample,
@@ -385,6 +386,11 @@ export const routes = [
     name: "Navbar4",
     path: "/navbars/navbar-4",
     element: <Navbar4 />,
+  },
+  {
+    name: "Navbar5",
+    path: "/navbars/navbar-5",
+    element: <Navbar5 />,
   },
   {
     name: "Sidebar15",
