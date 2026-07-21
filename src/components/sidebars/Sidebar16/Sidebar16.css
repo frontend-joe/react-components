@@ -1,0 +1,146 @@
+.page.sidebar-16-page {
+  background-color: #073e77;
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 30%;
+  font-family: "Euclid Circular A";
+}
+
+.sidebar-16-page :is(button, label) {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+}
+
+.sidebar-16 {
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 260px;
+  border-radius: 34px;
+  padding: 0 16px;
+  border: 3px solid rgb(255 255 255 / 8%);
+  backdrop-filter: blur(30px);
+}
+
+.sidebar-16 header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  height: 72px;
+  padding: 10px 16px 0;
+  border-bottom: 1px solid rgb(255 255 255 / 8%);
+}
+
+.sidebar-16 header img {
+  height: 24px;
+}
+
+.sidebar-16 header h1 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "SF Pro Display";
+  letter-spacing: 1px;
+  color: rgb(255 255 255 / 95%);
+}
+
+.sidebar-16 header svg {
+  margin-left: auto;
+  color: rgb(255 255 255 / 95%);
+}
+
+.sidebar-16 button {
+  position: relative;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  padding: 0 16px;
+  color: rgb(255 255 255 / 95%);
+  transition: 0.3s;
+}
+
+.sidebar-16 button p:nth-child(2) {
+  flex: 1 1 auto;
+}
+
+.sidebar-16 button[aria-expanded="true"],
+.sidebar-16 button[aria-current="page"] {
+  background: rgb(255 255 255 / 10%);
+}
+
+.sidebar-16 button svg {
+  transition: 0.3s;
+}
+
+.sidebar-16 button[aria-expanded="true"] > svg:nth-child(3) {
+  rotate: -180deg;
+}
+
+.sidebar-16
+  button:not([aria-expanded="true"]):not([aria-current="page"]):hover {
+  background: rgb(255 255 255 / 3%);
+}
+
+.sidebar-16 ul {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.sidebar-16 li:last-child {
+  margin-top: auto;
+  margin-bottom: 16px;
+}
+
+.sidebar-16 .sub-menu {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  transition: 0.5s;
+}
+
+.sidebar-16 .sub-menu ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+}
+
+.sidebar-16 .sub-menu button {
+  padding-left: 52px;
+}
+
+.sidebar-16 .sub-menu button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  translate: 0 -50%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: rgb(255 255 255 / 35%);
+}
+
+.sidebar-16 svg {
+  flex-shrink: 0;
+}
