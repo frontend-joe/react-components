@@ -7,6 +7,7 @@ import {
   Card5Example,
   Card6Example,
   Card7Example,
+  Card8Example,
   Carousel1,
   Carousel2,
   Carousel3,
@@ -417,6 +418,11 @@ export const routes = [
     name: "Card7",
     path: "/cards/card-7",
     element: <Card7Example />,
+  },
+  {
+    name: "Card8",
+    path: "/cards/card-8",
+    element: <Card8Example />,
   },
   {
     name: "Controls - PasswordStrength3",

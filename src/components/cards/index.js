@@ -5,3 +5,4 @@ export * from "./Card4/Card4Example";
 export * from "./Card5/Card5Example";
 export * from "./Card6/Card6Example";
 export * from "./Card7/Card7Example";
+export * from "./Card8/Card8Example";
