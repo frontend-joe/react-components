@@ -4,8 +4,8 @@
 
 .login-4-page.page {
   margin: 0;
-  background: #f2f3fe;
-  color: #4b5679;
+  background: #f3f3f1;
+  color: #212625;
   height: 100vh;
   display: grid;
   place-items: center;
@@ -14,7 +14,6 @@
 }
 
 .login-4-card {
-  --gradient: linear-gradient(45deg, #5823c9, #6b50ff);
   position: relative;
   overflow: hidden;
   width: 660px;
@@ -32,7 +31,7 @@
   left: 0;
   bottom: 0;
   width: 50%;
-  background: var(--gradient);
+  background: url("hero.jpg") center/cover no-repeat;
   border-radius: 18px;
   translate: 0 0;
   transition: 0.65s ease-in-out;
@@ -132,7 +131,7 @@
 }
 
 .login-4-card .hero button:hover {
-  color: #3c23c9;
+  color: #212625;
   background: #f9f9f9;
 }
 
@@ -172,7 +171,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #f2f3fe;
+  background: #f3f3f1;
   font-size: 16px;
 }
 
@@ -195,7 +194,7 @@
   font-family: inherit;
   border-radius: 10px;
   border: 0;
-  background: #f2f3fe;
+  background: #f3f3f1;
   padding: 14px 12px;
   color: inherit;
   width: 100%;
@@ -214,6 +213,5 @@
   color: #f9f9f9;
   width: 160px;
   margin-top: 10px;
-  background: var(--gradient);
-  box-shadow: 0 10px 40px rgb(30 61 161 / 32%);
+  background: #212625;
 }
