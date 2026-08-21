@@ -12,5 +12,6 @@ export * from "./parallax";
 export * from "./dropdowns";
 export * from "./widgets";
 export * from "./navbars";
+export * from "./menus";
 export * from "./tables";
 export * from "./signups";

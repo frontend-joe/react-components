@@ -19,6 +19,7 @@ import {
   Dropdown5Example,
   Dropdown6Example,
   Dropdown7,
+  Dropdown8Example,
   EditableTitleExample,
   FabButton,
   Accordion1Example,
@@ -33,6 +34,8 @@ import {
   Login7,
   Login8,
   Login9,
+  Menu1,
+  MenuPage,
   Modal1,
   Modal2Example,
   Navbar1,
@@ -440,6 +443,11 @@ export const routes = [
     element: <Dropdown7 />,
   },
   {
+    name: "Dropdown8",
+    path: "/dropdowns/dropdown-8",
+    element: <Dropdown8Example />,
+  },
+  {
     name: "Login5",
     path: "/logins/login-5",
     element: <Login5 />,
@@ -463,5 +471,17 @@ export const routes = [
     name: "Login9",
     path: "/logins/login-9",
     element: <Login9 />,
+  },
+  {
+    name: "Menu1",
+    path: "/menus/menu-1",
+    element: <Menu1 />,
+    children: [
+      { index: true, element: <MenuPage page="about" /> },
+      { path: "about", element: <MenuPage page="about" /> },
+      { path: "portfolio", element: <MenuPage page="portfolio" /> },
+      { path: "services", element: <MenuPage page="services" /> },
+      { path: "contact", element: <MenuPage page="contact" /> },
+    ],
   },
 ];

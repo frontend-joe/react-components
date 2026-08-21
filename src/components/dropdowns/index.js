@@ -5,3 +5,4 @@ export * from "./Dropdown4/Dropdown4Example";
 export * from "./Dropdown5/Dropdown5Example";
 export * from "./Dropdown6/Dropdown6Example";
 export * from "./Dropdown7/Dropdown7";
+export * from "./Dropdown8/Dropdown8Example";

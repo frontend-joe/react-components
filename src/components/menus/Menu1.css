@@ -1,0 +1,148 @@
+.page.menu-1-page {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  color: #f9f9f9;
+  background: url("./bg.jpeg") no-repeat center center/ cover;
+  font-family: "Euclid Circular A", "Poppins";
+}
+
+.menu-1-page button {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.menu-1-page .burger,
+.menu-1-page .menu {
+  position: fixed;
+}
+
+.menu-1-page .burger {
+  z-index: 4;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  width: 88px;
+  height: 88px;
+  background-image: url("./menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-1-page .burger.open {
+  background-image: url("./close.svg");
+}
+
+.menu-1-page .background {
+  position: fixed;
+  z-index: 2;
+  top: 44px;
+  left: 44px;
+  aspect-ratio: 1 / 1;
+  translate: -50% -50%;
+  height: 88px;
+  background: rgb(0 0 0 / 0.85);
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.6s;
+}
+
+.menu-1-page .background.open {
+  height: 300vh;
+  opacity: 0.85;
+}
+
+.menu-1-page .menu {
+  z-index: 3;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.05s;
+}
+
+.menu-1-page .menu nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 100px;
+}
+
+.menu-1-page .menu.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-1-page .menu nav:hover > a {
+  opacity: 0.25;
+}
+
+.menu-1-page .menu nav > a:hover {
+  opacity: 1;
+}
+
+.menu-1-page .menu a {
+  color: #f9f9f9;
+  font-size: 32px;
+  font-family: "Euclid Circular A";
+  padding: 20px 0 20px 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.menu-1-page .menu.open a {
+  opacity: 1;
+}
+
+@keyframes menu-1-appear {
+  0% {
+    opacity: 0;
+    translate: 0 30px;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.menu-1-page .appear {
+  animation: menu-1-appear 0.35s backwards;
+}
+
+.menu-1-page .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 100px 15%;
+  transition: 0.6s;
+  background: linear-gradient(rgb(10 15 20 / 0%) 0%, rgb(10 15 20 / 100%) 100%);
+}
+
+.menu-1-page .content.open {
+  filter: blur(10px);
+}
+
+.menu-1-page .content h2 {
+  font-weight: 400;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.menu-1-page .content p {
+  line-height: 1.66;
+  opacity: 0.55;
+  font-size: 18px;
+}

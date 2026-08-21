@@ -1,0 +1,154 @@
+.dropdown-8 {
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.dropdown-8 .apps-btn {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #c7c7c7;
+  font-size: 22px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.dropdown-8 .apps-btn:hover {
+  background: rgb(255 255 255 / 10%);
+}
+
+.dropdown-8 .scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+}
+
+.dropdown-8 .popover {
+  position: absolute;
+  top: 54px;
+  right: -8px;
+  z-index: 11;
+  width: 360px;
+  max-height: min(520px, 80vh);
+  overflow-y: auto;
+  padding-bottom: 12px;
+  background: #282a2c;
+  border-radius: 28px;
+  box-shadow: 0 8px 32px rgb(0 0 0 / 55%);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px) scale(0.98);
+  transform-origin: top right;
+  transition: 0.2s;
+}
+
+.dropdown-8 .popover.open {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
+.dropdown-8 .popover::-webkit-scrollbar {
+  width: 15px;
+}
+
+.dropdown-8 .popover::-webkit-scrollbar-thumb {
+  background: rgb(255 255 255 / 30%);
+  border-radius: 10px;
+  border: 4px solid transparent;
+  background-clip: padding-box;
+}
+
+.dropdown-8 .popover::-webkit-scrollbar-thumb:hover {
+  background: rgb(255 255 255 / 45%);
+  background-clip: padding-box;
+}
+
+.dropdown-8 .popover-head {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 12px 12px 22px;
+  background: #282a2c;
+}
+
+.dropdown-8 .popover-head h3 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 400;
+  color: #e3e3e3;
+}
+
+.dropdown-8 .edit-btn {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: rgb(255 255 255 / 8%);
+  color: #c7c7c7;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.dropdown-8 .edit-btn:hover {
+  background: rgb(255 255 255 / 16%);
+}
+
+.dropdown-8 .apps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  padding: 4px 10px;
+}
+
+.dropdown-8 .app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 6px;
+  border: 0;
+  border-radius: 16px;
+  background: transparent;
+  color: #e3e3e3;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.dropdown-8 .app:hover {
+  background: rgb(255 255 255 / 8%);
+}
+
+.dropdown-8 .app-label {
+  font-size: 13px;
+}
+
+.dropdown-8 .app-icon {
+  width: 48px;
+  height: 48px;
+  background-image: url("icons.png");
+  background-repeat: no-repeat;
+  background-size: 53px auto;
+  background-position: center var(--y);
+}
+
+.dropdown-8 .app-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 2px;
+  background: linear-gradient(140deg, #c158dc, #6a5cff);
+}
