@@ -6,3 +6,4 @@ export * from "./Card5/Card5Example";
 export * from "./Card6/Card6Example";
 export * from "./Card7/Card7Example";
 export * from "./Card8/Card8Example";
+export * from "./Card9/Card9Example";

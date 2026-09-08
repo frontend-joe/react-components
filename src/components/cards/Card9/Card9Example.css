@@ -1,0 +1,9 @@
+.page.card-9-page {
+  background: #f8f9fa;
+  color: #202124;
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  font-family: "Euclid Circular B", "Poppins";
+}
