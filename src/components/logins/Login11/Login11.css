@@ -1,0 +1,400 @@
+.page.login-11 {
+  --color-primary: #3cafd1;
+  --color-dark: #4497bf;
+  --color-muted: #747b92;
+  --color-text: #1b1f24;
+  background: #eaeeef;
+  color: #abaab8;
+  overflow: hidden;
+  font-family: "Euclid Circular B";
+}
+
+.login-11 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.login-11 input,
+.login-11 button {
+  font-family: inherit;
+  color: inherit;
+  border: 0;
+  border-radius: 10px;
+  height: 44px;
+}
+
+.login-11 button {
+  padding: 0;
+  cursor: pointer;
+}
+
+.login-11 p {
+  font-size: 12px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.login-11 p a {
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.login-11 .card {
+  display: flex;
+  align-content: stretch;
+  width: 680px;
+  height: 460px;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow:
+    0 10px 30px rgba(40, 55, 75, 0.08),
+    0 30px 70px rgba(40, 55, 75, 0.07);
+}
+
+.login-11 .card-nav {
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100px;
+}
+
+.login-11 .card-nav .active-bar {
+  position: absolute;
+  top: 33.33%;
+  left: 0;
+  height: 33.33%;
+  transition: 0.4s ease-in-out;
+}
+
+.login-11 .card.signup .card-nav .active-bar {
+  top: 66.66%;
+}
+
+.login-11 .card-nav .active-bar::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+  width: 6px;
+  height: 60px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background: var(--color-primary);
+}
+
+.login-11 .card-nav img {
+  height: 44px;
+}
+
+.login-11 .card-nav li {
+  flex: 1 1 auto;
+  display: grid;
+  place-items: center;
+}
+
+.login-11 .card-nav li button.active {
+  color: var(--color-dark);
+}
+
+.login-11 .card-nav button {
+  background: transparent;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.login-11 .card-nav button:not(.active):hover {
+  opacity: 0.675;
+  color: var(--color-dark);
+}
+
+.login-11 .card-nav button i {
+  font-size: 20px;
+}
+
+.login-11 .card-hero {
+  position: relative;
+  margin: -30px 0;
+  flex: 0 0 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 18px 45px rgba(40, 55, 75, 0.22);
+}
+
+.login-11 .card-hero-bg {
+  position: absolute;
+  inset: -24px 0;
+  background: url("hero.jpg") center / cover no-repeat;
+  transition: translate 0.5s ease-in-out;
+}
+
+.login-11 .card.signup .card-hero-bg {
+  translate: 0 -24px;
+}
+
+.login-11 .card-hero-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: 0.5s ease-in-out;
+}
+
+.login-11 .card.signup .card-hero-inner {
+  top: -100%;
+}
+
+.login-11 .card-hero-content {
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.login-11 .card.signin .card-hero-content.signin,
+.login-11 .card.signup .card-hero-content.signup {
+  opacity: 1;
+}
+
+.login-11 h2,
+.login-11 h3 {
+  text-align: left;
+  font-weight: 400;
+  margin: 0;
+  padding-left: 24px;
+}
+
+.login-11 .card-hero h2 {
+  color: #f9f9f9;
+  margin: 0 0 2px;
+  padding-left: 0;
+  text-align: center;
+}
+
+.login-11 .card-hero h3 {
+  color: #f9f9f9;
+  opacity: 0.75;
+  font-size: 13px;
+  padding-left: 0;
+  text-align: center;
+}
+
+.login-11 .card-hero .terms {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 16px;
+  color: #f9f9f9;
+  font-size: 11px;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.login-11 .card-hero .terms i {
+  font-size: 13px;
+}
+
+.login-11 .card-hero .terms:hover {
+  opacity: 1;
+}
+
+.login-11 .card-form {
+  position: relative;
+  overflow: hidden;
+  padding: 24px;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.login-11 .card-form .forms {
+  position: absolute;
+  height: 200%;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.login-11 .card.signup .card-form .forms {
+  top: -100%;
+}
+
+.login-11 .card-form form {
+  height: 460px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.login-11 .card-form label {
+  font-size: 13px;
+  color: var(--color-muted);
+}
+
+.login-11 .control {
+  position: relative;
+}
+
+.login-11 .control input {
+  background: #f5f5f5;
+  border: 0;
+  border-radius: 10px;
+  width: 100%;
+  padding: 0 40px 0 12px;
+}
+
+.login-11 .control input:focus {
+  outline-color: var(--color-primary);
+}
+
+.login-11 .control input::placeholder {
+  color: #abaab8;
+}
+
+.login-11 .control input:focus ~ i {
+  color: var(--color-dark);
+}
+
+.login-11 .control i {
+  color: var(--color-muted);
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  translate: 0 -50%;
+  transition: 0.3s;
+}
+
+.login-11 .card-form form > button {
+  padding: 12px 20px;
+  color: #f9f9f9;
+  border: 0;
+  margin-top: 12px;
+  background: var(--color-text);
+}
+
+.login-11 p.footer {
+  opacity: 0.75;
+}
+
+.login-11 .control .eye {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  translate: 0 -50%;
+  height: auto;
+  padding: 4px;
+  background: transparent;
+  color: var(--color-muted);
+  display: grid;
+  place-items: center;
+  transition: color 0.3s;
+}
+
+.login-11 .control .eye:hover {
+  color: var(--color-dark);
+}
+
+.login-11 .control .eye .material-symbols-outlined {
+  font-size: 20px;
+}
+
+.login-11 .remember-forgot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  height: 48px;
+  margin: 6px 0 4px;
+}
+
+.login-11 .remember {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-muted);
+  cursor: pointer;
+}
+
+.login-11 .remember input {
+  appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1px solid rgb(0 0 0 / 20%);
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.login-11 .remember input:checked {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.login-11 .remember input:checked::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 4px;
+  height: 8px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  rotate: 45deg;
+}
+
+.login-11 .forgot {
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.login-11 .or {
+  text-align: center;
+  font-size: 12px;
+  color: var(--color-muted);
+  opacity: 0.625;
+  margin: 4px 0;
+}
+
+.login-11 .socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.login-11 .social-btn {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  background: #f5f5f5;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.login-11 .social-btn:hover {
+  background: #eceef1;
+}
+
+.login-11 .social-btn img {
+  height: 22px;
+  width: 22px;
+  object-fit: contain;
+}
