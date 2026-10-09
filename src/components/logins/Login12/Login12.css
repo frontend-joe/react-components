@@ -1,0 +1,334 @@
+.page.login-12 {
+  background: #f8f9fd;
+  color: #212625;
+  overflow: hidden;
+  font-family: "Euclid Circular B", "Poppins";
+}
+
+.login-12 .card {
+  position: relative;
+  overflow: hidden;
+  width: 660px;
+  height: 520px;
+  border-radius: 24px;
+  background: #ffffff;
+  border: 8px solid #ffffff;
+  box-shadow: 0 12px 80px rgba(41, 30, 113, 0.12);
+}
+
+.login-12 .card-bg {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  background: url("hero.png") center/cover no-repeat;
+  background-position-y: -16px;
+  background-size: 118%;
+  border-radius: 18px;
+  translate: 100% 0;
+  transition: 0.65s ease-in-out;
+}
+
+.login-12 .card.register .card-bg {
+  translate: 0 0;
+}
+
+.login-12 .hero,
+.login-12 .form {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.65s ease-in-out;
+}
+
+.login-12 .hero.login,
+.login-12 .form.login {
+  opacity: 1;
+  visibility: visible;
+}
+
+.login-12 .card.register :is(.hero, .form).login {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.login-12 .card.register :is(.hero, .form).register {
+  opacity: 1;
+  visibility: visible;
+}
+
+.login-12 .hero.login {
+  left: 50%;
+  translate: 0;
+}
+
+.login-12 .card.register .hero.login {
+  translate: 100% 0;
+}
+
+.login-12 .hero.register {
+  translate: -100% 0;
+}
+
+.login-12 .card.register .hero.register {
+  translate: 0;
+}
+
+.login-12 .form.login {
+  translate: 0;
+}
+
+.login-12 .card.register .form.login {
+  translate: 100% 0;
+}
+
+.login-12 .form.register {
+  left: 50%;
+  translate: -100% 0;
+}
+
+.login-12 .card.register .form.register {
+  translate: 0;
+}
+
+.login-12 .hero {
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: #f9f9f9;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.login-12 .hero h2 {
+  margin: 0;
+  font-weight: 500;
+}
+
+.login-12 .hero p {
+  margin: 0 0 6px;
+  opacity: 0.85;
+  line-height: 1.45;
+}
+
+.login-12 .hero .switch {
+  padding: 12px 46px;
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  color: inherit;
+  border: 0;
+  background: rgb(255 255 255 / 8%);
+  backdrop-filter: blur(12px);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.login-12 .hero .switch:hover {
+  color: #212625;
+  background: #f9f9f9;
+}
+
+/* ---------- form ---------- */
+
+.login-12 .form {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  padding: 28px;
+  background: #ffffff;
+}
+
+.login-12 .brand {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.login-12 .brand img {
+  width: 30px;
+  height: 30px;
+}
+
+.login-12 .brand span {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  color: #141619;
+}
+
+.login-12 .form h2 {
+  margin: 0 0 6px;
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: #141619;
+}
+
+.login-12 .form form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.login-12 .field-label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #1b1d21;
+}
+
+.login-12 .control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 46px;
+  padding: 0 14px;
+  background: #f1f2f4;
+  border-radius: 12px;
+}
+
+.login-12 .control .material-symbols-outlined {
+  color: #a2a7ae;
+  font-size: 20px;
+}
+
+.login-12 .control input {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  border: 0;
+  background: transparent;
+  outline: none;
+  font-family: inherit;
+  font-size: 14px;
+  color: #1b1d21;
+}
+
+.login-12 .control input::placeholder {
+  color: #b7bbc1;
+}
+
+.login-12 p {
+  font-size: 14px;
+  color: #b7bbc1;
+  margin-bottom: 6px;
+}
+
+.login-12 p a {
+  opacity: 1;
+  color: #1b1d21;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-12 .remember {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 4px 0 8px;
+  cursor: pointer;
+}
+
+.login-12 .remember input {
+  appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #c9ccd1;
+  border-radius: 6px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.login-12 .remember input:checked {
+  background: #6b5ee3;
+  border-color: #6b5ee3;
+}
+
+.login-12 .remember input:checked::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 5px;
+  width: 5px;
+  height: 9px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  rotate: 45deg;
+}
+
+.login-12 .remember span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1b1d21;
+}
+
+.login-12 .submit {
+  height: 52px;
+  width: 100%;
+  margin-top: 4px;
+  border: 0;
+  border-radius: 12px;
+  background: #0f0f0f;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.login-12 .submit:hover {
+  background: #000000;
+}
+
+.login-12 .forgot {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1b1d21;
+  cursor: pointer;
+}
+
+.login-12 .socials {
+  display: flex;
+  gap: 14px;
+  margin-top: 6px;
+}
+
+.login-12 .social-btn {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 8%);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.login-12 .social-btn:hover {
+  transform: translateY(-2px);
+}
+
+.login-12 .social-btn img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}

@@ -37,6 +37,7 @@ import {
   Login9,
   Login10,
   Login11,
+  Login12,
   Menu1,
   MenuPage,
   Modal1,
@@ -489,6 +490,11 @@ export const routes = [
     name: "Login11",
     path: "/logins/login-11",
     element: <Login11 />,
+  },
+  {
+    name: "Login12",
+    path: "/logins/login-12",
+    element: <Login12 />,
   },
   {
     name: "Menu1",
