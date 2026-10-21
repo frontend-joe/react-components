@@ -94,7 +94,7 @@ export const Sidebar1 = () => {
 
   return (
     <section className="page sidebar-1-page">
-      <aside className="sidebar">
+      <aside className="sidebar-1">
         <NavHeader />
         {menuItems.map((item) => (
           <div>
