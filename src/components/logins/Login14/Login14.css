@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+.page.login-14 {
+  --color-primary: #539fdf;
+  --color-primary-dark: #4b91cb;
+  --slide: 0.5s linear;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #aab6c2;
+  color: #212625;
+  overflow: hidden;
+  font-family: "Euclid Circular B", "Poppins";
+}
+
+.login-14 .screen-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  z-index: 0;
+  background: #142b41;
+  transition: translate var(--slide);
+}
+
+.login-14.register .screen-bg {
+  translate: 100% 0;
+}
+
+.login-14 .card {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  width: 660px;
+  height: 520px;
+  border-radius: 0;
+  background: #ffffff;
+  box-shadow: 0 12px 80px rgba(41, 30, 113, 0.12);
+}
+
+.login-14 .card-bg {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  overflow: hidden;
+  background: url("hero.jpg") center / cover no-repeat;
+  border-radius: 0;
+  translate: 100% 0;
+  transition: var(--slide);
+}
+
+.login-14 .card.register .card-bg {
+  translate: 0 0;
+}
+
+.login-14 .hero,
+.login-14 .form {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--slide);
+}
+
+.login-14 .hero.login,
+.login-14 .form.login {
+  opacity: 1;
+  visibility: visible;
+}
+
+.login-14 .card.register :is(.hero, .form).login {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.login-14 .card.register :is(.hero, .form).register {
+  opacity: 1;
+  visibility: visible;
+}
+
+.login-14 .hero.login {
+  left: 50%;
+  translate: 0;
+}
+
+.login-14 .card.register .hero.login {
+  translate: 100% 0;
+}
+
+.login-14 .hero.register {
+  translate: -100% 0;
+}
+
+.login-14 .card.register .hero.register {
+  translate: 0;
+}
+
+.login-14 .form.login {
+  translate: 0;
+}
+
+.login-14 .card.register .form.login {
+  translate: 100% 0;
+}
+
+.login-14 .form.register {
+  left: 50%;
+  translate: -100% 0;
+}
+
+.login-14 .card.register .form.register {
+  translate: 0;
+}
+
+.login-14 .hero {
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: #f9f9f9;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.login-14 .card h2 {
+  margin: 0;
+  font-weight: 500;
+}
+
+.login-14 .hero p {
+  margin: 0 0 6px;
+  opacity: 0.85;
+  line-height: 1.45;
+}
+
+.login-14 .hero .switch {
+  padding: 12px 46px;
+  border-radius: 32px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  color: #425096;
+  border: 0;
+  background: rgb(255 255 255 / 24%);
+  backdrop-filter: blur(4px);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.login-14 .hero .switch:hover {
+  background: rgb(255 255 255 / 24%);
+}
+
+/* ---------- form ---------- */
+
+.login-14 .form {
+  background: #ffffff;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  padding: 32px;
+}
+
+.login-14 .form h2 {
+  margin: 0 0 4px;
+  font-size: 26px;
+  font-weight: 500;
+  text-align: center;
+  color: #3a4160;
+}
+
+.login-14 .form form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.login-14 .control {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 52px;
+  padding: 0 16px;
+  background: #f1f2f6;
+  border-radius: 12px;
+}
+
+.login-14 .control i {
+  font-size: 20px;
+  color: #9aa0ac;
+}
+
+.login-14 .control input {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  border: 0;
+  background: transparent;
+  outline: none;
+  font-family: inherit;
+  font-size: 15px;
+  color: #3a4160;
+}
+
+.login-14 .control input::placeholder {
+  color: #9aa0ac;
+}
+
+.login-14 .control .eye {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #3a4160;
+  cursor: pointer;
+}
+
+.login-14 .control .eye .material-symbols-outlined {
+  font-size: 22px;
+}
+
+.login-14 .remember-forgot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2px 0;
+}
+
+.login-14 .remember,
+.login-14 .agree {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 2px 0;
+  font-size: 14px;
+  color: #3a4160;
+  cursor: pointer;
+}
+
+.login-14 .remember input,
+.login-14 .agree input {
+  appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #d4d7de;
+  border-radius: 6px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.login-14 .remember input:checked,
+.login-14 .agree input:checked {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.login-14 .remember input:checked::after,
+.login-14 .agree input:checked::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 5px;
+  height: 10px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  rotate: 45deg;
+}
+
+.login-14 .submit {
+  height: 52px;
+  width: 100%;
+  margin-top: 4px;
+  border: 0;
+  border-radius: 12px;
+  background: #021016;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.login-14 .or {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.login-14 .or::before,
+.login-14 .or::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #e4e6ec;
+}
+
+.login-14 .or span {
+  color: #9aa0ac;
+  font-size: 14px;
+}
+
+.login-14 .google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  height: 54px;
+  width: 100%;
+  border: 0;
+  border-radius: 12px;
+  background: #f1f2f6;
+  color: #3a4160;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.login-14 .google-btn:hover {
+  background: #e9ebf1;
+}
+
+.login-14 .google-btn img {
+  width: 22px;
+  height: 22px;
+}
+
+.login-14 .legal {
+  margin: 4px 0 0;
+  text-align: center;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: #9aa0ac;
+}
+
+.login-14 .legal a {
+  color: #8a909c;
+  text-decoration: underline;
+  cursor: pointer;
+}

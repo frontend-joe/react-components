@@ -39,6 +39,7 @@ import {
   Login11,
   Login12,
   Login13,
+  Login14,
   Menu1,
   MenuPage,
   Modal1,
@@ -75,6 +76,7 @@ import {
   Sidebar14,
   Sidebar15,
   Sidebar16,
+  Sidebar17,
   Signup1,
   SliderExample,
   Table1Example,
@@ -413,6 +415,11 @@ export const routes = [
     element: <Sidebar16 />,
   },
   {
+    name: "Sidebar17",
+    path: "/sidebars/sidebars-17",
+    element: <Sidebar17 />,
+  },
+  {
     name: "Login4",
     path: "/logins/login-4",
     element: <Login4 />,
@@ -501,6 +508,11 @@ export const routes = [
     name: "Login13",
     path: "/logins/login-13",
     element: <Login13 />,
+  },
+  {
+    name: "Login14",
+    path: "/logins/login-14",
+    element: <Login14 />,
   },
   {
     name: "Menu1",
